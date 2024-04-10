@@ -2,7 +2,7 @@
 
 package application;
 
-public class JournalPaper extends ResearchReport {
+public class JournalPaper extends Published {
     public String journal_title;
 
     public JournalPaper() {
@@ -10,7 +10,7 @@ public class JournalPaper extends ResearchReport {
         journal_title = "N/A";
     }
     public JournalPaper(String t, String py, int an, String jt) {
-        super(t, py, jt);
+        super(t, py, an);
         journal_title = jt;
     }
 }
