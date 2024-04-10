@@ -1,5 +1,16 @@
-package cs.CS3700.LMS.application;
+//Written by Aliilani McGuire
 
-public class ResearchReport {
-    
+package application;
+
+public class ResearchReport extends Magazine {
+    public Author[] author_list;
+
+    public ResearchReport() {
+        super();
+        author_list = Author[0];
+    }
+    public ResearchReport(String t, String py, int an) {
+        super(t, py);
+        author_list = Author[an];
+    }
 }

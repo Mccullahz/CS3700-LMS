@@ -1,6 +1,6 @@
 //Written by ALiilani McGuire
 
-package bookstore;
+package application;
 
 public class Author {
     private String first_name, last_name;

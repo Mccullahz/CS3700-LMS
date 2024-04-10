@@ -1,4 +1,4 @@
-package cs.CS3700.LMS.application;
+package application;
 
 public class Thesis {
     
