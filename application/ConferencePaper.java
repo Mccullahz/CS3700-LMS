@@ -1,5 +1,5 @@
 package application;
 
-public class ConferencePaper {
+public class ConferencePaper extends ResearchReport{
     
 }

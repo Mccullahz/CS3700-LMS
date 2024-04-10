@@ -2,16 +2,13 @@
 
 package application;
 
-public class Magazine {
-    public String title, pub_year;
+public class Magazine extends Published{
 
     public Magazine() {
-        title = "N/A";
-        pub_year = "1969";
+        super("N/A", "1963");
     }
 
     public Magazine(String t, String py) {
-        title = t;
-        pub_year = py;
+        super(t, py);
     }
 }
