@@ -2,7 +2,7 @@
 
 package application;
 
-public class JournalPaper extends Published {
+public class JournalPaper extends Publication {
     public String journal_title;
 
     public JournalPaper() {

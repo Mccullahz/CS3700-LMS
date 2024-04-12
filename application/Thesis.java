@@ -1,5 +1,5 @@
 package application;
 
-public class Thesis extends Published{
+public class Thesis extends Publication{
     
 }
