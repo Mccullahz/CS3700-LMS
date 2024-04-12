@@ -2,7 +2,7 @@
 
 package application;
 
-public class ResearchReport extends Published {
+public class ResearchReport extends Publication {
     public Author[] author_list;
 
     public ResearchReport() {
