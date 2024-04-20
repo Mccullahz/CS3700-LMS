@@ -1,6 +1,6 @@
 package application;
 
 
-public class Dissertation {
+public class Dissertation extends Publication{
     
 }
