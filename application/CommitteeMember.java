@@ -1,4 +1,5 @@
 //Written by Aliilani McGuire
+package application;
 
 public class CommitteeMember extends Author {
     public String education_background;
