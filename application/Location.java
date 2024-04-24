@@ -1,3 +1,6 @@
+/*
+* @author: Zylar :)
+*/
 package application;
 
 public class Location {

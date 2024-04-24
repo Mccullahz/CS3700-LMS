@@ -1,8 +1,4 @@
-/*
-*
-* @author: Zylar :)
-*
-*/
+
 package application;
 
 public class AuthorList {
