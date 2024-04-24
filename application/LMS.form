@@ -112,20 +112,17 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="ItmSearchDescLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ItmSearchLabel" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="SearchTabbedPanel" min="-2" pref="925" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="ItmSearchDescLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="ItmSearchLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <EmptySpace pref="563" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="SearchTabbedPanel" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -136,7 +133,7 @@
                           <Component id="ItmSearchDescLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="ItmSearchLabel" min="-2" pref="16" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="SearchTabbedPanel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -200,7 +197,7 @@
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Component id="SearchBookPubYearLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -214,14 +211,16 @@
                                           <Component id="SearchBookPubLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="searchBookPubTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="39" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jScrollPane15" min="-2" pref="169" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
+                                      <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="68" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -230,10 +229,6 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -260,6 +255,11 @@
                                           </Group>
                                       </Group>
                                       <Component id="jScrollPane15" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jScrollPane10" pref="325" max="32767" attributes="0"/>
@@ -449,6 +449,24 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchBookBtnActionPerformed"/>
                           </Events>
                         </Component>
+                        <Component class="javax.swing.JButton" name="confirmEditBookBtn">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Edit Book"/>
+                            <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditBookBtnActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditBookBtn.setVisible(false);"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchThesisPanel">
@@ -465,7 +483,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane9" pref="886" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane9" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -483,7 +501,6 @@
                                           <Component id="SearchThesisAuthorLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="searchThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="36" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="SearchThesisTitleLabel" min="-2" max="-2" attributes="0"/>
@@ -497,15 +514,21 @@
                                           <Component id="SearchThesisFigsLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="searchThesisFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="SearchThesisCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jScrollPane14" min="-2" pref="159" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="searchThesisBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="confirmEditThesisBtn" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="searchThesisBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -514,10 +537,6 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="searchThesisBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
                                       <Component id="jScrollPane14" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -543,6 +562,12 @@
                                               <Component id="SearchThesisAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="searchThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                          <Component id="searchThesisBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="confirmEditThesisBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -727,6 +752,24 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchThesisBtnActionPerformed"/>
                           </Events>
                         </Component>
+                        <Component class="javax.swing.JButton" name="confirmEditThesisBtn">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                            </Property>
+                            <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                            <Property name="label" type="java.lang.String" value="Edit Thesis"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditThesisBtnActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditThesisBtn.setVisible(false);"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchDissertationPanel">
@@ -761,7 +804,6 @@
                                           <Component id="SearchDissertationAuthorLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="searchDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="36" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="SearchDissertationTitleLabel" min="-2" max="-2" attributes="0"/>
@@ -775,15 +817,24 @@
                                           <Component id="SearchDissertationFigsLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="searchDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="SearchDissertationCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="8" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -792,10 +843,6 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
                                       <Component id="jScrollPane13" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -821,6 +868,11 @@
                                               <Component id="SearchDissertationAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="searchDissertationAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1005,6 +1057,24 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchDissertationAuthorTxtActionPerformed"/>
                           </Events>
                         </Component>
+                        <Component class="javax.swing.JButton" name="confirmEditDissertationBtn">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Edit Dissertation"/>
+                            <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditDissertationBtnActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditDissertationBtn.setVisible(false);"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchConferencePanel">
@@ -1023,8 +1093,8 @@
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
                                                   <Component id="SearchJournalTitleLabel1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="searchConferenceTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
@@ -1032,72 +1102,77 @@
                                                   <Component id="SearchConferencePublicationLabel" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="searchConferencePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                                   <Component id="SearchConferenceAuthorListLabel" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
                                                   <Component id="SearchConferenceNameLabel" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="searchConferenceNameTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                                  <Component id="SearchConferencePeriodLabel" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="searchConferencePeriodTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="searchConferenceNameTxt" min="-2" pref="162" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="searchConferenceBeginDateLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="searchConferenceBeginDateFrmtTxt" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="searchConferenceEndDateLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="searchConferenceEndDateFrmtTxt" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <Component id="jScrollPane12" min="-2" pref="159" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane12" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <EmptySpace pref="32" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="confirmEditConferenceBtn" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="jScrollPane7" max="32767" attributes="0"/>
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jScrollPane7" max="32767" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jScrollPane12" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="searchConferenceTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchConferencePublicationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="searchConferencePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalTitleLabel1" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Component id="SearchConferenceAuthorListLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchConferenceNameLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="searchConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchConferencePeriodLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="searchConferencePeriodTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
+                                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                                  <Component id="searchConferenceTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchConferencePublicationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchConferencePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchConferenceAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                                  <Component id="SearchJournalTitleLabel1" min="-2" pref="23" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="SearchConferenceNameLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="searchConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchConferenceBeginDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jScrollPane12" min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="confirmEditConferenceBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane7" pref="325" max="32767" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane7" pref="319" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1227,23 +1302,55 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchConferenceNameTxtActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="SearchConferencePeriodLabel">
+                        <Component class="javax.swing.JLabel" name="searchConferenceEndDateLabel">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="Period:"/>
+                            <Property name="text" type="java.lang.String" value="End Date:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="searchConferencePeriodTxt">
+                        <Component class="javax.swing.JLabel" name="searchConferenceBeginDateLabel">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Yu Gothic Medium" size="12" style="0"/>
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Start Date:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JFormattedTextField" name="searchConferenceBeginDateFrmtTxt">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                             </Property>
                           </Properties>
+                        </Component>
+                        <Component class="javax.swing.JFormattedTextField" name="searchConferenceEndDateFrmtTxt">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="confirmEditConferenceBtn">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Edit Conference"/>
+                            <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                          </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchConferencePeriodTxtActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditConferenceBtnActionPerformed"/>
                           </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditConferenceBtn.setVisible(false);"/>
+                          </AuxValues>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -1272,6 +1379,8 @@
                                                   <Component id="SearchJournalPubYearLabel" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="searchJournalPubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                                  <Component id="SearchJournalAuthorListLabel" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Component id="SearchJournalNameLabel" min="-2" max="-2" attributes="0"/>
@@ -1279,16 +1388,22 @@
                                                   <Component id="searchJournalNameTxt" min="-2" pref="193" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace pref="68" max="32767" attributes="0"/>
-                                          <Component id="SearchJournalAuthorListLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane11" min="-2" pref="159" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane11" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                                  <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="confirmEditJournalBtn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="jScrollPane6" pref="886" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane6" pref="932" max="32767" attributes="0"/>
                                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1298,39 +1413,36 @@
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                          <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jScrollPane11" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jScrollPane11" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                                  <Component id="searchJournalTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchJournalAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchJournalPubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchJournalPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="searchJournalTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalPubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="searchJournalPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalTitleLabel" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchJournalNameLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="searchJournalNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
+                                                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                                  <Component id="SearchJournalTitleLabel" min="-2" pref="23" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="SearchJournalNameLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="searchJournalNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="confirmEditJournalBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane6" pref="317" max="32767" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane6" pref="305" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1457,6 +1569,24 @@
                             <Property name="text" type="java.lang.String" value="Publication Year:"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JButton" name="confirmEditJournalBtn">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Edit Journal"/>
+                            <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditJournalBtnActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditJournalBtn.setVisible(false);"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchResearchPanel">
@@ -1510,15 +1640,18 @@
                                               <Component id="SearchResearchAuthorListLabel" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                               <Component id="jScrollPane3" min="-2" pref="159" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="182" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                                      <Component id="confirmEditResearchBtn" min="-2" pref="162" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                                      <Component id="searchResearchBtn" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="0" pref="34" max="32767" attributes="0"/>
                                           </Group>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="788" max="-2" attributes="0"/>
-                                          <Component id="searchResearchBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="53" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1543,17 +1676,16 @@
                                                   </Group>
                                               </Group>
                                           </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                              <Component id="searchResearchBtn" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="confirmEditResearchBtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane5" pref="313" max="32767" attributes="0"/>
+                                      <EmptySpace pref="175" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane5" min="-2" pref="156" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                          <Component id="searchResearchBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="389" max="32767" attributes="0"/>
-                                      </Group>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -1664,6 +1796,24 @@
                                 <Property name="text" type="java.lang.String" value="Publication Year:"/>
                               </Properties>
                             </Component>
+                            <Component class="javax.swing.JButton" name="confirmEditResearchBtn">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Edit Research Paper"/>
+                                <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditResearchBtnActionPerformed"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditResearchBtn.setVisible(false);"/>
+                              </AuxValues>
+                            </Component>
                           </SubComponents>
                         </Container>
                       </SubComponents>
@@ -1680,20 +1830,12 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="SearchMagazinePalettePanel" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="SearchMagazinePalettePanel" alignment="1" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="SearchMagazinePalettePanel" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="SearchMagazinePalettePanel" alignment="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                       </Layout>
@@ -1706,7 +1848,11 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="MagazineSearchList" max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
                                               <Component id="SearchMagazineTitleLablel" min="-2" pref="35" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="searchMagazineTitleTxt" min="-2" pref="336" max="-2" attributes="0"/>
@@ -1714,15 +1860,16 @@
                                               <Component id="SearchMagazinePubYearLabel" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Component id="searchMagazinePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                              <EmptySpace pref="90" max="32767" attributes="0"/>
+                                              <EmptySpace pref="128" max="32767" attributes="0"/>
                                               <Component id="searchMagazineBtn" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Component id="MagazineSearchList" max="32767" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="confirmEditMagazineBtn" min="-2" pref="137" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -1730,10 +1877,6 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                              <Component id="searchMagazineBtn" min="-2" max="-2" attributes="0"/>
-                                          </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="SearchMagazineTitleLablel" min="-2" pref="24" max="-2" attributes="0"/>
@@ -1744,14 +1887,17 @@
                                                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                       <Component id="SearchMagazinePubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="searchMagazinePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="searchMagazineBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Component id="searchMagazineTitleTxt" min="-2" pref="26" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="MagazineSearchList" min="-2" pref="350" max="-2" attributes="0"/>
-                                      <EmptySpace pref="15" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="confirmEditMagazineBtn" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="MagazineSearchList" min="-2" pref="336" max="-2" attributes="0"/>
+                                      <EmptySpace pref="22" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -1826,6 +1972,24 @@
                                 <Property name="text" type="java.lang.String" value="Publication Year:"/>
                               </Properties>
                             </Component>
+                            <Component class="javax.swing.JButton" name="confirmEditMagazineBtn">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Edit Magazine"/>
+                                <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditMagazineBtnActionPerformed"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditMagazineBtn.setVisible(false);"/>
+                              </AuxValues>
+                            </Component>
                           </SubComponents>
                         </Container>
                       </SubComponents>
@@ -1859,7 +2023,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="EditItemPane">
+            <Container class="javax.swing.JPanel" name="AddRemovePane">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="76" green="5b" red="3c" type="rgb"/>
@@ -1867,8 +2031,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Edit Items">
-                    <Property name="tabTitle" type="java.lang.String" value="Edit Items"/>
+                  <JTabbedPaneConstraints tabName="Add/Remove Items">
+                    <Property name="tabTitle" type="java.lang.String" value="Add/Remove Items"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -1876,108 +2040,38 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="16" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="EditItemPanel" min="-2" pref="951" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="VerificationPanel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="296" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Component id="EditItemPanel" min="-2" pref="951" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="VerificationPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="AddRemoveInstructionLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="EditItemPanel" min="-2" pref="484" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="AddRemoveInstructionLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="EditItemPanel" min="-2" pref="504" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                           <Component id="VerificationPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="618" max="32767" attributes="0"/>
+                          <EmptySpace pref="612" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="VerificationPanel">
-                  <Properties>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                        <LineBorder/>
-                      </Border>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="VerificationPanel.setVisible(false);"/>
-                  </AuxValues>
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="VerificationYesButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="110" max="32767" attributes="0"/>
-                              <Component id="VerificationNoButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="VerificationLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Component id="VerificationLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="VerificationYesButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="VerificationNoButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="30" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                  <SubComponents>
-                    <Component class="javax.swing.JLabel" name="VerificationLabel">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Are you sure you wish to remove this book?"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="VerificationYesButton">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Yes"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerificationYesButtonActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="VerificationNoButton">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="No"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerificationNoButtonActionPerformed"/>
-                      </Events>
-                    </Component>
-                  </SubComponents>
-                </Container>
                 <Container class="javax.swing.JTabbedPane" name="EditItemPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -2019,7 +2113,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="AddItemTabbedPane" min="-2" pref="418" max="-2" attributes="0"/>
-                                  <EmptySpace pref="22" max="32767" attributes="0"/>
+                                  <EmptySpace pref="42" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2867,16 +2961,19 @@
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <Component id="AddConferenceNameLabel" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="addConferencePeriodTxt" min="-2" pref="100" max="-2" attributes="0"/>
-                                                              <Component id="addConferenceLocationTxt" min="-2" pref="286" max="-2" attributes="0"/>
-                                                          </Group>
+                                                          <Component id="addConferenceLocationTxt" min="-2" pref="286" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
-                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  <EmptySpace min="0" pref="233" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
-                                                  <Component id="addConferencePeriodLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="addConferenceStartDateLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="addConferenceBeginDateFrmtTxt" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                                  <Component id="addConferenceEndDateLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="addConferenceEndDateFrmtTxt" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="addConferenceBtn" min="-2" pref="242" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -2921,12 +3018,16 @@
                                               <Component id="AddConferenceNameLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                               <Component id="addConferenceNameTixt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                                          <EmptySpace pref="25" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="addConferencePeriodLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="addConferencePeriodTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="addConferenceStartDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="addConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                                          <Component id="addConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="addConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
                                                   </Group>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -3006,24 +3107,14 @@
                                     <Property name="text" type="java.lang.String" value="Conference Name:"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JLabel" name="addConferencePeriodLabel">
+                                <Component class="javax.swing.JLabel" name="addConferenceStartDateLabel">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                                     </Property>
-                                    <Property name="text" type="java.lang.String" value="Period:"/>
+                                    <Property name="text" type="java.lang.String" value="Start Date:"/>
                                     <Property name="toolTipText" type="java.lang.String" value=""/>
                                   </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="addConferencePeriodTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addConferencePeriodTxtActionPerformed"/>
-                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="addConferenceBtn">
                                   <Properties>
@@ -3071,6 +3162,25 @@
                                       <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Enter the author(s) of the conference paper. If there are multiple, seprate them by a semicolon. (;)"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JFormattedTextField" name="addConferenceBeginDateFrmtTxt">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JFormattedTextField" name="addConferenceEndDateFrmtTxt">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="addConferenceEndDateLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="End Date:"/>
+                                    <Property name="toolTipText" type="java.lang.String" value=""/>
                                   </Properties>
                                 </Component>
                               </SubComponents>
@@ -3531,8 +3641,8 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="RemoveItemTabbedPane" min="-2" pref="423" max="-2" attributes="0"/>
-                                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                                  <Component id="RemoveItemTabbedPane" pref="454" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -3568,12 +3678,7 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane16" max="32767" attributes="0"/>
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
@@ -3608,10 +3713,10 @@
                                                   <Component id="SearchBookPubLabel1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="removeBookPublisherTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                                  <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
+                                                  <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                           <Component id="jScrollPane17" min="-2" pref="124" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
@@ -3625,13 +3730,30 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                       </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane16" min="-2" pref="889" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jScrollPane17" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                                      <Component id="removeSearchBookBtn" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -3657,21 +3779,9 @@
                                                       <Component id="removeBookPublisherTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jScrollPane17" min="-2" pref="91" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                      <Component id="removeSearchBookBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane16" pref="273" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane16" pref="304" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -3976,7 +4086,7 @@
                                               </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane18" pref="273" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane18" pref="304" max="32767" attributes="0"/>
                                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -4494,8 +4604,21 @@
                                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="SearchConferenceNameLabel1" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="removeConferenceNameTxt" min="-2" pref="127" max="-2" attributes="0"/>
+                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceBeginDateLabel" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceBeginDateFrmtTxt" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceEndDateLabel" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceEndDateFrmtTxt" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" attributes="0">
                                                           <Component id="SearchJournalTitleLabel2" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                                           <Component id="removeConferenceTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
@@ -4503,31 +4626,23 @@
                                                           <Component id="SearchConferencePublicationLabel1" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace max="-2" attributes="0"/>
                                                           <Component id="removeConferencePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
                                                           <Component id="SearchConferenceAuthorListLabel1" min="-2" max="-2" attributes="0"/>
                                                       </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="SearchConferenceNameLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeConferenceNameTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                                          <Component id="SearchConferencePeriodLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeConferencePeriodTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                      </Group>
                                                   </Group>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jScrollPane23" min="-2" pref="159" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
-                                                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
                                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                           <Component id="removeConferenceBtn" min="-2" max="-2" attributes="0"/>
                                                       </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceBtn" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
                                                   </Group>
+                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jScrollPane22" pref="886" max="32767" attributes="0"/>
@@ -4560,8 +4675,12 @@
                                                   <Group type="103" groupAlignment="3" attributes="0">
                                                       <Component id="SearchConferenceNameLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                                       <Component id="removeConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchConferencePeriodLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeConferencePeriodTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="removeSearchConferenceBeginDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="removeSearchConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                                          <Component id="removeSearchConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
                                                   </Group>
                                               </Group>
                                               <Group type="102" attributes="0">
@@ -4571,7 +4690,7 @@
                                               </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane22" pref="279" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane22" pref="310" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -4698,23 +4817,13 @@
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferenceNameTxtActionPerformed"/>
                                   </Events>
                                 </Component>
-                                <Component class="javax.swing.JLabel" name="SearchConferencePeriodLabel1">
+                                <Component class="javax.swing.JLabel" name="removeSearchConferenceBeginDateLabel">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                                     </Property>
-                                    <Property name="text" type="java.lang.String" value="Period:"/>
+                                    <Property name="text" type="java.lang.String" value="Start Date:"/>
                                   </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeConferencePeriodTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferencePeriodTxtActionPerformed"/>
-                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="removeConferenceBtn">
                                   <Properties>
@@ -4731,6 +4840,30 @@
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferenceBtnActionPerformed"/>
                                   </Events>
+                                </Component>
+                                <Component class="javax.swing.JFormattedTextField" name="removeSearchConferenceBeginDateFrmtTxt">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JFormattedTextField" name="removeSearchConferenceEndDateFrmtTxt">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="removeSearchConferenceEndDateLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="End Date:"/>
+                                  </Properties>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -4827,7 +4960,7 @@
                                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <Component id="jScrollPane24" pref="265" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane24" pref="296" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5068,7 +5201,7 @@
                                                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <Component id="jScrollPane26" pref="261" max="32767" attributes="0"/>
+                                              <Component id="jScrollPane26" pref="292" max="32767" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -5382,23 +5515,84 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JButton" name="confirmEditBookBtn">
+                <Container class="javax.swing.JPanel" name="VerificationPanel">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
                     </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Edit Book"/>
-                    <Property name="actionCommand" type="java.lang.String" value="EditBook"/>
                   </Properties>
-                  <AccessibilityProperties>
-                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Edit Item"/>
-                  </AccessibilityProperties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditBookBtnActionPerformed"/>
-                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="VerificationPanel.setVisible(false);"/>
+                  </AuxValues>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="VerificationYesButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="110" max="32767" attributes="0"/>
+                              <Component id="VerificationNoButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                              <Component id="VerificationLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="VerificationLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="VerificationYesButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="VerificationNoButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="30" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="VerificationLabel">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Are you sure you wish to remove this book?"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="VerificationYesButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Yes"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerificationYesButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="VerificationNoButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="No"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerificationNoButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="AddRemoveInstructionLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Add/Remove Items"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -5440,8 +5634,8 @@
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Component id="GenReportButton" min="-2" pref="38" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="GeneratedReportScrollPane" min="-2" pref="479" max="-2" attributes="0"/>
-                          <EmptySpace pref="758" max="32767" attributes="0"/>
+                          <Component id="GeneratedReportScrollPane" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="795" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
