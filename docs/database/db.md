@@ -29,8 +29,19 @@ services:
 
 And the SQL script:
 <pre>   
-CREATE DATABASE IF NOT EXISTS LMS;
-USE LMS;
+DROP TABLE IF EXISTS Magazine;
+DROP TABLE IF EXISTS ResearchReport;
+DROP TABLE IF EXISTS JournalPaper;
+DROP TABLE IF EXISTS ConferencePaper;
+DROP TABLE IF EXISTS Dissertation;
+DROP TABLE IF EXISTS Thesis;
+DROP TABLE IF EXISTS Book;
+DROP TABLE IF EXISTS Item;
+DROP TABLE IF EXISTS Committee;
+DROP TABLE IF EXISTS Department;
+DROP TABLE IF EXISTS Publisher;
+DROP TABLE IF EXISTS Author;
+
 
 CREATE TABLE IF NOT EXISTS Author (
     author_id INT PRIMARY KEY,
@@ -52,7 +63,7 @@ CREATE TABLE IF NOT EXISTS Committee (
     committee_member_name VARCHAR(255)
 );
 
-CREATE TABLE Item (
+CREATE TABLE IF NOT EXISTS Item (
     item_id INT PRIMARY KEY,
     title VARCHAR(255),
     publication_year INT,
@@ -62,14 +73,14 @@ CREATE TABLE Item (
     FOREIGN KEY (publisher_id) REFERENCES Publisher(publisher_id)
 );
 
-CREATE TABLE Book (
+CREATE TABLE IF NOT EXISTS Book (
     book_id INT PRIMARY KEY,
     edition_number INT,
     item_id INT,
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
-CREATE TABLE Thesis (
+CREATE TABLE IF NOT EXISTS Thesis (
     thesis_id INT PRIMARY KEY,
     item_id INT,
     department_id INT,
@@ -79,7 +90,7 @@ CREATE TABLE Thesis (
     FOREIGN KEY (committee_id) REFERENCES Committee(committee_id)
 );
 
-CREATE TABLE Dissertation (
+CREATE TABLE IF NOT EXISTS Dissertation (
     dissertation_id INT PRIMARY KEY,
     item_id INT,
     department_id INT,
@@ -89,7 +100,7 @@ CREATE TABLE Dissertation (
     FOREIGN KEY (committee_id) REFERENCES Committee(committee_id)
 );
 
-CREATE TABLE ConferencePaper (
+CREATE TABLE IF NOT EXISTS ConferencePaper (
     conference_paper_id INT PRIMARY KEY,
     conference_name VARCHAR(255),
     location VARCHAR(255),
@@ -98,20 +109,20 @@ CREATE TABLE ConferencePaper (
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
-CREATE TABLE JournalPaper (
+CREATE TABLE IF NOT EXISTS JournalPaper (
     journal_paper_id INT PRIMARY KEY,
     journal_name VARCHAR(255),
     item_id INT,
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
-CREATE TABLE ResearchReport (
+CREATE TABLE IF NOT EXISTS ResearchReport (
     research_report_id INT PRIMARY KEY,
     item_id INT,
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
-CREATE TABLE Magazine (
+CREATE TABLE IF NOT EXISTS Magazine (
     magazine_id INT PRIMARY KEY,
     item_id INT,
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
