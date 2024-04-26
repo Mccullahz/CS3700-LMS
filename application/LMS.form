@@ -282,6 +282,9 @@
                                   <Connection code="model" type="code"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchBookListValueChanged"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -591,6 +594,9 @@
                                   <Connection code="model" type="code"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchThesisListValueChanged"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -896,6 +902,9 @@
                                   <Connection code="model" type="code"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchDissertationListValueChanged"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -1192,6 +1201,9 @@
                                   <Connection code="model" type="code"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchConferenceListValueChanged"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -1462,6 +1474,9 @@
                                   <Connection code="model" type="code"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchJournalListValueChanged"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -1755,6 +1770,9 @@
                                       <Connection code="model" type="code"/>
                                     </Property>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchResearchListValueChanged"/>
+                                  </Events>
                                   <AuxValues>
                                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                                   </AuxValues>
@@ -1876,22 +1894,15 @@
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="SearchMagazineTitleLablel" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="SearchMagazineTitleLablel" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="SearchMagazinePubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchMagazinePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="searchMagazineBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchMagazinePubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="searchMagazinePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="searchMagazineBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Component id="searchMagazineTitleTxt" min="-2" pref="26" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                          <Component id="searchMagazineTitleTxt" min="-2" pref="26" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="confirmEditMagazineBtn" min="-2" max="-2" attributes="0"/>
@@ -1931,6 +1942,9 @@
                                       <Connection code="model" type="code"/>
                                     </Property>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="SearchMagazineListValueChanged"/>
+                                  </Events>
                                   <AuxValues>
                                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                                   </AuxValues>
@@ -3021,12 +3035,14 @@
                                           <EmptySpace pref="25" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="addConferenceStartDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="addConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                           <Component id="addConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                           <Component id="addConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="addConferenceStartDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="addConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4672,14 +4688,16 @@
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchConferenceNameLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="removeConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeSearchConferenceBeginDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeSearchConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                           <Component id="removeSearchConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                           <Component id="removeSearchConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="SearchConferenceNameLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                                          <Component id="removeConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceBeginDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="removeSearchConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
