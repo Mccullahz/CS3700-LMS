@@ -400,10 +400,6 @@ public class LMS extends javax.swing.JFrame {
         removeMagazinePubYearTxt = new javax.swing.JTextField();
         SearchMagazinePubYearLabel1 = new javax.swing.JLabel();
         removeMagazineBtn = new javax.swing.JButton();
-        VerificationPanel = new javax.swing.JPanel();
-        VerificationLabel = new javax.swing.JLabel();
-        VerificationYesButton = new javax.swing.JButton();
-        VerificationNoButton = new javax.swing.JButton();
         AddRemoveInstructionLabel = new javax.swing.JLabel();
         GenerateReportPane = new javax.swing.JPanel();
         GenReportButton = new javax.swing.JButton();
@@ -3560,10 +3556,6 @@ public class LMS extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(EditItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 951, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 17, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddRemovePaneLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(VerificationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(299, 299, 299))
             .addGroup(AddRemovePaneLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(AddRemoveInstructionLabel)
@@ -3576,9 +3568,7 @@ public class LMS extends javax.swing.JFrame {
                 .addComponent(AddRemoveInstructionLabel)
                 .addGap(45, 45, 45)
                 .addComponent(EditItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(VerificationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(612, Short.MAX_VALUE))
+                .addContainerGap(750, Short.MAX_VALUE))
         );
 
         MultiPaneLMS.addTab("Add/Remove Items", AddRemovePane);
@@ -3674,7 +3664,12 @@ public class LMS extends javax.swing.JFrame {
 
 
         private void removeBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeBookBtnActionPerformed
-            
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }            
         }//GEN-LAST:event_removeBookBtnActionPerformed
 
     private void searchMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchMagazineBtnActionPerformed
@@ -4058,27 +4053,57 @@ public class LMS extends javax.swing.JFrame {
     }//GEN-LAST:event_removeMagazinePubYearTxtActionPerformed
 
     private void removeThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeThesisBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeThesisBtnActionPerformed
 
     private void removeDIssertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeDIssertationBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeDIssertationBtnActionPerformed
 
     private void removeConferenceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeConferenceBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeConferenceBtnActionPerformed
 
     private void removeJournalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeJournalBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeJournalBtnActionPerformed
 
     private void removeResearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeResearchBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeResearchBtnActionPerformed
 
     private void removeMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeMagazineBtnActionPerformed
-        // TODO add your handling code here:
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }
     }//GEN-LAST:event_removeMagazineBtnActionPerformed
 
     private void confirmEditBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmEditBookBtnActionPerformed
@@ -4381,10 +4406,6 @@ the index value is -1
     private javax.swing.JLabel SearchThesisPubYearLabel1;
     private javax.swing.JLabel SearchThesisTitleLabel;
     private javax.swing.JLabel SearchThesisTitleLabel1;
-    private javax.swing.JLabel VerificationLabel;
-    private javax.swing.JButton VerificationNoButton;
-    private javax.swing.JPanel VerificationPanel;
-    private javax.swing.JButton VerificationYesButton;
     private javax.swing.JTextField addBookAuthorListTxt;
     private javax.swing.JButton addBookBtn;
     private javax.swing.JTextField addBookChapTxt;
