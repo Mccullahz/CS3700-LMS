@@ -1,10 +1,10 @@
 # LMS Database Information 
 ## Access Control:
-Server Address: 10.21.58.130:3306
-Software: MySQL Server - Docker 
-User: ** REDACTED **
-Password: ** REDACTED **
-Default Database: LMS 
+- Server Address: 10.21.58.130:3306
+- Software: MySQL Server - Docker 
+- User: ** REDACTED **
+- Password: ** REDACTED **
+- Default Database: LMS 
 
 ## Docker Configuration
 Quite simple configuration, Docker Compose file, SQL script to create database and tables, no inserts.
