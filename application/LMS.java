@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
+import javax.swing.text.MaskFormatter;
 
 /**
  *
@@ -44,15 +45,29 @@ public class LMS extends javax.swing.JFrame {
         each and every class, then we'll be good.
     */
     
-    //Updated list containing title + publisher, used in remove book and book editor
-    private final List<String> BookStrList = new ArrayList<>();
-    //private finale List<Publication> BookList = new ArrayList<>(); <--NOTE, NEEDS IMPLEMENTATION
-    DefaultListModel model = new DefaultListModel();
+    // //Updated list containing title + publisher, used in remove book and book editor
+    // private final List<String> BookStrList = new ArrayList<>();
+    // //private finale List<Publication> BookList = new ArrayList<>(); <--NOTE, NEEDS IMPLEMENTATION
+    // DefaultListModel  = new DefaultListModel();
+
     /**
      * Creates new form LMS
      */
     public LMS() {
         initComponents();
+    }
+
+    
+
+    protected MaskFormatter createFormatter(String s) {
+        MaskFormatter formatter = null;
+        try {
+            formatter = new MaskFormatter(s);
+        } catch (java.text.ParseException exc) {
+            System.err.println("formatter is bad: " + exc.getMessage());
+            System.exit(-1);
+        }
+        return formatter;
     }
 
     /**
@@ -143,8 +158,8 @@ public class LMS extends javax.swing.JFrame {
         searchConferenceNameTxt = new javax.swing.JTextField();
         searchConferenceEndDateLabel = new javax.swing.JLabel();
         searchConferenceBeginDateLabel = new javax.swing.JLabel();
-        searchConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField();
-        searchConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField();
+        searchConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
+        searchConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
         confirmEditConferenceBtn = new javax.swing.JButton();
         SearchJournalPanel = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -254,8 +269,8 @@ public class LMS extends javax.swing.JFrame {
         addConferenceAuthorListTxt = new javax.swing.JTextField();
         AddConferenceAuthorLabel = new javax.swing.JLabel();
         AddBookAuthorInstructionLabel1 = new javax.swing.JLabel();
-        addConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField();
-        addConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField();
+        addConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
+        addConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
         addConferenceEndDateLabel = new javax.swing.JLabel();
         AddJournalPanel = new javax.swing.JPanel();
         addJournalAuthorListTxt = new javax.swing.JTextField();
@@ -425,7 +440,6 @@ public class LMS extends javax.swing.JFrame {
         SearchTabbedPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         SearchTabbedPanel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
 
-        SearchBookList.setModel(model);
         SearchBookList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchBookListValueChanged(evt);
@@ -610,7 +624,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Book", SearchBookPanel);
 
-        SearchThesisList.setModel(model);
         SearchThesisList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchThesisListValueChanged(evt);
@@ -789,7 +802,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Thesis", SearchThesisPanel);
 
-        SearchDissertationList.setModel(model);
         SearchDissertationList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchDissertationListValueChanged(evt);
@@ -969,7 +981,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Dissertation", SearchDissertationPanel);
 
-        SearchConferenceList.setModel(model);
         SearchConferenceList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchConferenceListValueChanged(evt);
@@ -1124,7 +1135,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Conference Paper", SearchConferencePanel);
 
-        SearchJournalList.setModel(model);
         SearchJournalList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchJournalListValueChanged(evt);
@@ -1272,7 +1282,6 @@ public class LMS extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(searchResearchAuthorList);
 
-        SearchResearchList.setModel(model);
         SearchResearchList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchResearchListValueChanged(evt);
@@ -1391,7 +1400,6 @@ public class LMS extends javax.swing.JFrame {
 
         searchMagazineTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
-        SearchMagazineList.setModel(model);
         SearchMagazineList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchMagazineListValueChanged(evt);
@@ -2479,7 +2487,6 @@ public class LMS extends javax.swing.JFrame {
         RemoveItemTabbedPane.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         RemoveItemTabbedPane.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
 
-        removeSearchBookList.setModel(model);
         jScrollPane16.setViewportView(removeSearchBookList);
 
         removeBookTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
@@ -2665,7 +2672,6 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Book", removeBookPanel);
 
-        removeSearchThesisList.setModel(model);
         jScrollPane18.setViewportView(removeSearchThesisList);
 
         removeThesisDepTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
@@ -2838,7 +2844,6 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Thesis", removeThesisPanel);
 
-        removeSearchDissertationList.setModel(model);
         jScrollPane20.setViewportView(removeSearchDissertationList);
 
         removeDissertationTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
@@ -3013,7 +3018,6 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Dissertation", removeDissertationPanel);
 
-        removeSearchConferenceList.setModel(model);
         jScrollPane22.setViewportView(removeSearchConferenceList);
 
         SearchConferenceAuthorListLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
@@ -3166,7 +3170,6 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Conference Paper", removeConferencePanel);
 
-        removeSearchJournalList.setModel(model);
         jScrollPane24.setViewportView(removeSearchJournalList);
 
         removeSearchJournalBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -3312,7 +3315,6 @@ public class LMS extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(removeResearchAuthorList);
 
-        removeSearchResearchList.setModel(model);
         jScrollPane26.setViewportView(removeSearchResearchList);
 
         removeSearchResearchBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -3429,7 +3431,6 @@ public class LMS extends javax.swing.JFrame {
 
         removeMagazineTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
-        removeSearchMagazineList.setModel(model);
         MagazineSearchList1.setViewportView(removeSearchMagazineList);
 
         removeSearchMagazineBtn.setBackground(new java.awt.Color(203, 211, 217));
