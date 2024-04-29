@@ -3548,52 +3548,6 @@ public class LMS extends javax.swing.JFrame {
 
         EditItemPanel.addTab("Remove Item", RemoveItemInnerPanel1);
 
-        VerificationPanel.setVisible(false);
-        VerificationPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        VerificationLabel.setText("Are you sure you wish to remove this book?");
-
-        VerificationYesButton.setText("Yes");
-        VerificationYesButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VerificationYesButtonActionPerformed(evt);
-            }
-        });
-
-        VerificationNoButton.setText("No");
-        VerificationNoButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VerificationNoButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout VerificationPanelLayout = new javax.swing.GroupLayout(VerificationPanel);
-        VerificationPanel.setLayout(VerificationPanelLayout);
-        VerificationPanelLayout.setHorizontalGroup(
-            VerificationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VerificationPanelLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(VerificationYesButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
-                .addComponent(VerificationNoButton)
-                .addGap(45, 45, 45))
-            .addGroup(VerificationPanelLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(VerificationLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        VerificationPanelLayout.setVerticalGroup(
-            VerificationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(VerificationPanelLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(VerificationLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(VerificationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VerificationYesButton)
-                    .addComponent(VerificationNoButton))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-
         AddRemoveInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         AddRemoveInstructionLabel.setForeground(new java.awt.Color(255, 255, 255));
         AddRemoveInstructionLabel.setText("Add/Remove Items");
@@ -3718,25 +3672,9 @@ public class LMS extends javax.swing.JFrame {
             */
         }//GEN-LAST:event_GenReportButtonActionPerformed
 
-        private void VerificationNoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificationNoButtonActionPerformed
-            VerificationPanel.setVisible(false);
-        }//GEN-LAST:event_VerificationNoButtonActionPerformed
-
-        private void VerificationYesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificationYesButtonActionPerformed
-            int index = BookJList.getSelectedIndex();
-            System.out.println(index);
-            if (index != -1) {
-                BookStrList.remove(index); //This is perhaps redudant, the model below should be built by taking the first
-                //BookList.remove(index); <- NOTE: Needs implementation
-                model.removeElement(index);
-                VerificationPanel.setVisible(false);
-            }
-        }//GEN-LAST:event_VerificationYesButtonActionPerformed
 
         private void removeBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeBookBtnActionPerformed
-            if (BookJList.getSelectedIndex() != -1) {
-                VerificationPanel.setVisible(true);
-            }
+            
         }//GEN-LAST:event_removeBookBtnActionPerformed
 
     private void searchMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchMagazineBtnActionPerformed
