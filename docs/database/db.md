@@ -20,7 +20,7 @@ services:
     ports:
             - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: CS3700
+      MYSQL_ROOT_PASSWORD: blank
     volumes:
       - ./createdb.sql:/docker-entrypoint-initdb.d/createdb.sql
 
@@ -29,6 +29,7 @@ services:
 
 And the SQL script:
 <pre>   
+
 DROP TABLE IF EXISTS Magazine;
 DROP TABLE IF EXISTS ResearchReport;
 DROP TABLE IF EXISTS JournalPaper;
@@ -42,10 +43,10 @@ DROP TABLE IF EXISTS Department;
 DROP TABLE IF EXISTS Publisher;
 DROP TABLE IF EXISTS Author;
 
-
 CREATE TABLE IF NOT EXISTS Author (
     author_id INT PRIMARY KEY,
-    author_name VARCHAR(255)
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
 );
 
 CREATE TABLE IF NOT EXISTS Publisher(
@@ -106,6 +107,7 @@ CREATE TABLE IF NOT EXISTS ConferencePaper (
     location VARCHAR(255),
     period VARCHAR(255),
     item_id INT,
+    details TEXT,  -- Additional field for more details
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
@@ -127,4 +129,40 @@ CREATE TABLE IF NOT EXISTS Magazine (
     item_id INT,
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
+
+INSERT INTO Author VALUES (1, 'Aliilani', 'McGuire');
+INSERT INTO Author VALUES (2, 'Zylar', 'McCullah');
+INSERT INTO Author VALUES (3, 'Cherico', 'Welch');
+INSERT INTO Author VALUES (4, 'Patrick', 'Siegler');
+INSERT INTO Author VALUES (5, 'Kala', 'Meyer');
+
+INSERT INTO Publisher VALUES (1, 'Pearson');
+INSERT INTO Publisher VALUES (2, 'Springer');
+INSERT INTO Publisher VALUES (3, 'McGraw Hill');
+
+INSERT INTO Department VALUES (1, 'Computer Science');
+INSERT INTO Department VALUES (2, 'Physics');
+INSERT INTO Department VALUES (3, 'History');
+
+INSERT INTO Committee VALUES (1, 'John Doe');
+INSERT INTO Committee VALUES (2, 'Jane Smith');
+INSERT INTO Committee VALUES (3, 'Alice Johnson');
+
+INSERT INTO Item VALUES (1, 'Introduction to Algorithms', 2020, 1, 1);
+INSERT INTO Item VALUES (2, 'Quantum Mechanics', 2019, 2, 2);
+INSERT INTO Item VALUES (3, 'World History', 2018, 3, 3);
+
+INSERT INTO Book VALUES (1, 3, 1);
+
+INSERT INTO Thesis VALUES (1, 2, 2, 2);
+
+INSERT INTO Dissertation VALUES (1, 3, 3, 3);
+
+INSERT INTO ConferencePaper VALUES (123, 'Tech Conference', 'New York', '2021', 1, 'details');
+
+INSERT INTO JournalPaper VALUES (1, 'Journal of Advanced Physics', 2);
+
+INSERT INTO ResearchReport VALUES (1, 3);
+
+INSERT INTO Magazine VALUES (1, 1);
 </pre>
