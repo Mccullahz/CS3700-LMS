@@ -258,8 +258,8 @@
                                       </Group>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane10" pref="325" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jScrollPane10" min="-2" pref="313" max="-2" attributes="0"/>
+                                  <EmptySpace pref="18" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -561,16 +561,26 @@
                                                   <Component id="SearchThesisTitleLabel" min="-2" pref="23" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="SearchThesisDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                              <Component id="searchThesisDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="SearchThesisChapLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="searchThesisChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="SearchThesisAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="searchThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="SearchThesisChapLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="searchThesisChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="SearchThesisAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="searchThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="SearchThesisDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                                      <Component id="searchThesisDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="SearchThesisBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                               <Component id="searchThesisBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -860,20 +870,11 @@
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="20" max="32767" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jScrollPane8" max="32767" attributes="0"/>
@@ -3796,110 +3797,25 @@
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="SearchBookEdNumLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="searchBookEdNumTxt1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="SearchBookChapLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeBookChapTxt" min="-2" pref="56" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchBookFigsLabel1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="removeBookTitleLabel" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="removeBookTitleTxt" min="-2" pref="286" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="SearchBookPubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="removeBookPubYearTxt" min="-2" pref="82" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="SearchBookAuthorLabel1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="removeBookFigsTxt" min="-2" pref="40" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchBookPubLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeBookPublisherTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                                  <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane17" min="-2" pref="124" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchBookBtn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane16" min="-2" pref="889" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jScrollPane16" min="-2" pref="747" max="-2" attributes="0"/>
+                                          <EmptySpace pref="26" max="32767" attributes="0"/>
+                                          <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jScrollPane17" min="-2" pref="91" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                      <Component id="removeSearchBookBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="removeBookTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchBookPubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeBookPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchBookAuthorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="removeBookTitleLabel" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchBookEdNumLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="searchBookEdNumTxt1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchBookChapLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeBookChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchBookFigsLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeBookFigsTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchBookPubLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeBookPublisherTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane16" pref="304" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                          <Component id="removeBookBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="346" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jScrollPane16" min="-2" pref="387" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -3912,7 +3828,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeSearchBookList">
+                                    <Component class="javax.swing.JList" name="removeBookList">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                           <Connection code="model" type="code"/>
@@ -3924,164 +3840,6 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JLabel" name="removeBookTitleLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Title:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeBookTitleTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBookTitleTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookEdNumLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Edition Number:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="searchBookEdNumTxt1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchBookEdNumTxt1ActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookPubYearLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeBookPubYearTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBookPubYearTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookChapLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Chapters:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeBookChapTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBookChapTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookFigsLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Figures:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeBookFigsTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBookFigsTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookPubLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publisher:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeBookPublisherTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBookPublisherTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchBookAuthorLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Authors:"/>
-                                  </Properties>
-                                </Component>
-                                <Container class="javax.swing.JScrollPane" name="jScrollPane17">
-                                  <AuxValues>
-                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                  </AuxValues>
-
-                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                  <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeBookAuthorList">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="5">
-                                            <StringItem index="0" value="Item 1"/>
-                                            <StringItem index="1" value="Item 2"/>
-                                            <StringItem index="2" value="Item 3"/>
-                                            <StringItem index="3" value="Item 4"/>
-                                            <StringItem index="4" value="Item 5"/>
-                                          </StringArray>
-                                        </Property>
-                                      </Properties>
-                                      <AuxValues>
-                                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                      </AuxValues>
-                                    </Component>
-                                  </SubComponents>
-                                </Container>
-                                <Component class="javax.swing.JButton" name="removeSearchBookBtn">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Search"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchBookBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
                                 <Component class="javax.swing.JButton" name="removeBookBtn">
                                   <Properties>
                                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -4114,109 +3872,26 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jScrollPane18" max="32767" attributes="0"/>
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="SearchThesisTitleLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisPubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisPubYearTxt" min="-2" pref="79" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisFigsLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeThesisFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisCommiteeMemLabel1" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="SearchThesisDepLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="removeThesisBuildLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="removeThesisBuildTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                              <Group type="102" attributes="0">
-                                                                  <Component id="removeThesisDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                                  <Component id="SearchThesisChapLabel1" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace max="-2" attributes="0"/>
-                                                                  <Component id="removeThesisChapTxt" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                                                  <Component id="SearchThesisAuthorLabel1" min="-2" max="-2" attributes="0"/>
-                                                                  <EmptySpace max="-2" attributes="0"/>
-                                                                  <Component id="removeThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                                              </Group>
-                                                          </Group>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jScrollPane19" min="-2" pref="131" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchThesisBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane18" min="-2" pref="756" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="22" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jScrollPane19" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                               <Group type="102" attributes="0">
-                                                  <Component id="removeSearchThesisBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                                  <Component id="jScrollPane18" min="-2" pref="397" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="removeThesisTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisPubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisFigsLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisFigsTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisCommiteeMemLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisTitleLabel1" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchThesisDepLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="removeThesisDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchThesisChapLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeThesisChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchThesisAuthorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="removeThesisBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="removeThesisBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
+                                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                                  <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane18" min="-2" pref="276" max="-2" attributes="0"/>
                                           <EmptySpace pref="12" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -4230,7 +3905,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeSearchThesisList">
+                                    <Component class="javax.swing.JList" name="removeThesisList">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                           <Connection code="model" type="code"/>
@@ -4242,161 +3917,6 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JTextField" name="removeThesisDepTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisDepTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisDepLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Department:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisTitleLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Title:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisTitleTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisPubYearLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisPubYearTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisPubYearTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisChapLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Chapters:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisChapTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisChapTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisFigsLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Figures:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisFigsTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisFigsTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisAuthorLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Author:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisAuthorTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisAuthorTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchThesisCommiteeMemLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Commitee Members:"/>
-                                  </Properties>
-                                </Component>
-                                <Container class="javax.swing.JScrollPane" name="jScrollPane19">
-                                  <AuxValues>
-                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                  </AuxValues>
-
-                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                  <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeThesisCommiteeMemList">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="5">
-                                            <StringItem index="0" value="Item 1"/>
-                                            <StringItem index="1" value="Item 2"/>
-                                            <StringItem index="2" value="Item 3"/>
-                                            <StringItem index="3" value="Item 4"/>
-                                            <StringItem index="4" value="Item 5"/>
-                                          </StringArray>
-                                        </Property>
-                                      </Properties>
-                                      <AuxValues>
-                                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                      </AuxValues>
-                                    </Component>
-                                  </SubComponents>
-                                </Container>
-                                <Component class="javax.swing.JButton" name="removeSearchThesisBtn">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Search"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchThesisBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
                                 <Component class="javax.swing.JButton" name="removeThesisBtn">
                                   <Properties>
                                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -4411,24 +3931,6 @@
                                   </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="removeThesisBuildLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Building:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeThesisBuildTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisBuildTxtActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -4447,111 +3949,26 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane20" max="32767" attributes="0"/>
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="SearchDissertationTitleLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationPubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationPubYearTxt" min="-2" pref="79" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationFigsLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationCommiteeMemLabel1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="removeDissertationBuildLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="removeDissertationBuildTxt" min="-2" pref="158" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="removeDissertationDepLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeDissertationDepTxt" min="-2" pref="158" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationChapLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationAuthorLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane21" min="-2" pref="126" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDIssertationBtn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jScrollPane20" min="-2" pref="717" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="removeDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jScrollPane21" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeDIssertationBtn" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                                  <Component id="jScrollPane20" min="-2" pref="385" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="removeDissertationTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchDissertationPubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeDissertationPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchDissertationFigsLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeDissertationFigsTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchDissertationCommiteeMemLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="SearchDissertationTitleLabel1" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="removeDissertationDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="removeDissertationDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchDissertationChapLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeDissertationChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="SearchDissertationAuthorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeDissertationAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="removeDissertationBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      <Component id="removeDissertationBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
+                                                  <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                                                  <Component id="removeDissertationBtn" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane20" min="-2" pref="263" max="-2" attributes="0"/>
                                           <EmptySpace pref="26" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -4565,7 +3982,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeSearchDissertationList">
+                                    <Component class="javax.swing.JList" name="removeDissertationList">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                           <Connection code="model" type="code"/>
@@ -4577,162 +3994,7 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JTextField" name="removeDissertationTitleTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationTitleLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Title:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="removeDissertationDepLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Department:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationDepTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationDepTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationPubYearTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationPubYearTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationPubYearLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationChapLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Chapters:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationChapTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationChapTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationCommiteeMemLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Commitee Members:"/>
-                                  </Properties>
-                                </Component>
-                                <Container class="javax.swing.JScrollPane" name="jScrollPane21">
-                                  <AuxValues>
-                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                  </AuxValues>
-
-                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                  <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeDissertationCommiteeMemList">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="5">
-                                            <StringItem index="0" value="Item 1"/>
-                                            <StringItem index="1" value="Item 2"/>
-                                            <StringItem index="2" value="Item 3"/>
-                                            <StringItem index="3" value="Item 4"/>
-                                            <StringItem index="4" value="Item 5"/>
-                                          </StringArray>
-                                        </Property>
-                                      </Properties>
-                                      <AuxValues>
-                                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                      </AuxValues>
-                                    </Component>
-                                  </SubComponents>
-                                </Container>
-                                <Component class="javax.swing.JButton" name="removeSearchDissertationBtn">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Search"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchDissertationBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationFigsTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationFigsTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationFigsLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Figures:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationAuthorLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Author:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationAuthorTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationAuthorTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="removeDIssertationBtn">
+                                <Component class="javax.swing.JButton" name="removeDissertationBtn">
                                   <Properties>
                                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                       <Color blue="d9" green="d3" red="cb" type="rgb"/>
@@ -4745,25 +4007,7 @@
                                     <Property name="opaque" type="boolean" value="true"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDIssertationBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="removeDissertationBuildLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Building:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeDissertationBuildTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationBuildTxtActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationBtnActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -4781,99 +4025,24 @@
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="SearchConferenceNameLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeConferenceNameTxt" min="-2" pref="127" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBeginDateLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBeginDateFrmtTxt" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceEndDateLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceEndDateFrmtTxt" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="SearchJournalTitleLabel2" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="removeConferenceTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                                          <Component id="SearchConferencePublicationLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeConferencePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                          <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="SearchConferenceAuthorListLabel1" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jScrollPane23" min="-2" pref="159" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jScrollPane22" pref="886" max="32767" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                          <Component id="jScrollPane22" min="-2" pref="713" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="removeConferenceBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="39" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane22" min="-2" pref="401" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jScrollPane23" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="removeConferenceTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchConferencePublicationLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeConferencePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SearchConferenceAuthorListLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalTitleLabel2" min="-2" pref="23" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="removeSearchConferenceEndDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="103" groupAlignment="3" attributes="0">
-                                                          <Component id="SearchConferenceNameLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                          <Component id="removeConferenceNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBeginDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchConferenceBeginDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="removeSearchConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeConferenceBtn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane22" pref="310" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                                          <Component id="removeConferenceBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -4886,7 +4055,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeSearchConferenceList">
+                                    <Component class="javax.swing.JList" name="removeConferenceList">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                           <Connection code="model" type="code"/>
@@ -4898,115 +4067,6 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JLabel" name="SearchConferenceAuthorListLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Author List:"/>
-                                  </Properties>
-                                </Component>
-                                <Container class="javax.swing.JScrollPane" name="jScrollPane23">
-                                  <AuxValues>
-                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                  </AuxValues>
-
-                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                  <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeConferenceAuthorList">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="5">
-                                            <StringItem index="0" value="Item 1"/>
-                                            <StringItem index="1" value="Item 2"/>
-                                            <StringItem index="2" value="Item 3"/>
-                                            <StringItem index="3" value="Item 4"/>
-                                            <StringItem index="4" value="Item 5"/>
-                                          </StringArray>
-                                        </Property>
-                                      </Properties>
-                                      <AuxValues>
-                                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                      </AuxValues>
-                                    </Component>
-                                  </SubComponents>
-                                </Container>
-                                <Component class="javax.swing.JButton" name="removeSearchConferenceBtn">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Search"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchConferenceBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchConferenceNameLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Conference Name: "/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeConferencePubYearTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferencePubYearTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchJournalTitleLabel2">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Title:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeConferenceTitleTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchConferencePublicationLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeConferenceNameTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferenceNameTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="removeSearchConferenceBeginDateLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Start Date:"/>
-                                  </Properties>
-                                </Component>
                                 <Component class="javax.swing.JButton" name="removeConferenceBtn">
                                   <Properties>
                                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -5023,30 +4083,6 @@
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeConferenceBtnActionPerformed"/>
                                   </Events>
                                 </Component>
-                                <Component class="javax.swing.JFormattedTextField" name="removeSearchConferenceBeginDateFrmtTxt">
-                                  <Properties>
-                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JFormattedTextField" name="removeSearchConferenceEndDateFrmtTxt">
-                                  <Properties>
-                                    <Property name="text" type="java.lang.String" value="dd/mm/yyyy"/>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="removeSearchConferenceEndDateLabel">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="End Date:"/>
-                                  </Properties>
-                                </Component>
                               </SubComponents>
                             </Container>
                             <Container class="javax.swing.JPanel" name="removeJournalPanel">
@@ -5062,88 +4098,25 @@
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="SearchJournalTitleLabel3" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="removeJournalTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                                                          <Component id="SearchJournalPubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeJournalPubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="SearchJournalNameLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeJournalNameTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="SearchJournalAuthorListLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jScrollPane25" min="-2" pref="159" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeJournalBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                                          <Component id="removeSearchJournalBtn" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jScrollPane24" pref="886" max="32767" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane24" min="-2" pref="707" max="-2" attributes="0"/>
+                                          <EmptySpace pref="39" max="32767" attributes="0"/>
+                                          <Component id="removeJournalBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jScrollPane25" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                                  <Component id="removeJournalTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="SearchJournalAuthorListLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="SearchJournalPubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="removeJournalPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                                  <Component id="SearchJournalTitleLabel3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                              </Group>
-                                                          </Group>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="3" attributes="0">
-                                                              <Component id="SearchJournalNameLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                                              <Component id="removeJournalNameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="removeSearchJournalBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="removeJournalBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="jScrollPane24" pref="296" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane24" min="-2" pref="401" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                          <Component id="removeJournalBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -5156,7 +4129,7 @@
 
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                   <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeSearchJournalList">
+                                    <Component class="javax.swing.JList" name="removeJournalList">
                                       <Properties>
                                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                           <Connection code="model" type="code"/>
@@ -5168,107 +4141,6 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JButton" name="removeSearchJournalBtn">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Search"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchJournalBtnActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeJournalTitleTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchJournalTitleLabel3">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Title:"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchJournalAuthorListLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Author List:"/>
-                                  </Properties>
-                                </Component>
-                                <Container class="javax.swing.JScrollPane" name="jScrollPane25">
-                                  <AuxValues>
-                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                  </AuxValues>
-
-                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                  <SubComponents>
-                                    <Component class="javax.swing.JList" name="removeJournalAuthorList">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                          <StringArray count="5">
-                                            <StringItem index="0" value="Item 1"/>
-                                            <StringItem index="1" value="Item 2"/>
-                                            <StringItem index="2" value="Item 3"/>
-                                            <StringItem index="3" value="Item 4"/>
-                                            <StringItem index="4" value="Item 5"/>
-                                          </StringArray>
-                                        </Property>
-                                      </Properties>
-                                      <AuxValues>
-                                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                      </AuxValues>
-                                    </Component>
-                                  </SubComponents>
-                                </Container>
-                                <Component class="javax.swing.JLabel" name="SearchJournalNameLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Journal Name: "/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeJournalNameTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeJournalNameTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="removeJournalPubYearTxt">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeJournalPubYearTxtActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JLabel" name="SearchJournalPubYearLabel1">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                  </Properties>
-                                </Component>
                                 <Component class="javax.swing.JButton" name="removeJournalBtn">
                                   <Properties>
                                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -5323,131 +4195,29 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jScrollPane26" alignment="0" max="32767" attributes="0"/>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="SearchResearchTitleLabel1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="removeResearchTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                                      <Component id="SearchResearchPubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="removeResearchPubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                                      <Component id="SearchResearchAuthorListLabel1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                                      <Component id="jScrollPane4" min="-2" pref="159" max="-2" attributes="0"/>
-                                                      <EmptySpace pref="25" max="32767" attributes="0"/>
-                                                      <Component id="removeResearchBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="788" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchResearchBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace pref="53" max="32767" attributes="0"/>
-                                              </Group>
+                                              <Component id="jScrollPane26" min="-2" pref="700" max="-2" attributes="0"/>
+                                              <EmptySpace pref="37" max="32767" attributes="0"/>
+                                              <Component id="removeResearchBtn" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
                                     <DimensionLayout dim="1">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jScrollPane4" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                                          <Group type="102" attributes="0">
-                                                              <EmptySpace max="-2" attributes="0"/>
-                                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                                      <Component id="removeResearchTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                      <Component id="SearchResearchPubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                      <Component id="removeResearchPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                      <Component id="SearchResearchAuthorListLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                  </Group>
-                                                                  <Group type="102" alignment="0" attributes="0">
-                                                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                                                      <Component id="SearchResearchTitleLabel1" max="32767" attributes="0"/>
-                                                                  </Group>
-                                                              </Group>
-                                                          </Group>
-                                                      </Group>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="removeResearchBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Component id="jScrollPane26" pref="292" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="7" max="32767" attributes="0"/>
+                                              <Component id="jScrollPane26" min="-2" pref="394" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
-                                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchResearchBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace pref="389" max="32767" attributes="0"/>
-                                              </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="removeResearchBtn" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
                                   </Layout>
                                   <SubComponents>
-                                    <Component class="javax.swing.JLabel" name="SearchResearchTitleLabel1">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Title:"/>
-                                      </Properties>
-                                    </Component>
-                                    <Component class="javax.swing.JTextField" name="removeResearchTitleTxt">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                      </Properties>
-                                    </Component>
-                                    <Component class="javax.swing.JLabel" name="SearchResearchAuthorListLabel1">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Authors:"/>
-                                      </Properties>
-                                    </Component>
-                                    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
-                                      <AuxValues>
-                                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                                      </AuxValues>
-
-                                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                                      <SubComponents>
-                                        <Component class="javax.swing.JList" name="removeResearchAuthorList">
-                                          <Properties>
-                                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                              <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                            </Property>
-                                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                              <StringArray count="5">
-                                                <StringItem index="0" value="Item 1"/>
-                                                <StringItem index="1" value="Item 2"/>
-                                                <StringItem index="2" value="Item 3"/>
-                                                <StringItem index="3" value="Item 4"/>
-                                                <StringItem index="4" value="Item 5"/>
-                                              </StringArray>
-                                            </Property>
-                                          </Properties>
-                                          <AuxValues>
-                                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                          </AuxValues>
-                                        </Component>
-                                      </SubComponents>
-                                    </Container>
                                     <Container class="javax.swing.JScrollPane" name="jScrollPane26">
                                       <AuxValues>
                                         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -5455,7 +4225,7 @@
 
                                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                       <SubComponents>
-                                        <Component class="javax.swing.JList" name="removeSearchResearchList">
+                                        <Component class="javax.swing.JList" name="removeResearchList">
                                           <Properties>
                                             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                               <Connection code="model" type="code"/>
@@ -5467,38 +4237,6 @@
                                         </Component>
                                       </SubComponents>
                                     </Container>
-                                    <Component class="javax.swing.JButton" name="removeSearchResearchBtn">
-                                      <Properties>
-                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                        </Property>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Search"/>
-                                      </Properties>
-                                      <Events>
-                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchResearchBtnActionPerformed"/>
-                                      </Events>
-                                    </Component>
-                                    <Component class="javax.swing.JTextField" name="removeResearchPubYearTxt">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                      </Properties>
-                                      <Events>
-                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeResearchPubYearTxtActionPerformed"/>
-                                      </Events>
-                                    </Component>
-                                    <Component class="javax.swing.JLabel" name="SearchResearchPubYearLabel1">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                      </Properties>
-                                    </Component>
                                     <Component class="javax.swing.JButton" name="removeResearchBtn">
                                       <Properties>
                                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -5554,72 +4292,34 @@
                                   <Layout>
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="MagazineSearchList1" max="32767" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="SearchMagazineTitleLablel1" min="-2" pref="35" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="removeMagazineTitleTxt" min="-2" pref="336" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                                                      <Component id="SearchMagazinePubYearLabel1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="removeMagazinePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
-                                                      <EmptySpace pref="72" max="32767" attributes="0"/>
-                                                      <Component id="removeSearchMagazineBtn" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="MagazineSearchList1" min="-2" pref="688" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                                               <Component id="removeMagazineBtn" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                              <EmptySpace pref="38" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
                                     <DimensionLayout dim="1">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="SearchMagazineTitleLablel1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
-                                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchMagazinePubYearLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="removeMagazinePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                                      <Component id="MagazineSearchList1" min="-2" pref="406" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="removeMagazineTitleTxt" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchMagazineBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                                      <Component id="removeMagazineBtn" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="removeMagazineBtn" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                                              <Component id="MagazineSearchList1" min="-2" pref="327" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
                                   </Layout>
                                   <SubComponents>
-                                    <Component class="javax.swing.JLabel" name="SearchMagazineTitleLablel1">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="12" style="1"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Title:"/>
-                                      </Properties>
-                                    </Component>
-                                    <Component class="javax.swing.JTextField" name="removeMagazineTitleTxt">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                      </Properties>
-                                    </Component>
                                     <Container class="javax.swing.JScrollPane" name="MagazineSearchList1">
                                       <AuxValues>
                                         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -5627,7 +4327,7 @@
 
                                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                                       <SubComponents>
-                                        <Component class="javax.swing.JList" name="removeSearchMagazineList">
+                                        <Component class="javax.swing.JList" name="removeMagazineList">
                                           <Properties>
                                             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                                               <Connection code="model" type="code"/>
@@ -5639,38 +4339,6 @@
                                         </Component>
                                       </SubComponents>
                                     </Container>
-                                    <Component class="javax.swing.JButton" name="removeSearchMagazineBtn">
-                                      <Properties>
-                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="d9" green="d3" red="cb" type="rgb"/>
-                                        </Property>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="14" style="1"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Search"/>
-                                      </Properties>
-                                      <Events>
-                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSearchMagazineBtnActionPerformed"/>
-                                      </Events>
-                                    </Component>
-                                    <Component class="javax.swing.JTextField" name="removeMagazinePubYearTxt">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                        </Property>
-                                      </Properties>
-                                      <Events>
-                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeMagazinePubYearTxtActionPerformed"/>
-                                      </Events>
-                                    </Component>
-                                    <Component class="javax.swing.JLabel" name="SearchMagazinePubYearLabel1">
-                                      <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="text" type="java.lang.String" value="Publication Year:"/>
-                                      </Properties>
-                                    </Component>
                                     <Component class="javax.swing.JButton" name="removeMagazineBtn">
                                       <Properties>
                                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -5679,7 +4347,7 @@
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                           <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
                                         </Property>
-                                        <Property name="text" type="java.lang.String" value="Remove Research"/>
+                                        <Property name="text" type="java.lang.String" value="Remove Magazine"/>
                                         <Property name="actionCommand" type="java.lang.String" value="RemoveBook"/>
                                         <Property name="opaque" type="boolean" value="true"/>
                                       </Properties>
