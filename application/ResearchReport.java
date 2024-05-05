@@ -2,15 +2,12 @@
 
 package application;
 
-public class ResearchReport extends Published {
-    public Author[] author_list;
+public class ResearchReport extends Publication {
 
     public ResearchReport() {
         super();
-        author_list = new Author[0];
     }
     public ResearchReport(String t, String py, int an) {
-        super(t, py);
-        author_list = new Author[an];
+        super(t, py, an);
     }
 }

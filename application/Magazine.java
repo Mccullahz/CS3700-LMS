@@ -2,7 +2,7 @@
 
 package application;
 
-public class Magazine extends Published{
+public class Magazine extends Publication{
 
     public Magazine() {
         super("N/A", "1963");
