@@ -209,9 +209,9 @@
                                           <Component id="searchBookPubTxt" min="-2" pref="136" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane15" min="-2" pref="169" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="searchBookAuthorTxt" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
                                       <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
@@ -232,6 +232,7 @@
                                                   <Component id="SearchBookPubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="searchBookPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="SearchBookAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchBookAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -250,14 +251,13 @@
                                               <Component id="searchBookPubTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="jScrollPane15" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Component id="searchBookBtn" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="confirmEditBookBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   <Component id="jScrollPane10" min="-2" pref="313" max="-2" attributes="0"/>
                                   <EmptySpace pref="18" max="32767" attributes="0"/>
                               </Group>
@@ -406,34 +406,6 @@
                             <Property name="text" type="java.lang.String" value="Authors:"/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane15">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JList" name="searchBookAuthorList">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                  <StringArray count="5">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
-                                    <StringItem index="4" value="Item 5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
                         <Component class="javax.swing.JButton" name="searchBookBtn">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -465,6 +437,13 @@
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditBookBtn.setVisible(false);"/>
                           </AuxValues>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="searchBookAuthorTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -502,6 +481,8 @@
                                           <Component id="searchThesisFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="SearchThesisCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="searchThesisCommitteeMemTxt" min="-2" pref="169" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -526,9 +507,7 @@
                                           <Component id="searchThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane14" min="-2" pref="159" max="-2" attributes="0"/>
-                                  <EmptySpace pref="45" max="32767" attributes="0"/>
+                                  <EmptySpace pref="41" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="confirmEditThesisBtn" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="1" attributes="0">
@@ -545,7 +524,6 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane14" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -555,6 +533,7 @@
                                                   <Component id="SearchThesisFigsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="searchThesisFigsTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="SearchThesisCommiteeMemLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchThesisCommitteeMemTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -736,34 +715,6 @@
                             <Property name="text" type="java.lang.String" value="Commitee Members:"/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane14">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JList" name="searchThesisCommiteeMemList">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                  <StringArray count="5">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
-                                    <StringItem index="4" value="Item 5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
                         <Component class="javax.swing.JButton" name="searchThesisBtn">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -814,6 +765,13 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchThesisBuildTxtActionPerformed"/>
                           </Events>
                         </Component>
+                        <Component class="javax.swing.JTextField" name="searchThesisCommitteeMemTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchDissertationPanel">
@@ -847,6 +805,8 @@
                                                   <Component id="searchDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="SearchDissertationCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationCommitteeMemTxt" min="-2" pref="166" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -868,13 +828,17 @@
                                                   <Component id="searchDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jScrollPane8" max="32767" attributes="0"/>
@@ -887,10 +851,9 @@
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane13" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                   <Component id="searchDisseratationTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -899,6 +862,7 @@
                                                   <Component id="SearchDissertationFigsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="searchDissertationFigsTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="SearchDissertationCommiteeMemLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationCommitteeMemTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -922,8 +886,9 @@
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
@@ -1033,34 +998,6 @@
                             <Property name="text" type="java.lang.String" value="Commitee Members:"/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane13">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JList" name="searchDissertationCommiteeMemList">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                  <StringArray count="5">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
-                                    <StringItem index="4" value="Item 5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
                         <Component class="javax.swing.JButton" name="searchDissertationBtn">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1147,6 +1084,13 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchDissertationBuildTxtActionPerformed"/>
                           </Events>
                         </Component>
+                        <Component class="javax.swing.JTextField" name="searchDissertationCommitteeMemTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchConferencePanel">
@@ -1175,7 +1119,7 @@
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="searchConferencePubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                                                  <Component id="SearchConferenceAuthorListLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchConferenceAuthorLabel" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Component id="SearchConferenceNameLabel" min="-2" max="-2" attributes="0"/>
@@ -1191,11 +1135,11 @@
                                                   <Component id="searchConferenceEndDateFrmtTxt" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane12" min="-2" pref="159" max="-2" attributes="0"/>
-                                          <EmptySpace pref="44" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="searchConferenceAuthorTxt" min="-2" pref="178" max="-2" attributes="0"/>
+                                                  <EmptySpace pref="65" max="32767" attributes="0"/>
                                                   <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                               </Group>
@@ -1219,7 +1163,8 @@
                                                   <Component id="searchConferenceTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="SearchConferencePublicationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="searchConferencePubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="SearchConferenceAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SearchConferenceAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchConferenceAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -1236,14 +1181,13 @@
                                               <Component id="searchConferenceEndDateFrmtTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="jScrollPane12" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Component id="searchConferenceBtn" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="confirmEditConferenceBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                   <Component id="jScrollPane7" pref="319" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1273,42 +1217,14 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="SearchConferenceAuthorListLabel">
+                        <Component class="javax.swing.JLabel" name="SearchConferenceAuthorLabel">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="Author List:"/>
+                            <Property name="text" type="java.lang.String" value="Authors:"/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane12">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JList" name="searchConferencelAuthorList">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                  <StringArray count="5">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
-                                    <StringItem index="4" value="Item 5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
                         <Component class="javax.swing.JButton" name="searchConferenceBtn">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1427,6 +1343,13 @@
                             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditConferenceBtn.setVisible(false);"/>
                           </AuxValues>
                         </Component>
+                        <Component class="javax.swing.JTextField" name="searchConferenceAuthorTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchJournalPanel">
@@ -1463,19 +1386,20 @@
                                                   <Component id="searchJournalNameTxt" min="-2" pref="193" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jScrollPane11" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                                  <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="0" pref="270" max="32767" attributes="0"/>
+                                                  <Component id="confirmEditJournalBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="confirmEditJournalBtn" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchJournalAuthorTxt" min="-2" pref="186" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="searchJournalBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jScrollPane6" pref="944" max="32767" attributes="0"/>
@@ -1488,9 +1412,8 @@
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane11" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -1498,6 +1421,7 @@
                                                   <Component id="SearchJournalAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="SearchJournalPubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="searchJournalPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="searchJournalAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -1516,8 +1440,8 @@
                                           <Component id="confirmEditJournalBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane6" pref="305" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane6" pref="307" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1580,37 +1504,9 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="Author List:"/>
+                            <Property name="text" type="java.lang.String" value="Author:"/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane11">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JList" name="searchJournalAuthorList">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                  <StringArray count="5">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
-                                    <StringItem index="4" value="Item 5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
                         <Component class="javax.swing.JLabel" name="SearchJournalNameLabel">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1665,6 +1561,13 @@
                             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditJournalBtn.setVisible(false);"/>
                           </AuxValues>
                         </Component>
+                        <Component class="javax.swing.JTextField" name="searchJournalAuthorTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchResearchPanel">
@@ -1713,15 +1616,15 @@
                                       <Component id="searchResearchPubYearTxt" min="-2" pref="138" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                       <Component id="SearchResearchAuthorListLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane3" min="-2" pref="159" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
-                                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
                                               <Component id="confirmEditResearchBtn" min="-2" pref="162" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="searchResearchAuthorTxt" min="-2" pref="157" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                                               <Component id="searchResearchBtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -1738,7 +1641,6 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jScrollPane3" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -1747,6 +1649,7 @@
                                                       <Component id="SearchResearchPubYearLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="searchResearchPubYearTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="SearchResearchAuthorListLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="searchResearchAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -1761,8 +1664,8 @@
                                               <Component id="confirmEditResearchBtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane5" pref="325" max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane5" pref="327" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1792,34 +1695,6 @@
                                 <Property name="text" type="java.lang.String" value="Authors:"/>
                               </Properties>
                             </Component>
-                            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-                              <AuxValues>
-                                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                              </AuxValues>
-
-                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                              <SubComponents>
-                                <Component class="javax.swing.JList" name="searchResearchAuthorList">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
-                                    </Property>
-                                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                      <StringArray count="5">
-                                        <StringItem index="0" value="Item 1"/>
-                                        <StringItem index="1" value="Item 2"/>
-                                        <StringItem index="2" value="Item 3"/>
-                                        <StringItem index="3" value="Item 4"/>
-                                        <StringItem index="4" value="Item 5"/>
-                                      </StringArray>
-                                    </Property>
-                                  </Properties>
-                                  <AuxValues>
-                                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                  </AuxValues>
-                                </Component>
-                              </SubComponents>
-                            </Container>
                             <Container class="javax.swing.JScrollPane" name="jScrollPane5">
                               <AuxValues>
                                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1894,6 +1769,13 @@
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditResearchBtn.setVisible(false);"/>
                               </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="searchResearchAuthorTxt">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                </Property>
+                              </Properties>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -1971,7 +1853,7 @@
                                       <Component id="confirmEditMagazineBtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="MagazineSearchList" min="-2" pref="336" max="-2" attributes="0"/>
-                                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                                      <EmptySpace pref="24" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
