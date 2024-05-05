@@ -493,19 +493,6 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="SearchThesisDepLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="searchThesisDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="SearchThesisChapLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="searchThesisChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="SearchThesisAuthorLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="searchThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
                                           <Component id="SearchThesisTitleLabel" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="searchThesisTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
@@ -519,6 +506,28 @@
                                           <Component id="searchThesisFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="SearchThesisCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="SearchThesisBuildLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="searchThesisBuildTxt" min="-2" pref="193" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="SearchThesisDepLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="searchThesisDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="SearchThesisChapLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="searchThesisChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="SearchThesisAuthorLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="searchThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -565,6 +574,11 @@
                                               <Component id="SearchThesisAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="searchThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="SearchThesisBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="searchThesisBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
@@ -574,7 +588,7 @@
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane9" pref="319" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane9" pref="306" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -776,6 +790,24 @@
                             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditThesisBtn.setVisible(false);"/>
                           </AuxValues>
                         </Component>
+                        <Component class="javax.swing.JLabel" name="SearchThesisBuildLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Building:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="searchThesisBuildTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic Medium" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchThesisBuildTxtActionPerformed"/>
+                          </Events>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="SearchDissertationPanel">
@@ -792,53 +824,62 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane8" max="32767" attributes="0"/>
-                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="SearchDissertationDepLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="searchDissertationDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="SearchDissertationChapLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="searchDissertationChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="SearchDissertationAuthorLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="searchDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="SearchDissertationTitleLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="searchDisseratationTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="SearchDissertationPubYearLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="searchDissertationPubYearTxt" min="-2" pref="79" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="SearchDissertationFigsLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="searchDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="SearchDissertationCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="SearchDissertationTitleLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="searchDisseratationTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationPubYearLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationPubYearTxt" min="-2" pref="79" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationFigsLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationCommiteeMemLabel" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="SearchDissertationDepLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="searchDissertationBuildingLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="searchDissertationDepTxt" pref="154" max="32767" attributes="0"/>
+                                                      <Component id="searchDissertationBuildTxt" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationChapLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationAuthorLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="searchDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="8" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane13" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jScrollPane8" max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -874,6 +915,11 @@
                                               <Component id="SearchDissertationAuthorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="searchDissertationAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="searchDissertationBuildingLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="searchDissertationBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="searchDissertationBtn" min="-2" max="-2" attributes="0"/>
@@ -881,8 +927,8 @@
                                           <Component id="confirmEditDissertationBtn" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane8" pref="331" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane8" min="-2" pref="301" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1083,6 +1129,24 @@
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="confirmEditDissertationBtn.setVisible(false);"/>
                           </AuxValues>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="searchDissertationBuildingLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Building:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JTextField" name="searchDissertationBuildTxt">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Yu Gothic Medium" size="12" style="0"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchDissertationBuildTxtActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -2436,41 +2500,36 @@
                                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="AddThesisDepLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AddThesisChapLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AddThesisPubYear" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="addThesisTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="25" pref="25" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="addThesisTitleTxt" alignment="0" min="-2" pref="286" max="-2" attributes="0"/>
+                                                      <Component id="addThesisPubYearTxt" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
+                                                      <Component id="addThesisChapTxt" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
                                                       <Group type="102" alignment="0" attributes="0">
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="AddThesisFigLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="AddThesisAuthorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="addThesisFigsTxt" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="addThesisAuthorTxt" max="32767" attributes="0"/>
-                                                          </Group>
+                                                          <Component id="addThesisDepTxt" min="-2" pref="160" max="-2" attributes="0"/>
+                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <Component id="AddThesisBuildLabel" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                                          <Component id="addThesisBuildTxt" min="-2" pref="160" max="-2" attributes="0"/>
                                                       </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="AddThesisDepLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="AddThesisChapLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="AddThesisPubYear" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="addThesisTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <EmptySpace min="25" pref="25" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="addThesisDepTxt" max="32767" attributes="0"/>
-                                                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <Group type="102" attributes="0">
-                                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                                      <Component id="addThesisTitleTxt" alignment="0" min="-2" pref="286" max="-2" attributes="0"/>
-                                                                      <Component id="addThesisPubYearTxt" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
-                                                                      <Component id="addThesisChapTxt" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                                                                  </Group>
-                                                                  <EmptySpace min="0" pref="70" max="32767" attributes="0"/>
-                                                              </Group>
-                                                          </Group>
-                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace pref="348" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="AddThesisFigLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AddThesisAuthorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="addThesisFigsTxt" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="addThesisAuthorTxt" max="32767" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace max="32767" attributes="0"/>
                                               </Group>
@@ -2512,6 +2571,8 @@
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="AddThesisDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                               <Component id="addThesisDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="AddThesisBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="addThesisBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
@@ -2683,6 +2744,24 @@
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addThesisBtnActionPerformed"/>
                                   </Events>
                                 </Component>
+                                <Component class="javax.swing.JLabel" name="AddThesisBuildLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Building:"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JTextField" name="addThesisBuildTxt">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addThesisBuildTxtActionPerformed"/>
+                                  </Events>
+                                </Component>
                               </SubComponents>
                             </Container>
                             <Container class="javax.swing.JPanel" name="AddDissertationPanel">
@@ -2721,15 +2800,21 @@
                                                               <Component id="addDissertationTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                                           </Group>
                                                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="addDissertationTitleTxt" alignment="0" pref="286" max="32767" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="addDissertationTitleTxt" alignment="0" min="-2" pref="286" max="-2" attributes="0"/>
                                                               <Component id="addDissertationPubYearTxt" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
-                                                              <Component id="addDissertationDepTxt" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="addDissertationChapTxt" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="addDissertationDepTxt" min="-2" pref="159" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                  <Component id="AddDissertationBuildLabel" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                                  <Component id="addDissertationBuildTxt" min="-2" pref="159" max="-2" attributes="0"/>
+                                                              </Group>
                                                           </Group>
                                                       </Group>
                                                   </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <EmptySpace pref="352" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
@@ -2769,6 +2854,8 @@
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="AddDissertationDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                               <Component id="addDissertationDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="AddDissertationBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="addDissertationBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
@@ -2938,6 +3025,24 @@
                                   </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addDissertationBtnActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="AddDissertationBuildLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Building:"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JTextField" name="addDissertationBuildTxt">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addDissertationBuildTxtActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -4011,19 +4116,6 @@
                                               <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="SearchThesisDepLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="removeThesisDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisChapLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeThesisChapTxt" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                                          <Component id="SearchThesisAuthorLabel1" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Component id="removeThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
                                                           <Component id="SearchThesisTitleLabel1" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                                           <Component id="removeThesisTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
@@ -4037,6 +4129,27 @@
                                                           <Component id="removeThesisFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
                                                           <EmptySpace max="-2" attributes="0"/>
                                                           <Component id="SearchThesisCommiteeMemLabel1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="SearchThesisDepLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="removeThesisBuildLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="removeThesisBuildTxt" min="-2" pref="193" max="-2" attributes="0"/>
+                                                              <Group type="102" attributes="0">
+                                                                  <Component id="removeThesisDepTxt" min="-2" pref="193" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                  <Component id="SearchThesisChapLabel1" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="removeThesisChapTxt" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                                                  <Component id="SearchThesisAuthorLabel1" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="removeThesisAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -4063,6 +4176,11 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jScrollPane19" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="removeSearchThesisBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -4087,16 +4205,16 @@
                                                       <Component id="SearchThesisAuthorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="removeThesisAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="removeSearchThesisBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeThesisBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="removeThesisBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                                      <Component id="removeThesisBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
                                           </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane18" pref="304" max="32767" attributes="0"/>
-                                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane18" min="-2" pref="276" max="-2" attributes="0"/>
+                                          <EmptySpace pref="12" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -4292,6 +4410,24 @@
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisBtnActionPerformed"/>
                                   </Events>
                                 </Component>
+                                <Component class="javax.swing.JLabel" name="removeThesisBuildLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Building:"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JTextField" name="removeThesisBuildTxt">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeThesisBuildTxtActionPerformed"/>
+                                  </Events>
+                                </Component>
                               </SubComponents>
                             </Container>
                             <Container class="javax.swing.JPanel" name="removeDissertationPanel">
@@ -4315,19 +4451,6 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="SearchDissertationDepLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationDepTxt" min="-2" pref="158" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationChapLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="SearchDissertationAuthorLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="removeDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
                                                   <Component id="SearchDissertationTitleLabel1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="removeDissertationTitleTxt" min="-2" pref="146" max="-2" attributes="0"/>
@@ -4341,6 +4464,28 @@
                                                   <Component id="removeDissertationFigsTxt" min="-2" pref="77" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="SearchDissertationCommiteeMemLabel1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="removeDissertationBuildLabel" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="removeDissertationBuildTxt" min="-2" pref="158" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="removeDissertationDepLabel" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Component id="removeDissertationDepTxt" min="-2" pref="158" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationChapLabel1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="removeDissertationChapTxt" min="-2" pref="77" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="SearchDissertationAuthorLabel1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="removeDissertationAuthorTxt" min="-2" pref="136" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
@@ -4366,6 +4511,12 @@
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jScrollPane21" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                  <Component id="removeSearchDissertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="removeDIssertationBtn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                           <Component id="removeDissertationTitleTxt" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4382,24 +4533,23 @@
                                                   </Group>
                                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="SearchDissertationDepLabel1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                                      <Component id="removeDissertationDepLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                                       <Component id="removeDissertationDepTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="SearchDissertationChapLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="removeDissertationChapTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="SearchDissertationAuthorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       <Component id="removeDissertationAuthorTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                  <Component id="removeSearchDissertationBtn" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="removeDIssertationBtn" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="removeDissertationBuildLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                                      <Component id="removeDissertationBuildTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
                                           </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jScrollPane20" min="-2" pref="290" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane20" min="-2" pref="263" max="-2" attributes="0"/>
+                                          <EmptySpace pref="26" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -4439,7 +4589,7 @@
                                     <Property name="text" type="java.lang.String" value="Title:"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JLabel" name="SearchDissertationDepLabel1">
+                                <Component class="javax.swing.JLabel" name="removeDissertationDepLabel">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
@@ -4593,6 +4743,24 @@
                                   </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDIssertationBtnActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="removeDissertationBuildLabel">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Building:"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JTextField" name="removeDissertationBuildTxt">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Yu Gothic Medium" size="12" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDissertationBuildTxtActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
