@@ -4,5 +4,5 @@ package application;
 
 
 public class Department {
-    public String room_num, building, department_name;
+    public String building, department_name;
 }
