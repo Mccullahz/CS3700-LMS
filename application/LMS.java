@@ -161,9 +161,9 @@ public class LMS extends javax.swing.JFrame {
         searchThesisFigsTxt = new javax.swing.JTextField();
         SearchThesisAuthorLabel = new javax.swing.JLabel();
         searchThesisAuthorTxt = new javax.swing.JTextField();
-        SearchThesisCommitteeMemLabel = new javax.swing.JLabel();
+        SearchThesisCommiteeMemLabel = new javax.swing.JLabel();
         jScrollPane14 = new javax.swing.JScrollPane();
-        searchThesisCommitteeMemList = new javax.swing.JList<>();
+        searchThesisCommiteeMemList = new javax.swing.JList<>();
         searchThesisBtn = new javax.swing.JButton();
         confirmEditThesisBtn = new javax.swing.JButton();
         SearchThesisBuildLabel = new javax.swing.JLabel();
@@ -199,14 +199,14 @@ public class LMS extends javax.swing.JFrame {
         searchConferenceBtn = new javax.swing.JButton();
         SearchConferenceNameLabel = new javax.swing.JLabel();
         searchConferencePubYearTxt = new javax.swing.JTextField();
-        SearchConferenceTitleLabel = new javax.swing.JLabel();
+        SearchJournalTitleLabel1 = new javax.swing.JLabel();
         searchConferenceTitleTxt = new javax.swing.JTextField();
         SearchConferencePublicationLabel = new javax.swing.JLabel();
         searchConferenceNameTxt = new javax.swing.JTextField();
         searchConferenceEndDateLabel = new javax.swing.JLabel();
         searchConferenceBeginDateLabel = new javax.swing.JLabel();
-        searchConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
-        searchConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
+        searchConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField();
+        searchConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField();
         confirmEditConferenceBtn = new javax.swing.JButton();
         SearchJournalPanel = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -281,9 +281,9 @@ public class LMS extends javax.swing.JFrame {
         addThesisFigsTxt = new javax.swing.JTextField();
         AddThesisAuthorLabel = new javax.swing.JLabel();
         addThesisAuthorTxt = new javax.swing.JTextField();
-        AddThesisCommitteeMemInstructionLabel = new javax.swing.JLabel();
-        AddThesisCommitteeMemLabel = new javax.swing.JLabel();
-        addThesisCommitteeMemsTxt = new javax.swing.JTextField();
+        AddThesisCommiteeMemInstructionLabel = new javax.swing.JLabel();
+        AddThesisCommiteeMemLabel = new javax.swing.JLabel();
+        addThesisCommiteeMemsTxt = new javax.swing.JTextField();
         addThesisBtn = new javax.swing.JButton();
         AddThesisBuildLabel = new javax.swing.JLabel();
         addThesisBuildTxt = new javax.swing.JTextField();
@@ -300,14 +300,17 @@ public class LMS extends javax.swing.JFrame {
         addDissertationFigsTxt = new javax.swing.JTextField();
         AddDissertationAuthorLabel = new javax.swing.JLabel();
         addDissertationAuthorTxt = new javax.swing.JTextField();
-        AddDissertationCommitteeMemInstructionLabel = new javax.swing.JLabel();
-        AddDissertationCommitteeMemLabel = new javax.swing.JLabel();
-        addDissertationCommitteeMemsTxt = new javax.swing.JTextField();
+        AddDissertationCommiteeMemInstructionLabel = new javax.swing.JLabel();
+        AddThesisCommiteeMemLabel1 = new javax.swing.JLabel();
+        addDissertationCommiteeMemsTxt = new javax.swing.JTextField();
         addDissertationBtn = new javax.swing.JButton();
         AddDissertationBuildLabel = new javax.swing.JLabel();
         addDissertationBuildTxt = new javax.swing.JTextField();
         AddConferencePanel = new javax.swing.JPanel();
-        AddConferencePubYearLabel = new javax.swing.JLabel();
+        addConferenceTitleTxt = new javax.swing.JTextField();
+        addDissertationTitleLabel1 = new javax.swing.JLabel();
+        AddDissertationPubYearLabel1 = new javax.swing.JLabel();
+        addConferencePubYearTxt = new javax.swing.JTextField();
         addConferenceNameTxt = new javax.swing.JTextField();
         AddConferenceNameLabel = new javax.swing.JLabel();
         addConferenceStartDateLabel = new javax.swing.JLabel();
@@ -316,9 +319,9 @@ public class LMS extends javax.swing.JFrame {
         addConferenceLocationTxt = new javax.swing.JTextField();
         addConferenceAuthorListTxt = new javax.swing.JTextField();
         AddConferenceAuthorLabel = new javax.swing.JLabel();
-        addConferenceAuthorInstructionLabel = new javax.swing.JLabel();
-        addConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
-        addConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField(createFormatter("##/##/####"));
+        AddBookAuthorInstructionLabel1 = new javax.swing.JLabel();
+        addConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField();
+        addConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField();
         addConferenceEndDateLabel = new javax.swing.JLabel();
         AddJournalPanel = new javax.swing.JPanel();
         addJournalAuthorListTxt = new javax.swing.JTextField();
@@ -346,7 +349,7 @@ public class LMS extends javax.swing.JFrame {
         addMagazinePubYearLabel = new javax.swing.JLabel();
         addMagazinePubYearTxt = new javax.swing.JTextField();
         addMagazineBtn = new javax.swing.JButton();
-        RemoveItemInnerPanel = new javax.swing.JPanel();
+        RemoveItemInnerPanel1 = new javax.swing.JPanel();
         RemoveItemTabbedPane = new javax.swing.JTabbedPane();
         removeBookPanel = new javax.swing.JPanel();
         jScrollPane16 = new javax.swing.JScrollPane();
@@ -369,15 +372,131 @@ public class LMS extends javax.swing.JFrame {
         removeJournalList = new javax.swing.JList<>();
         removeJournalBtn = new javax.swing.JButton();
         removeResearchPanel = new javax.swing.JPanel();
-        SearchRemoveResearchPalettePanel = new javax.swing.JPanel();
+        SearchResearchPalettePanel1 = new javax.swing.JPanel();
         jScrollPane26 = new javax.swing.JScrollPane();
         removeResearchList = new javax.swing.JList<>();
         removeResearchBtn = new javax.swing.JButton();
         removeMagazinePanel = new javax.swing.JPanel();
-        SearchRemoveMagazinePalettePanel = new javax.swing.JPanel();
-        MagazineSearchListRemove = new javax.swing.JScrollPane();
+        SearchMagazinePalettePanel1 = new javax.swing.JPanel();
+        MagazineSearchList1 = new javax.swing.JScrollPane();
         removeMagazineList = new javax.swing.JList<>();
         removeMagazineBtn = new javax.swing.JButton();
+        RemoveItemTabbedPane1 = new javax.swing.JTabbedPane();
+        removeBookPanel1 = new javax.swing.JPanel();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        removeSearchBookList1 = new javax.swing.JList<>();
+        removeBookTitleLabel1 = new javax.swing.JLabel();
+        removeBookTitleTxt1 = new javax.swing.JTextField();
+        SearchBookEdNumLabel2 = new javax.swing.JLabel();
+        searchBookEdNumTxt2 = new javax.swing.JTextField();
+        SearchBookPubYearLabel2 = new javax.swing.JLabel();
+        removeBookPubYearTxt1 = new javax.swing.JTextField();
+        SearchBookChapLabel2 = new javax.swing.JLabel();
+        removeBookChapTxt1 = new javax.swing.JTextField();
+        SearchBookFigsLabel2 = new javax.swing.JLabel();
+        removeBookFigsTxt1 = new javax.swing.JTextField();
+        SearchBookPubLabel2 = new javax.swing.JLabel();
+        removeBookPublisherTxt1 = new javax.swing.JTextField();
+        SearchBookAuthorLabel2 = new javax.swing.JLabel();
+        jScrollPane28 = new javax.swing.JScrollPane();
+        removeBookAuthorList1 = new javax.swing.JList<>();
+        removeSearchBookBtn1 = new javax.swing.JButton();
+        removeBookBtn1 = new javax.swing.JButton();
+        removeThesisPanel1 = new javax.swing.JPanel();
+        jScrollPane29 = new javax.swing.JScrollPane();
+        removeSearchThesisList1 = new javax.swing.JList<>();
+        removeThesisDepTxt1 = new javax.swing.JTextField();
+        SearchThesisDepLabel2 = new javax.swing.JLabel();
+        SearchThesisTitleLabel2 = new javax.swing.JLabel();
+        removeThesisTitleTxt1 = new javax.swing.JTextField();
+        SearchThesisPubYearLabel2 = new javax.swing.JLabel();
+        removeThesisPubYearTxt1 = new javax.swing.JTextField();
+        SearchThesisChapLabel2 = new javax.swing.JLabel();
+        removeThesisChapTxt1 = new javax.swing.JTextField();
+        SearchThesisFigsLabel2 = new javax.swing.JLabel();
+        removeThesisFigsTxt1 = new javax.swing.JTextField();
+        SearchThesisAuthorLabel2 = new javax.swing.JLabel();
+        removeThesisAuthorTxt1 = new javax.swing.JTextField();
+        SearchThesisCommiteeMemLabel2 = new javax.swing.JLabel();
+        jScrollPane30 = new javax.swing.JScrollPane();
+        removeThesisCommiteeMemList1 = new javax.swing.JList<>();
+        removeSearchThesisBtn1 = new javax.swing.JButton();
+        removeThesisBtn1 = new javax.swing.JButton();
+        removeDissertationPanel1 = new javax.swing.JPanel();
+        jScrollPane31 = new javax.swing.JScrollPane();
+        removeSearchDissertationList1 = new javax.swing.JList<>();
+        removeDissertationTitleTxt1 = new javax.swing.JTextField();
+        SearchDissertationTitleLabel2 = new javax.swing.JLabel();
+        SearchDissertationDepLabel2 = new javax.swing.JLabel();
+        removeDissertationDepTxt1 = new javax.swing.JTextField();
+        removeDissertationPubYearTxt1 = new javax.swing.JTextField();
+        SearchDissertationPubYearLabel2 = new javax.swing.JLabel();
+        SearchDissertationChapLabel2 = new javax.swing.JLabel();
+        removeDissertationChapTxt1 = new javax.swing.JTextField();
+        SearchDissertationCommiteeMemLabel2 = new javax.swing.JLabel();
+        jScrollPane32 = new javax.swing.JScrollPane();
+        removeDissertationCommiteeMemList1 = new javax.swing.JList<>();
+        removeSearchDissertationBtn1 = new javax.swing.JButton();
+        removeDissertationFigsTxt1 = new javax.swing.JTextField();
+        SearchDissertationFigsLabel2 = new javax.swing.JLabel();
+        SearchDissertationAuthorLabel2 = new javax.swing.JLabel();
+        removeDissertationAuthorTxt1 = new javax.swing.JTextField();
+        removeDIssertationBtn1 = new javax.swing.JButton();
+        removeConferencePanel1 = new javax.swing.JPanel();
+        jScrollPane33 = new javax.swing.JScrollPane();
+        removeSearchConferenceList1 = new javax.swing.JList<>();
+        SearchConferenceAuthorListLabel2 = new javax.swing.JLabel();
+        jScrollPane34 = new javax.swing.JScrollPane();
+        removeConferenceAuthorList1 = new javax.swing.JList<>();
+        removeSearchConferenceBtn1 = new javax.swing.JButton();
+        SearchConferenceNameLabel2 = new javax.swing.JLabel();
+        removeConferencePubYearTxt1 = new javax.swing.JTextField();
+        SearchJournalTitleLabel4 = new javax.swing.JLabel();
+        removeConferenceTitleTxt1 = new javax.swing.JTextField();
+        SearchConferencePublicationLabel2 = new javax.swing.JLabel();
+        removeConferenceNameTxt1 = new javax.swing.JTextField();
+        removeSearchConferenceBeginDateLabel1 = new javax.swing.JLabel();
+        removeConferenceBtn1 = new javax.swing.JButton();
+        removeSearchConferenceBeginDateFrmtTxt1 = new javax.swing.JFormattedTextField();
+        removeSearchConferenceEndDateFrmtTxt1 = new javax.swing.JFormattedTextField();
+        removeSearchConferenceEndDateLabel1 = new javax.swing.JLabel();
+        removeJournalPanel1 = new javax.swing.JPanel();
+        jScrollPane35 = new javax.swing.JScrollPane();
+        removeSearchJournalList1 = new javax.swing.JList<>();
+        removeSearchJournalBtn1 = new javax.swing.JButton();
+        removeJournalTitleTxt1 = new javax.swing.JTextField();
+        SearchJournalTitleLabel5 = new javax.swing.JLabel();
+        SearchJournalAuthorListLabel2 = new javax.swing.JLabel();
+        jScrollPane36 = new javax.swing.JScrollPane();
+        removeJournalAuthorList1 = new javax.swing.JList<>();
+        SearchJournalNameLabel2 = new javax.swing.JLabel();
+        removeJournalNameTxt1 = new javax.swing.JTextField();
+        removeJournalPubYearTxt1 = new javax.swing.JTextField();
+        SearchJournalPubYearLabel2 = new javax.swing.JLabel();
+        removeJournalBtn1 = new javax.swing.JButton();
+        removeResearchPanel1 = new javax.swing.JPanel();
+        SearchResearchPalettePanel2 = new javax.swing.JPanel();
+        SearchResearchTitleLabel2 = new javax.swing.JLabel();
+        removeResearchTitleTxt1 = new javax.swing.JTextField();
+        SearchResearchAuthorListLabel2 = new javax.swing.JLabel();
+        jScrollPane37 = new javax.swing.JScrollPane();
+        removeResearchAuthorList1 = new javax.swing.JList<>();
+        jScrollPane38 = new javax.swing.JScrollPane();
+        removeSearchResearchList1 = new javax.swing.JList<>();
+        removeSearchResearchBtn1 = new javax.swing.JButton();
+        removeResearchPubYearTxt1 = new javax.swing.JTextField();
+        SearchResearchPubYearLabel2 = new javax.swing.JLabel();
+        removeResearchBtn1 = new javax.swing.JButton();
+        removeMagazinePanel1 = new javax.swing.JPanel();
+        SearchMagazinePalettePanel2 = new javax.swing.JPanel();
+        SearchMagazineTitleLablel2 = new javax.swing.JLabel();
+        removeMagazineTitleTxt1 = new javax.swing.JTextField();
+        MagazineSearchList2 = new javax.swing.JScrollPane();
+        removeSearchMagazineList1 = new javax.swing.JList<>();
+        removeSearchMagazineBtn1 = new javax.swing.JButton();
+        removeMagazinePubYearTxt1 = new javax.swing.JTextField();
+        SearchMagazinePubYearLabel2 = new javax.swing.JLabel();
+        removeMagazineBtn1 = new javax.swing.JButton();
         AddRemoveInstructionLabel = new javax.swing.JLabel();
         GenerateReportPane = new javax.swing.JPanel();
         GenReportButton = new javax.swing.JButton();
@@ -403,6 +522,7 @@ public class LMS extends javax.swing.JFrame {
         SearchTabbedPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         SearchTabbedPanel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
 
+        SearchBookList.setModel(model);
         SearchBookList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchBookListValueChanged(evt);
@@ -587,6 +707,7 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Book", SearchBookPanel);
 
+        SearchThesisList.setModel(model);
         SearchThesisList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchThesisListValueChanged(evt);
@@ -649,16 +770,16 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
-        SearchThesisCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchThesisCommitteeMemLabel.setText("Commitee Members:");
+        SearchThesisCommiteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisCommiteeMemLabel.setText("Commitee Members:");
 
-        searchThesisCommitteeMemList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisCommitteeMemList.setModel(new javax.swing.AbstractListModel<String>() {
+        searchThesisCommiteeMemList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        searchThesisCommiteeMemList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane14.setViewportView(searchThesisCommitteeMemList);
+        jScrollPane14.setViewportView(searchThesisCommiteeMemList);
 
         searchThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -714,7 +835,7 @@ public class LMS extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(searchThesisFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(SearchThesisCommitteeMemLabel))
+                        .addComponent(SearchThesisCommiteeMemLabel))
                     .addGroup(SearchThesisPanelLayout.createSequentialGroup()
                         .addGroup(SearchThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SearchThesisPanelLayout.createSequentialGroup()
@@ -757,7 +878,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchThesisPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SearchThesisFigsLabel)
                                 .addComponent(searchThesisFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchThesisCommitteeMemLabel))
+                                .addComponent(SearchThesisCommiteeMemLabel))
                             .addGroup(SearchThesisPanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchThesisTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -791,6 +912,7 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Thesis", SearchThesisPanel);
 
+        SearchDissertationList.setModel(model);
         SearchDissertationList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchDissertationListValueChanged(evt);
@@ -985,6 +1107,7 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Dissertation", SearchDissertationPanel);
 
+        SearchConferenceList.setModel(model);
         SearchConferenceList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchConferenceListValueChanged(evt);
@@ -1022,8 +1145,8 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
-        SearchConferenceTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchConferenceTitleLabel.setText("Title:");
+        SearchJournalTitleLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalTitleLabel1.setText("Title:");
 
         searchConferenceTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
@@ -1070,7 +1193,7 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                         .addGroup(SearchConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
-                                .addComponent(SearchConferenceTitleLabel)
+                                .addComponent(SearchJournalTitleLabel1)
                                 .addGap(18, 18, 18)
                                 .addComponent(searchConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(52, 52, 52)
@@ -1116,7 +1239,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(SearchConferenceAuthorListLabel))
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
-                                .addComponent(SearchConferenceTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(SearchJournalTitleLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(20, 20, 20)
                         .addGroup(SearchConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SearchConferenceNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1139,6 +1262,7 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Conference Paper", SearchConferencePanel);
 
+        SearchJournalList.setModel(model);
         SearchJournalList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchJournalListValueChanged(evt);
@@ -1286,6 +1410,7 @@ public class LMS extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(searchResearchAuthorList);
 
+        SearchResearchList.setModel(model);
         SearchResearchList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchResearchListValueChanged(evt);
@@ -1405,6 +1530,7 @@ public class LMS extends javax.swing.JFrame {
 
         searchMagazineTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
+        SearchMagazineList.setModel(model);
         SearchMagazineList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchMagazineListValueChanged(evt);
@@ -1638,28 +1764,6 @@ public class LMS extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(AddBookPanelLayout.createSequentialGroup()
                         .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AddBookFigLabel)
-                            .addComponent(AddBookPubLabel))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(addBookFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(addBookPubTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
-                    .addGroup(AddBookPanelLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(AddBookPanelLayout.createSequentialGroup()
-                                .addComponent(AddBookAuthorInstructionLabel)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(AddBookPanelLayout.createSequentialGroup()
-                                .addComponent(AddBookAuthorLabel)
-                                .addGap(63, 63, 63)
-                                .addComponent(addBookAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                                .addComponent(addBookBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(57, 57, 57))))
-                    .addGroup(AddBookPanelLayout.createSequentialGroup()
-                        .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(AddBookPanelLayout.createSequentialGroup()
                                 .addGap(2, 2, 2)
                                 .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1675,7 +1779,28 @@ public class LMS extends javax.swing.JFrame {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(AddBookPanelLayout.createSequentialGroup()
                                 .addComponent(addBookTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(AddBookPanelLayout.createSequentialGroup()
+                        .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AddBookPanelLayout.createSequentialGroup()
+                                .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(AddBookFigLabel)
+                                    .addComponent(AddBookPubLabel))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(addBookFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(addBookPubTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(AddBookPanelLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(AddBookAuthorInstructionLabel)
+                                    .addGroup(AddBookPanelLayout.createSequentialGroup()
+                                        .addComponent(AddBookAuthorLabel)
+                                        .addGap(63, 63, 63)
+                                        .addComponent(addBookAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(41, 41, 41)
+                                        .addComponent(addBookBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(217, Short.MAX_VALUE))))
         );
         AddBookPanelLayout.setVerticalGroup(
             AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1711,9 +1836,8 @@ public class LMS extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddBookAuthorLabel)
-                    .addGroup(AddBookPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addBookAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(addBookBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(addBookAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addBookBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
         );
 
@@ -1782,11 +1906,11 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
-        AddThesisCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        AddThesisCommitteeMemInstructionLabel.setText("Enter the commitee members and seprate them by a semicolon. (;)");
+        AddThesisCommiteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddThesisCommiteeMemInstructionLabel.setText("Enter the committee members, and committee name, and seprate them by a semicolon. (;)");
 
-        AddThesisCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddThesisCommitteeMemLabel.setText("Commitee Members:");
+        AddThesisCommiteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddThesisCommiteeMemLabel.setText("Commitee Members:");
 
         addThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         addThesisBtn.setText("Add Thesis");
@@ -1831,7 +1955,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(AddThesisBuildLabel)
                                 .addGap(31, 31, 31)
                                 .addComponent(addThesisBuildTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(348, Short.MAX_VALUE))
+                        .addContainerGap(483, Short.MAX_VALUE))
                     .addGroup(AddThesisPanelLayout.createSequentialGroup()
                         .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(AddThesisFigLabel)
@@ -1840,20 +1964,18 @@ public class LMS extends javax.swing.JFrame {
                         .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(addThesisFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(addThesisAuthorTxt))
-                        .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(AddThesisPanelLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddThesisCommiteeMemInstructionLabel)
                             .addGroup(AddThesisPanelLayout.createSequentialGroup()
-                                .addComponent(AddThesisCommitteeMemInstructionLabel)
-                                .addContainerGap(459, Short.MAX_VALUE))
-                            .addGroup(AddThesisPanelLayout.createSequentialGroup()
-                                .addComponent(AddThesisCommitteeMemLabel)
+                                .addComponent(AddThesisCommiteeMemLabel)
                                 .addGap(33, 33, 33)
-                                .addComponent(addThesisCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(addThesisBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(57, 57, 57))))))
+                                .addComponent(addThesisCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(42, 42, 42)
+                                .addComponent(addThesisBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         AddThesisPanelLayout.setVerticalGroup(
             AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1885,12 +2007,12 @@ public class LMS extends javax.swing.JFrame {
                     .addComponent(AddThesisAuthorLabel)
                     .addComponent(addThesisAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(AddThesisCommitteeMemInstructionLabel)
+                .addComponent(AddThesisCommiteeMemInstructionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AddThesisCommitteeMemLabel)
+                    .addComponent(AddThesisCommiteeMemLabel)
                     .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addThesisCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addThesisCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(addThesisBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
@@ -1958,11 +2080,17 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
-        AddDissertationCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        AddDissertationCommitteeMemInstructionLabel.setText("Enter the commitee members and seprate them by a semicolon. (;)");
+        AddDissertationCommiteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddDissertationCommiteeMemInstructionLabel.setText("Enter the committee members, and committe name, and seprate them by a semicolon. (;)");
 
-        AddDissertationCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddDissertationCommitteeMemLabel.setText("Commitee Members:");
+        AddThesisCommiteeMemLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddThesisCommiteeMemLabel1.setText("Commitee Members:");
+
+        addDissertationCommiteeMemsTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDissertationCommiteeMemsTxtActionPerformed(evt);
+            }
+        });
 
         addDissertationBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         addDissertationBtn.setText("Add Dissertation");
@@ -1990,47 +2118,43 @@ public class LMS extends javax.swing.JFrame {
             .addGroup(AddDissertationPanelLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                        .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(AddDissertationFigsLabel)
-                                    .addComponent(AddDissertationAuthorLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(addDissertationFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addDissertationAuthorTxt)))
-                            .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(AddDissertationDepLabel)
-                                    .addComponent(AddDissertationChapLabel)
-                                    .addComponent(AddDissertationPubYearLabel)
-                                    .addComponent(addDissertationTitleLabel))
-                                .addGap(25, 25, 25)
-                                .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(addDissertationTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addDissertationPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addDissertationChapTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                        .addComponent(addDissertationDepTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(AddDissertationBuildLabel)
-                                        .addGap(29, 29, 29)
-                                        .addComponent(addDissertationBuildTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(352, Short.MAX_VALUE))
+                    .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(AddDissertationPanelLayout.createSequentialGroup()
+                            .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(AddDissertationFigsLabel)
+                                .addComponent(AddDissertationAuthorLabel))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(addDissertationFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addDissertationAuthorTxt)))
+                        .addGroup(AddDissertationPanelLayout.createSequentialGroup()
+                            .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(AddDissertationDepLabel)
+                                .addComponent(AddDissertationChapLabel)
+                                .addComponent(AddDissertationPubYearLabel)
+                                .addComponent(addDissertationTitleLabel))
+                            .addGap(25, 25, 25)
+                            .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(addDissertationTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addDissertationPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addDissertationChapTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(AddDissertationPanelLayout.createSequentialGroup()
+                                    .addComponent(addDissertationDepTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(AddDissertationBuildLabel)
+                                    .addGap(29, 29, 29)
+                                    .addComponent(addDissertationBuildTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(AddDissertationPanelLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddDissertationCommiteeMemInstructionLabel)
                             .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                .addComponent(AddDissertationCommitteeMemInstructionLabel)
-                                .addContainerGap(459, Short.MAX_VALUE))
-                            .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                .addComponent(AddDissertationCommitteeMemLabel)
+                                .addComponent(AddThesisCommiteeMemLabel1)
                                 .addGap(33, 33, 33)
-                                .addComponent(addDissertationCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(addDissertationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32))))))
+                                .addComponent(addDissertationCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(addDissertationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(179, Short.MAX_VALUE))
         );
         AddDissertationPanelLayout.setVerticalGroup(
             AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2062,12 +2186,12 @@ public class LMS extends javax.swing.JFrame {
                     .addComponent(AddDissertationAuthorLabel)
                     .addComponent(addDissertationAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(AddDissertationCommitteeMemInstructionLabel)
+                .addComponent(AddDissertationCommiteeMemInstructionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AddDissertationCommitteeMemLabel)
+                    .addComponent(AddThesisCommiteeMemLabel1)
                     .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addDissertationCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addDissertationCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(addDissertationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
@@ -2077,20 +2201,20 @@ public class LMS extends javax.swing.JFrame {
         addConferenceTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
         addConferenceTitleTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationTitleTxt1ActionPerformed(evt);
+                addConferenceTitleTxtActionPerformed(evt);
             }
         });
 
-        AddConferencePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddConferencePubYearLabel.setText("Title:");
+        addDissertationTitleLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        addDissertationTitleLabel1.setText("Title:");
 
-        AddConferencePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddConferencePubYearLabel.setText("Publication Year:");
+        AddDissertationPubYearLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddDissertationPubYearLabel1.setText("Publication Year:");
 
         addConferencePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
         addConferencePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationPubYearTxt1ActionPerformed(evt);
+                addConferencePubYearTxtActionPerformed(evt);
             }
         });
 
@@ -2130,8 +2254,8 @@ public class LMS extends javax.swing.JFrame {
         AddConferenceAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddConferenceAuthorLabel.setText("Authors:");
 
-        addConferenceAuthorInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        addConferenceAuthorInstructionLabel.setText("Enter the author(s) of the conference paper. If there are multiple, seprate them by a semicolon. (;)");
+        AddBookAuthorInstructionLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddBookAuthorInstructionLabel1.setText("Enter the author(s) of the conference paper. If there are multiple, seprate them by a semicolon. (;)");
 
         addConferenceBeginDateFrmtTxt.setText("dd/mm/yyyy");
 
@@ -2150,40 +2274,40 @@ public class LMS extends javax.swing.JFrame {
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddConferencePanelLayout.createSequentialGroup()
                         .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(addConferenceAuthorInstructionLabel)
+                            .addComponent(AddBookAuthorInstructionLabel1)
                             .addGroup(AddConferencePanelLayout.createSequentialGroup()
                                 .addComponent(AddConferenceAuthorLabel)
                                 .addGap(105, 105, 105)
-                                .addComponent(addConferenceAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(addConferenceAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 368, Short.MAX_VALUE))
+                    .addGroup(AddConferencePanelLayout.createSequentialGroup()
+                        .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(AddConferencePanelLayout.createSequentialGroup()
                                 .addComponent(AddConferenceNameLabel)
                                 .addGap(52, 52, 52)
-                                .addComponent(addConferenceLocationTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 233, Short.MAX_VALUE))
-                    .addGroup(AddConferencePanelLayout.createSequentialGroup()
-                        .addComponent(addConferenceStartDateLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addConferenceBeginDateFrmtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(addConferenceEndDateLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addConferenceEndDateFrmtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addConferenceLocationTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(AddConferencePanelLayout.createSequentialGroup()
+                                .addComponent(addConferenceStartDateLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addConferenceBeginDateFrmtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(37, 37, 37)
+                                .addComponent(addConferenceEndDateLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addConferenceEndDateFrmtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(addConferenceNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(AddConferencePanelLayout.createSequentialGroup()
+                                    .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(AddDissertationPubYearLabel1)
+                                        .addComponent(addDissertationTitleLabel1)
+                                        .addComponent(addConferenceLocationLabel))
+                                    .addGap(61, 61, 61)
+                                    .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(addConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(addConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(addConferenceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29))
-                    .addGroup(AddConferencePanelLayout.createSequentialGroup()
-                        .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(addConferenceNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(AddConferencePanelLayout.createSequentialGroup()
-                                .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(AddConferencePubYearLabel)
-                                    .addComponent(AddConferenceTitleLabel)
-                                    .addComponent(addConferenceLocationLabel))
-                                .addGap(61, 61, 61)
-                                .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(addConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(127, 127, 127))))
         );
         AddConferencePanelLayout.setVerticalGroup(
             AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2191,10 +2315,10 @@ public class LMS extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddConferenceTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addDissertationTitleLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddConferencePubYearLabel)
+                    .addComponent(AddDissertationPubYearLabel1)
                     .addComponent(addConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2217,8 +2341,8 @@ public class LMS extends javax.swing.JFrame {
                         .addGap(18, 18, 18))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddConferencePanelLayout.createSequentialGroup()
                         .addComponent(addConferenceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)))
-                .addComponent(addConferenceAuthorInstructionLabel)
+                        .addGap(33, 33, 33)))
+                .addComponent(AddBookAuthorInstructionLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddConferenceAuthorLabel)
@@ -2280,16 +2404,14 @@ public class LMS extends javax.swing.JFrame {
             .addGroup(AddJournalPanelLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addGroup(AddJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddJournalPanelLayout.createSequentialGroup()
-                        .addComponent(AddJournalAuthorInstructionLabel)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(AddJournalAuthorInstructionLabel)
                     .addGroup(AddJournalPanelLayout.createSequentialGroup()
                         .addComponent(AddJournalAuthorLabel)
                         .addGap(105, 105, 105)
                         .addComponent(addJournalAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                        .addComponent(addJournalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33))))
+                        .addGap(61, 61, 61)
+                        .addComponent(addJournalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(163, Short.MAX_VALUE))
             .addGroup(AddJournalPanelLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addGroup(AddJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2325,10 +2447,9 @@ public class LMS extends javax.swing.JFrame {
                 .addComponent(AddJournalAuthorInstructionLabel)
                 .addGap(18, 18, 18)
                 .addGroup(AddJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AddJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addJournalAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(addJournalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(AddJournalAuthorLabel))
+                    .addComponent(addJournalAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddJournalAuthorLabel)
+                    .addComponent(addJournalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(88, 88, 88))
         );
 
@@ -2373,7 +2494,7 @@ public class LMS extends javax.swing.JFrame {
         AddResearchPanel.setLayout(AddResearchPanelLayout);
         AddResearchPanelLayout.setHorizontalGroup(
             AddResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 925, Short.MAX_VALUE)
+            .addGap(0, 1060, Short.MAX_VALUE)
             .addGroup(AddResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AddResearchPanelLayout.createSequentialGroup()
                     .addGap(37, 37, 37)
@@ -2397,7 +2518,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(addResearchAuthorListTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(addResearchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addContainerGap(38, Short.MAX_VALUE)))
+                    .addContainerGap(173, Short.MAX_VALUE)))
         );
         AddResearchPanelLayout.setVerticalGroup(
             AddResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2466,7 +2587,7 @@ public class LMS extends javax.swing.JFrame {
                 .addGroup(AddMagazinePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(addMagazineTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addMagazinePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 243, Short.MAX_VALUE)
                 .addComponent(addMagazineBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(152, 152, 152))
         );
@@ -2510,12 +2631,14 @@ public class LMS extends javax.swing.JFrame {
 
         EditItemPanel.addTab("Add Item", AddItemPanel);
 
+        RemoveItemInnerPanel1.setBackground(new java.awt.Color(155, 171, 184));
 
         RemoveItemTabbedPane.setBackground(new java.awt.Color(203, 211, 217));
         RemoveItemTabbedPane.setForeground(new java.awt.Color(3, 25, 38));
         RemoveItemTabbedPane.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         RemoveItemTabbedPane.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
 
+        removeBookList.setModel(model);
         jScrollPane16.setViewportView(removeBookList);
 
         removeBookBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2554,6 +2677,7 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Book", removeBookPanel);
 
+        removeThesisList.setModel(model);
         jScrollPane18.setViewportView(removeThesisList);
 
         removeThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2593,7 +2717,7 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Thesis", removeThesisPanel);
 
-        
+        removeDissertationList.setModel(model);
         jScrollPane20.setViewportView(removeDissertationList);
 
         removeDissertationBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2633,7 +2757,7 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Dissertation", removeDissertationPanel);
 
-        
+        removeConferenceList.setModel(model);
         jScrollPane22.setViewportView(removeConferenceList);
 
         removeConferenceBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2671,7 +2795,7 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Conference Paper", removeConferencePanel);
 
-        
+        removeJournalList.setModel(model);
         jScrollPane24.setViewportView(removeJournalList);
 
         removeJournalBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2710,7 +2834,7 @@ public class LMS extends javax.swing.JFrame {
 
         RemoveItemTabbedPane.addTab("Journal", removeJournalPanel);
 
-        
+        removeResearchList.setModel(model);
         jScrollPane26.setViewportView(removeResearchList);
 
         removeResearchBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -2724,24 +2848,49 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
+        javax.swing.GroupLayout SearchResearchPalettePanel1Layout = new javax.swing.GroupLayout(SearchResearchPalettePanel1);
+        SearchResearchPalettePanel1.setLayout(SearchResearchPalettePanel1Layout);
+        SearchResearchPalettePanel1Layout.setHorizontalGroup(
+            SearchResearchPalettePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchResearchPalettePanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane26, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(removeResearchBtn)
+                .addGap(36, 36, 36))
+        );
+        SearchResearchPalettePanel1Layout.setVerticalGroup(
+            SearchResearchPalettePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchResearchPalettePanel1Layout.createSequentialGroup()
+                .addContainerGap(7, Short.MAX_VALUE)
+                .addComponent(jScrollPane26, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(SearchResearchPalettePanel1Layout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(removeResearchBtn)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout removeResearchPanelLayout = new javax.swing.GroupLayout(removeResearchPanel);
         removeResearchPanel.setLayout(removeResearchPanelLayout);
         removeResearchPanelLayout.setHorizontalGroup(
             removeResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(removeResearchPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SearchRemoveResearchPalettePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SearchResearchPalettePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         removeResearchPanelLayout.setVerticalGroup(
             removeResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeResearchPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SearchRemoveResearchPalettePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SearchResearchPalettePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         RemoveItemTabbedPane.addTab("Research Paper", removeResearchPanel);
+
+        removeMagazineList.setModel(model);
+        MagazineSearchList1.setViewportView(removeMagazineList);
 
         removeMagazineBtn.setBackground(new java.awt.Color(203, 211, 217));
         removeMagazineBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
@@ -2754,7 +2903,29 @@ public class LMS extends javax.swing.JFrame {
             }
         });
 
-        MagazineSearchListRemove.setViewportView(removeMagazineList);
+        javax.swing.GroupLayout SearchMagazinePalettePanel1Layout = new javax.swing.GroupLayout(SearchMagazinePalettePanel1);
+        SearchMagazinePalettePanel1.setLayout(SearchMagazinePalettePanel1Layout);
+        SearchMagazinePalettePanel1Layout.setHorizontalGroup(
+            SearchMagazinePalettePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchMagazinePalettePanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MagazineSearchList1, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(removeMagazineBtn)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        SearchMagazinePalettePanel1Layout.setVerticalGroup(
+            SearchMagazinePalettePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchMagazinePalettePanel1Layout.createSequentialGroup()
+                .addGroup(SearchMagazinePalettePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SearchMagazinePalettePanel1Layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(MagazineSearchList1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SearchMagazinePalettePanel1Layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addComponent(removeMagazineBtn)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout removeMagazinePanelLayout = new javax.swing.GroupLayout(removeMagazinePanel);
         removeMagazinePanel.setLayout(removeMagazinePanelLayout);
@@ -2762,19 +2933,1092 @@ public class LMS extends javax.swing.JFrame {
             removeMagazinePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeMagazinePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SearchRemoveMagazinePalettePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SearchMagazinePalettePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         removeMagazinePanelLayout.setVerticalGroup(
             removeMagazinePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeMagazinePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SearchRemoveMagazinePalettePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SearchMagazinePalettePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         RemoveItemTabbedPane.addTab("Magazine", removeMagazinePanel);
 
+        RemoveItemTabbedPane1.setBackground(new java.awt.Color(203, 211, 217));
+        RemoveItemTabbedPane1.setForeground(new java.awt.Color(3, 25, 38));
+        RemoveItemTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
+        RemoveItemTabbedPane1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+
+        removeSearchBookList1.setModel(model);
+        jScrollPane27.setViewportView(removeSearchBookList1);
+
+        removeBookTitleLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        removeBookTitleLabel1.setText("Title:");
+
+        removeBookTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookTitleTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookTitleTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchBookEdNumLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookEdNumLabel2.setText("Edition Number:");
+
+        searchBookEdNumTxt2.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        searchBookEdNumTxt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchBookEdNumTxt2ActionPerformed(evt);
+            }
+        });
+
+        SearchBookPubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookPubYearLabel2.setText("Publication Year:");
+
+        removeBookPubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookPubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookPubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchBookChapLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookChapLabel2.setText("Chapters:");
+
+        removeBookChapTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookChapTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookChapTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchBookFigsLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookFigsLabel2.setText("Figures:");
+
+        removeBookFigsTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookFigsTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookFigsTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchBookPubLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookPubLabel2.setText("Publisher:");
+
+        removeBookPublisherTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookPublisherTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookPublisherTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchBookAuthorLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchBookAuthorLabel2.setText("Authors:");
+
+        removeBookAuthorList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeBookAuthorList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane28.setViewportView(removeBookAuthorList1);
+
+        removeSearchBookBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchBookBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchBookBtn1.setText("Search");
+        removeSearchBookBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchBookBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeBookBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeBookBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeBookBtn1.setText("Remove Book");
+        removeBookBtn1.setActionCommand("RemoveBook");
+        removeBookBtn1.setOpaque(true);
+        removeBookBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeBookBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout removeBookPanel1Layout = new javax.swing.GroupLayout(removeBookPanel1);
+        removeBookPanel1.setLayout(removeBookPanel1Layout);
+        removeBookPanel1Layout.setHorizontalGroup(
+            removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addComponent(SearchBookEdNumLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(searchBookEdNumTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(SearchBookChapLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeBookChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SearchBookFigsLabel2))
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addComponent(removeBookTitleLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(removeBookTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addComponent(SearchBookPubYearLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(removeBookPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SearchBookAuthorLabel2))
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addComponent(removeBookFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SearchBookPubLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeBookPublisherTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 9, Short.MAX_VALUE)))
+                .addGap(17, 17, 17)
+                .addComponent(jScrollPane28, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(removeSearchBookBtn1))
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(removeBookBtn1)))
+                .addGap(33, 33, 33))
+            .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 889, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        removeBookPanel1Layout.setVerticalGroup(
+            removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jScrollPane28, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, removeBookPanel1Layout.createSequentialGroup()
+                            .addGap(16, 16, 16)
+                            .addComponent(removeSearchBookBtn1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(removeBookBtn1)))
+                    .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(removeBookTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchBookPubYearLabel2)
+                                .addComponent(removeBookPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchBookAuthorLabel2))
+                            .addGroup(removeBookPanel1Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(removeBookTitleLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(20, 20, 20)
+                        .addGroup(removeBookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SearchBookEdNumLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(searchBookEdNumTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchBookChapLabel2)
+                            .addComponent(removeBookChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchBookFigsLabel2)
+                            .addComponent(removeBookFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchBookPubLabel2)
+                            .addComponent(removeBookPublisherTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane27, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        RemoveItemTabbedPane1.addTab("Book", removeBookPanel1);
+
+        removeSearchThesisList1.setModel(model);
+        jScrollPane29.setViewportView(removeSearchThesisList1);
+
+        removeThesisDepTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisDepTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisDepTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchThesisDepLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisDepLabel2.setText("Department:");
+
+        SearchThesisTitleLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisTitleLabel2.setText("Title:");
+
+        removeThesisTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        SearchThesisPubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisPubYearLabel2.setText("Publication Year:");
+
+        removeThesisPubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisPubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisPubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchThesisChapLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisChapLabel2.setText("Chapters:");
+
+        removeThesisChapTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisChapTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisChapTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchThesisFigsLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisFigsLabel2.setText("Figures:");
+
+        removeThesisFigsTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisFigsTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisFigsTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchThesisAuthorLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisAuthorLabel2.setText("Author:");
+
+        removeThesisAuthorTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisAuthorTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisAuthorTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchThesisCommiteeMemLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisCommiteeMemLabel2.setText("Commitee Members:");
+
+        removeThesisCommiteeMemList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeThesisCommiteeMemList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane30.setViewportView(removeThesisCommiteeMemList1);
+
+        removeSearchThesisBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchThesisBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchThesisBtn1.setText("Search");
+        removeSearchThesisBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchThesisBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeThesisBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeThesisBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeThesisBtn1.setText("Remove Thesis");
+        removeThesisBtn1.setActionCommand("RemoveBook");
+        removeThesisBtn1.setOpaque(true);
+        removeThesisBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeThesisBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout removeThesisPanel1Layout = new javax.swing.GroupLayout(removeThesisPanel1);
+        removeThesisPanel1.setLayout(removeThesisPanel1Layout);
+        removeThesisPanel1Layout.setHorizontalGroup(
+            removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane29)
+                    .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                        .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                                .addComponent(SearchThesisDepLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeThesisDepTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SearchThesisChapLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeThesisChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(SearchThesisAuthorLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeThesisAuthorTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                                .addComponent(SearchThesisTitleLabel2)
+                                .addGap(18, 18, 18)
+                                .addComponent(removeThesisTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SearchThesisPubYearLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeThesisPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(SearchThesisFigsLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeThesisFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SearchThesisCommiteeMemLabel2)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane30, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(removeThesisBtn1))
+                            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                                .addGap(39, 39, 39)
+                                .addComponent(removeSearchThesisBtn1)))))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+        removeThesisPanel1Layout.setVerticalGroup(
+            removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeThesisPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane30, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                        .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(removeThesisTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchThesisPubYearLabel2)
+                                .addComponent(removeThesisPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchThesisFigsLabel2)
+                                .addComponent(removeThesisFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchThesisCommiteeMemLabel2))
+                            .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(SearchThesisTitleLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(20, 20, 20)
+                        .addGroup(removeThesisPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SearchThesisDepLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(removeThesisDepTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchThesisChapLabel2)
+                            .addComponent(removeThesisChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchThesisAuthorLabel2)
+                            .addComponent(removeThesisAuthorTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(removeThesisPanel1Layout.createSequentialGroup()
+                        .addComponent(removeSearchThesisBtn1)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeThesisBtn1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane29, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
+        );
+
+        RemoveItemTabbedPane1.addTab("Thesis", removeThesisPanel1);
+
+        removeSearchDissertationList1.setModel(model);
+        jScrollPane31.setViewportView(removeSearchDissertationList1);
+
+        removeDissertationTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        SearchDissertationTitleLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationTitleLabel2.setText("Title:");
+
+        SearchDissertationDepLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationDepLabel2.setText("Department:");
+
+        removeDissertationDepTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationDepTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDissertationDepTxt1ActionPerformed(evt);
+            }
+        });
+
+        removeDissertationPubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationPubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDissertationPubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchDissertationPubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationPubYearLabel2.setText("Publication Year:");
+
+        SearchDissertationChapLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationChapLabel2.setText("Chapters:");
+
+        removeDissertationChapTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationChapTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDissertationChapTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchDissertationCommiteeMemLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationCommiteeMemLabel2.setText("Commitee Members:");
+
+        removeDissertationCommiteeMemList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationCommiteeMemList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane32.setViewportView(removeDissertationCommiteeMemList1);
+
+        removeSearchDissertationBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchDissertationBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchDissertationBtn1.setText("Search");
+        removeSearchDissertationBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchDissertationBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeDissertationFigsTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationFigsTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDissertationFigsTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchDissertationFigsLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationFigsLabel2.setText("Figures:");
+
+        SearchDissertationAuthorLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationAuthorLabel2.setText("Author:");
+
+        removeDissertationAuthorTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeDissertationAuthorTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDissertationAuthorTxt1ActionPerformed(evt);
+            }
+        });
+
+        removeDIssertationBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeDIssertationBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeDIssertationBtn1.setText("Remove Dissertation");
+        removeDIssertationBtn1.setActionCommand("RemoveBook");
+        removeDIssertationBtn1.setOpaque(true);
+        removeDIssertationBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDIssertationBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout removeDissertationPanel1Layout = new javax.swing.GroupLayout(removeDissertationPanel1);
+        removeDissertationPanel1.setLayout(removeDissertationPanel1Layout);
+        removeDissertationPanel1Layout.setHorizontalGroup(
+            removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jScrollPane31)
+                .addGap(20, 20, 20))
+            .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addComponent(SearchDissertationDepLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(removeDissertationDepTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SearchDissertationChapLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeDissertationChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SearchDissertationAuthorLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeDissertationAuthorTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addComponent(SearchDissertationTitleLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeDissertationTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SearchDissertationPubYearLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeDissertationPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SearchDissertationFigsLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeDissertationFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SearchDissertationCommiteeMemLabel2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane32, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeDIssertationBtn1))
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(removeSearchDissertationBtn1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        removeDissertationPanel1Layout.setVerticalGroup(
+            removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeDissertationPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane32, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(removeDissertationTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchDissertationPubYearLabel2)
+                                .addComponent(removeDissertationPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchDissertationFigsLabel2)
+                                .addComponent(removeDissertationFigsTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchDissertationCommiteeMemLabel2))
+                            .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(SearchDissertationTitleLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(20, 20, 20)
+                        .addGroup(removeDissertationPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SearchDissertationDepLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(removeDissertationDepTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchDissertationChapLabel2)
+                            .addComponent(removeDissertationChapTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SearchDissertationAuthorLabel2)
+                            .addComponent(removeDissertationAuthorTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(removeDissertationPanel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(removeSearchDissertationBtn1)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeDIssertationBtn1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane31, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        RemoveItemTabbedPane1.addTab("Dissertation", removeDissertationPanel1);
+
+        removeSearchConferenceList1.setModel(model);
+        jScrollPane33.setViewportView(removeSearchConferenceList1);
+
+        SearchConferenceAuthorListLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchConferenceAuthorListLabel2.setText("Author List:");
+
+        removeConferenceAuthorList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeConferenceAuthorList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane34.setViewportView(removeConferenceAuthorList1);
+
+        removeSearchConferenceBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchConferenceBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchConferenceBtn1.setText("Search");
+        removeSearchConferenceBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchConferenceBtn1ActionPerformed(evt);
+            }
+        });
+
+        SearchConferenceNameLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchConferenceNameLabel2.setText("Conference Name: ");
+
+        removeConferencePubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeConferencePubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeConferencePubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchJournalTitleLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalTitleLabel4.setText("Title:");
+
+        removeConferenceTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        SearchConferencePublicationLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchConferencePublicationLabel2.setText("Publication Year:");
+
+        removeConferenceNameTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeConferenceNameTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeConferenceNameTxt1ActionPerformed(evt);
+            }
+        });
+
+        removeSearchConferenceBeginDateLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        removeSearchConferenceBeginDateLabel1.setText("Start Date:");
+
+        removeConferenceBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeConferenceBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeConferenceBtn1.setText("Remove Conference");
+        removeConferenceBtn1.setActionCommand("RemoveBook");
+        removeConferenceBtn1.setOpaque(true);
+        removeConferenceBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeConferenceBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeSearchConferenceBeginDateFrmtTxt1.setText("dd/mm/yyyy");
+        removeSearchConferenceBeginDateFrmtTxt1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+
+        removeSearchConferenceEndDateFrmtTxt1.setText("dd/mm/yyyy");
+        removeSearchConferenceEndDateFrmtTxt1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+
+        removeSearchConferenceEndDateLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        removeSearchConferenceEndDateLabel1.setText("End Date:");
+
+        javax.swing.GroupLayout removeConferencePanel1Layout = new javax.swing.GroupLayout(removeConferencePanel1);
+        removeConferencePanel1.setLayout(removeConferencePanel1Layout);
+        removeConferencePanel1Layout.setHorizontalGroup(
+            removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                        .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                                .addComponent(SearchConferenceNameLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeConferenceNameTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(removeSearchConferenceBeginDateLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeSearchConferenceBeginDateFrmtTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeSearchConferenceEndDateLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeSearchConferenceEndDateFrmtTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                                .addComponent(SearchJournalTitleLabel4)
+                                .addGap(18, 18, 18)
+                                .addComponent(removeConferenceTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(52, 52, 52)
+                                .addComponent(SearchConferencePublicationLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeConferencePubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(SearchConferenceAuthorListLabel2)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeConferenceBtn1))
+                            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                                .addGap(54, 54, 54)
+                                .addComponent(removeSearchConferenceBtn1)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane33, javax.swing.GroupLayout.DEFAULT_SIZE, 886, Short.MAX_VALUE)
+                        .addGap(20, 20, 20))))
+        );
+        removeConferencePanel1Layout.setVerticalGroup(
+            removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeConferencePanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                        .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(removeConferenceTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchConferencePublicationLabel2)
+                                .addComponent(removeConferencePubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchConferenceAuthorListLabel2))
+                            .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(SearchJournalTitleLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(20, 20, 20)
+                        .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(removeSearchConferenceEndDateLabel1)
+                                .addComponent(removeSearchConferenceEndDateFrmtTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(removeConferencePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(SearchConferenceNameLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(removeConferenceNameTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(removeSearchConferenceBeginDateLabel1)
+                                .addComponent(removeSearchConferenceBeginDateFrmtTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(removeConferencePanel1Layout.createSequentialGroup()
+                        .addComponent(removeSearchConferenceBtn1)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeConferenceBtn1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane33, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        RemoveItemTabbedPane1.addTab("Conference Paper", removeConferencePanel1);
+
+        removeSearchJournalList1.setModel(model);
+        jScrollPane35.setViewportView(removeSearchJournalList1);
+
+        removeSearchJournalBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchJournalBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchJournalBtn1.setText("Search");
+        removeSearchJournalBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchJournalBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeJournalTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        SearchJournalTitleLabel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalTitleLabel5.setText("Title:");
+
+        SearchJournalAuthorListLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalAuthorListLabel2.setText("Author List:");
+
+        removeJournalAuthorList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeJournalAuthorList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane36.setViewportView(removeJournalAuthorList1);
+
+        SearchJournalNameLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalNameLabel2.setText("Journal Name: ");
+
+        removeJournalNameTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeJournalNameTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeJournalNameTxt1ActionPerformed(evt);
+            }
+        });
+
+        removeJournalPubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeJournalPubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeJournalPubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchJournalPubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalPubYearLabel2.setText("Publication Year:");
+
+        removeJournalBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeJournalBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeJournalBtn1.setText("Remove Journal");
+        removeJournalBtn1.setActionCommand("RemoveBook");
+        removeJournalBtn1.setOpaque(true);
+        removeJournalBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeJournalBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout removeJournalPanel1Layout = new javax.swing.GroupLayout(removeJournalPanel1);
+        removeJournalPanel1.setLayout(removeJournalPanel1Layout);
+        removeJournalPanel1Layout.setHorizontalGroup(
+            removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                        .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                .addComponent(SearchJournalTitleLabel5)
+                                .addGap(18, 18, 18)
+                                .addComponent(removeJournalTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(44, 44, 44)
+                                .addComponent(SearchJournalPubYearLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeJournalPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                .addComponent(SearchJournalNameLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeJournalNameTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SearchJournalAuthorListLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane36, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(removeJournalBtn1))
+                            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addComponent(removeSearchJournalBtn1)))
+                        .addGap(8, 8, 8))
+                    .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane35, javax.swing.GroupLayout.DEFAULT_SIZE, 886, Short.MAX_VALUE)
+                        .addGap(19, 19, 19))))
+        );
+        removeJournalPanel1Layout.setVerticalGroup(
+            removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                        .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane36, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(removeJournalTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(SearchJournalAuthorListLabel2)
+                                        .addComponent(SearchJournalPubYearLabel2)
+                                        .addComponent(removeJournalPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(removeJournalPanel1Layout.createSequentialGroup()
+                                        .addGap(3, 3, 3)
+                                        .addComponent(SearchJournalTitleLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(removeJournalPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(SearchJournalNameLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(removeJournalNameTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeJournalPanel1Layout.createSequentialGroup()
+                        .addComponent(removeSearchJournalBtn1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(removeJournalBtn1)
+                        .addGap(20, 20, 20)))
+                .addComponent(jScrollPane35, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        RemoveItemTabbedPane1.addTab("Journal", removeJournalPanel1);
+
+        SearchResearchTitleLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchResearchTitleLabel2.setText("Title:");
+
+        removeResearchTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        SearchResearchAuthorListLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchResearchAuthorListLabel2.setText("Authors:");
+
+        removeResearchAuthorList1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeResearchAuthorList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane37.setViewportView(removeResearchAuthorList1);
+
+        removeSearchResearchList1.setModel(model);
+        jScrollPane38.setViewportView(removeSearchResearchList1);
+
+        removeSearchResearchBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchResearchBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchResearchBtn1.setText("Search");
+        removeSearchResearchBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchResearchBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeResearchPubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeResearchPubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeResearchPubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchResearchPubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchResearchPubYearLabel2.setText("Publication Year:");
+
+        removeResearchBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeResearchBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeResearchBtn1.setText("Remove Research");
+        removeResearchBtn1.setActionCommand("RemoveBook");
+        removeResearchBtn1.setOpaque(true);
+        removeResearchBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeResearchBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SearchResearchPalettePanel2Layout = new javax.swing.GroupLayout(SearchResearchPalettePanel2);
+        SearchResearchPalettePanel2.setLayout(SearchResearchPalettePanel2Layout);
+        SearchResearchPalettePanel2Layout.setHorizontalGroup(
+            SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane38)
+                    .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                        .addComponent(SearchResearchTitleLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeResearchTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(SearchResearchPubYearLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeResearchPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addComponent(SearchResearchAuthorListLabel2)
+                        .addGap(33, 33, 33)
+                        .addComponent(jScrollPane37, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                        .addComponent(removeResearchBtn1)
+                        .addGap(17, 17, 17))))
+            .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                    .addGap(788, 788, 788)
+                    .addComponent(removeSearchResearchBtn1)
+                    .addContainerGap(53, Short.MAX_VALUE)))
+        );
+        SearchResearchPalettePanel2Layout.setVerticalGroup(
+            SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                        .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane37, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(removeResearchTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(SearchResearchPubYearLabel2)
+                                        .addComponent(removeResearchPubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(SearchResearchAuthorListLabel2))
+                                    .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                                        .addGap(3, 3, 3)
+                                        .addComponent(SearchResearchTitleLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchResearchPalettePanel2Layout.createSequentialGroup()
+                        .addComponent(removeResearchBtn1)
+                        .addGap(34, 34, 34)))
+                .addComponent(jScrollPane38, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(SearchResearchPalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SearchResearchPalettePanel2Layout.createSequentialGroup()
+                    .addGap(12, 12, 12)
+                    .addComponent(removeSearchResearchBtn1)
+                    .addContainerGap(389, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout removeResearchPanel1Layout = new javax.swing.GroupLayout(removeResearchPanel1);
+        removeResearchPanel1.setLayout(removeResearchPanel1Layout);
+        removeResearchPanel1Layout.setHorizontalGroup(
+            removeResearchPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(removeResearchPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(SearchResearchPalettePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        removeResearchPanel1Layout.setVerticalGroup(
+            removeResearchPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeResearchPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(SearchResearchPalettePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        RemoveItemTabbedPane1.addTab("Research Paper", removeResearchPanel1);
+
+        SearchMagazineTitleLablel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 12)); // NOI18N
+        SearchMagazineTitleLablel2.setText("Title:");
+
+        removeMagazineTitleTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+
+        removeSearchMagazineList1.setModel(model);
+        MagazineSearchList2.setViewportView(removeSearchMagazineList1);
+
+        removeSearchMagazineBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeSearchMagazineBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        removeSearchMagazineBtn1.setText("Search");
+        removeSearchMagazineBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeSearchMagazineBtn1ActionPerformed(evt);
+            }
+        });
+
+        removeMagazinePubYearTxt1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
+        removeMagazinePubYearTxt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeMagazinePubYearTxt1ActionPerformed(evt);
+            }
+        });
+
+        SearchMagazinePubYearLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchMagazinePubYearLabel2.setText("Publication Year:");
+
+        removeMagazineBtn1.setBackground(new java.awt.Color(203, 211, 217));
+        removeMagazineBtn1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        removeMagazineBtn1.setText("Remove Research");
+        removeMagazineBtn1.setActionCommand("RemoveBook");
+        removeMagazineBtn1.setOpaque(true);
+        removeMagazineBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeMagazineBtn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SearchMagazinePalettePanel2Layout = new javax.swing.GroupLayout(SearchMagazinePalettePanel2);
+        SearchMagazinePalettePanel2.setLayout(SearchMagazinePalettePanel2Layout);
+        SearchMagazinePalettePanel2Layout.setHorizontalGroup(
+            SearchMagazinePalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchMagazinePalettePanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SearchMagazinePalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchMagazinePalettePanel2Layout.createSequentialGroup()
+                        .addComponent(MagazineSearchList2)
+                        .addContainerGap())
+                    .addGroup(SearchMagazinePalettePanel2Layout.createSequentialGroup()
+                        .addComponent(SearchMagazineTitleLablel2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(removeMagazineTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76)
+                        .addComponent(SearchMagazinePubYearLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(removeMagazinePubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                        .addComponent(removeSearchMagazineBtn1)
+                        .addGap(71, 71, 71))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchMagazinePalettePanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(removeMagazineBtn1)
+                .addGap(37, 37, 37))
+        );
+        SearchMagazinePalettePanel2Layout.setVerticalGroup(
+            SearchMagazinePalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchMagazinePalettePanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SearchMagazinePalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SearchMagazineTitleLablel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(SearchMagazinePalettePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(SearchMagazinePubYearLabel2)
+                        .addComponent(removeMagazinePubYearTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(removeMagazineTitleTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(removeSearchMagazineBtn1))
+                .addGap(18, 18, 18)
+                .addComponent(removeMagazineBtn1)
+                .addGap(8, 8, 8)
+                .addComponent(MagazineSearchList2, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout removeMagazinePanel1Layout = new javax.swing.GroupLayout(removeMagazinePanel1);
+        removeMagazinePanel1.setLayout(removeMagazinePanel1Layout);
+        removeMagazinePanel1Layout.setHorizontalGroup(
+            removeMagazinePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeMagazinePanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(SearchMagazinePalettePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        removeMagazinePanel1Layout.setVerticalGroup(
+            removeMagazinePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, removeMagazinePanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(SearchMagazinePalettePanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        RemoveItemTabbedPane1.addTab("Magazine", removeMagazinePanel1);
+
+        javax.swing.GroupLayout RemoveItemInnerPanel1Layout = new javax.swing.GroupLayout(RemoveItemInnerPanel1);
+        RemoveItemInnerPanel1.setLayout(RemoveItemInnerPanel1Layout);
+        RemoveItemInnerPanel1Layout.setHorizontalGroup(
+            RemoveItemInnerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RemoveItemInnerPanel1Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addGroup(RemoveItemInnerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RemoveItemTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 925, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RemoveItemTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 925, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        RemoveItemInnerPanel1Layout.setVerticalGroup(
+            RemoveItemInnerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RemoveItemInnerPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(RemoveItemTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 454, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RemoveItemTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 454, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        EditItemPanel.addTab("Remove Item", RemoveItemInnerPanel1);
 
         AddRemoveInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         AddRemoveInstructionLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -2857,7 +4101,7 @@ public class LMS extends javax.swing.JFrame {
         );
         RootPanelLayout.setVerticalGroup(
             RootPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MultiPaneLMS)
+            .addComponent(MultiPaneLMS, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -3104,6 +4348,33 @@ public class LMS extends javax.swing.JFrame {
 
     private void addThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisBtnActionPerformed
         // TODO add your handling code here:
+        if(addThesisTitleTxt.getText().isEmpty() && addThesisDepTxt.getText().isEmpty() && addThesisPubYearTxt.getText().isEmpty() && addThesisBuildTxt.getText().isEmpty() && addThesisFigsTxt.getText().isEmpty() && addThesisAuthorTxt.getText().isEmpty() && addThesisCommiteeMemsTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
+            List<CommitteeMember> committee = setCommitteeMems(addThesisCommiteeMemsTxt.getText());
+
+            //number of authors for array size in classes
+            int numCommittee = committee.size();
+
+            //this bookSuper.add is the justAddedBook
+            Department addThesisDepartment = new Department(addThesisBuildTxt.getText(), addThesisDepTxt.getText());
+            Chapter addThesisChapter = new Chapter(Integer.parseInt(addThesisChapTxt.getText()));
+            Figure addThesisFigure = new Figure(Integer.parseInt(addThesisFigsTxt.getText()));
+            
+            thesisSuper.add(new Thesis(addThesisTitleTxt.getText(), addThesisPubYearTxt.getText(), addThesisDepartment, numCommittee, addThesisChapter, addThesisFigure));
+            thesisSuper.author_list[0] = addThesisAuthorTxt.getText();
+            
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                Thesis justAddedThesis = thesisSuper.get(thesisSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numCommittee; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedThesis.committeeMembers[num] = committee.get(numCommittee - (1+num));
+                }
+            }
+        }        
     }//GEN-LAST:event_addThesisBtnActionPerformed
 
     private void addDissertationTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationTitleTxtActionPerformed
@@ -3132,15 +4403,42 @@ public class LMS extends javax.swing.JFrame {
 
     private void addDissertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationBtnActionPerformed
         // TODO add your handling code here:
+        if(addDissertationTitleTxt.getText().isEmpty() && addDissertationDepTxt.getText().isEmpty() && addDissertationPubYearTxt.getText().isEmpty() && addDissertationBuildTxt.getText().isEmpty() && addDissertationFigsTxt.getText().isEmpty() && addDissertationAuthorTxt.getText().isEmpty() && addDissertationCommiteeMemsTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
+            List<CommitteeMember> committee = setCommitteeMems(addDissertationCommiteeMemsTxt.getText());
+
+            //number of authors for array size in classes
+            int numCommittee = committee.size();
+
+            //this bookSuper.add is the justAddedBook
+            Department addDissertationDepartment = new Department(addDissertationBuildTxt.getText(), addDissertationDepTxt.getText());
+            Chapter addDissertationChapter = new Chapter(Integer.parseInt(addDissertationChapTxt.getText()));
+            Figure addDissertationFigure = new Figure(Integer.parseInt(addDissertationFigsTxt.getText()));
+            
+            dissertationSuper.add(new Dissertation(addDissertationTitleTxt.getText(), addDissertationPubYearTxt.getText(), addDissertationDepartment, numCommittee, addDissertationChapter, addDissertationFigure));
+            dissertationSuper.author_list[0] = addDissertationAuthorTxt.getText();
+            
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                Dissertation justAddedDissertation = dissertationSuper.get(dissertationSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numCommittee; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedDissertation.committeeMembers[num] = committee.get(numCommittee - (1+num));
+                }
+            }
+        }
     }//GEN-LAST:event_addDissertationBtnActionPerformed
 
-    private void addDissertationTitleTxt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationTitleTxt1ActionPerformed
+    private void addConferenceTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceTitleTxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationTitleTxt1ActionPerformed
+    }//GEN-LAST:event_addConferenceTitleTxtActionPerformed
 
-    private void addDissertationPubYearTxt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationPubYearTxt1ActionPerformed
+    private void addConferencePubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferencePubYearTxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationPubYearTxt1ActionPerformed
+    }//GEN-LAST:event_addConferencePubYearTxtActionPerformed
 
     private void addConferenceNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceNameTxtActionPerformed
         // TODO add your handling code here:
@@ -3148,6 +4446,28 @@ public class LMS extends javax.swing.JFrame {
 
     private void addConferenceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceBtnActionPerformed
         // TODO add your handling code here:
+        if(addConferenceTitleTxt.getText().isEmpty() && addConferencePubYearTxt.getText().isEmpty() && addConferenceAuthorListTxt.getText().isEmpty() && addConferenceNameTxt.getText().isEmpty() && addConferenceLocationTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addConferenceAuthorListTxt.getText());
+
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //this bookSuper.add is the justAddedBook
+            conferenceSuper.add(new ConferencePaper(addConferenceTitleTxt.getText(), addConferencePubYearTxt.getText(), numAuthors, addConferenceNameTxt.getText(), addConferenceLocationTxt.getText(), (addConferenceBeginDateFrmtTxt.getText() + "-" + addConferenceEndDateFrmtTxt.getText()) ));
+            
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                ConferencePaper justAddedConference = conferenceSuper.get(conferenceSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedConference.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+        }
     }//GEN-LAST:event_addConferenceBtnActionPerformed
 
     private void addConferenceLocationTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceLocationTxtActionPerformed
@@ -3156,6 +4476,28 @@ public class LMS extends javax.swing.JFrame {
 
     private void addJournalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalBtnActionPerformed
         // TODO add your handling code here:
+        if(addJournalTitleTxt.getText().isEmpty() && addJournalPubYearTxt.getText().isEmpty() && addJournalAuthorListTxt.getText().isEmpty() && addJournalNameTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addJournalAuthorListTxt.getText());
+
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //this bookSuper.add is the justAddedBook
+            journalSuper.add(new JournalPaper(addJournalTitleTxt.getText(), addJournalPubYearTxt.getText(), numAuthors, addJournalNameTxt.getText()));
+            
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                JournalPaper justAddedJournal = journalSuper.get(journalSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedJournal.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+        }
     }//GEN-LAST:event_addJournalBtnActionPerformed
 
     private void addJournalPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalPubYearTxtActionPerformed
@@ -3180,6 +4522,28 @@ public class LMS extends javax.swing.JFrame {
 
     private void addResearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResearchBtnActionPerformed
         // TODO add your handling code here:
+        if(addResearchTitleTxt.getText().isEmpty() && addResearchPubYearTxt.getText().isEmpty() && addResearchAuthorListTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addResearchAuthorListTxt.getText());
+
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //this bookSuper.add is the justAddedBook
+            researchSuper.add(new ResearchReport(addResearchTitleTxt.getText(), addResearchPubYearTxt.getText(), numAuthors));
+            
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                ResearchReport justAddedResearch = researchSuper.get(researchSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedResearch.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+        }
     }//GEN-LAST:event_addResearchBtnActionPerformed
 
     private void addMagazineTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMagazineTitleTxtActionPerformed
@@ -3192,6 +4556,11 @@ public class LMS extends javax.swing.JFrame {
 
     private void addMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMagazineBtnActionPerformed
         // TODO add your handling code here:
+        if(addMagazineTitleTxt.getText().isEmpty() && addMagazinePubYearTxt.getText().isEmpty() && addBookPubYearTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
+        } else {
+            magazineSuper.add(new Magazine(addMagazineTitleTxt.getText(), addMagazinePubYearTxt.getText()));
+        }
     }//GEN-LAST:event_addMagazineBtnActionPerformed
 
     private void removeThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeThesisBtnActionPerformed
@@ -3387,6 +4756,10 @@ the index value is -1
         // TODO add your handling code here:
     }//GEN-LAST:event_addDissertationBuildTxtActionPerformed
 
+    private void addDissertationCommiteeMemsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationCommiteeMemsTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addDissertationCommiteeMemsTxtActionPerformed
+
         /**
          * @param args the command line arguments
          */
@@ -3424,7 +4797,7 @@ the index value is -1
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AddBookAuthorInstructionLabel;
-    private javax.swing.JLabel addConferenceAuthorInstructionLabel;
+    private javax.swing.JLabel AddBookAuthorInstructionLabel1;
     private javax.swing.JLabel AddBookAuthorLabel;
     private javax.swing.JLabel AddBookChapLabel;
     private javax.swing.JLabel AddBookEdNumLabel;
@@ -3435,20 +4808,16 @@ the index value is -1
     private javax.swing.JLabel AddBookTitleLabel;
     private javax.swing.JLabel AddConferenceAuthorLabel;
     private javax.swing.JLabel AddConferenceNameLabel;
-    private javax.swing.JLabel AddConferencePubYearLabel;
-    private javax.swing.JLabel AddConferenceTitleLabel;
     private javax.swing.JPanel AddConferencePanel;
     private javax.swing.JLabel AddDissertationAuthorLabel;
     private javax.swing.JLabel AddDissertationBuildLabel;
     private javax.swing.JLabel AddDissertationChapLabel;
-    private javax.swing.JLabel AddDissertationCommitteeMemInstructionLabel;
+    private javax.swing.JLabel AddDissertationCommiteeMemInstructionLabel;
     private javax.swing.JLabel AddDissertationDepLabel;
     private javax.swing.JLabel AddDissertationFigsLabel;
     private javax.swing.JPanel AddDissertationPanel;
     private javax.swing.JLabel AddDissertationPubYearLabel;
-    private javax.swing.JTextField addConferencePubYearTxt;
-    private javax.swing.JTextField addConferenceTitleTxt;
-    private javax.swing.JTextField addConferenceNameTxt;
+    private javax.swing.JLabel AddDissertationPubYearLabel1;
     private javax.swing.JPanel AddItemPanel;
     private javax.swing.JTabbedPane AddItemTabbedPane;
     private javax.swing.JLabel AddJournalAuthorInstructionLabel;
@@ -3463,8 +4832,9 @@ the index value is -1
     private javax.swing.JLabel AddThesisAuthorLabel;
     private javax.swing.JLabel AddThesisBuildLabel;
     private javax.swing.JLabel AddThesisChapLabel;
-    private javax.swing.JLabel AddThesisCommitteeMemInstructionLabel;
-    private javax.swing.JLabel AddThesisCommitteeMemLabel;
+    private javax.swing.JLabel AddThesisCommiteeMemInstructionLabel;
+    private javax.swing.JLabel AddThesisCommiteeMemLabel;
+    private javax.swing.JLabel AddThesisCommiteeMemLabel1;
     private javax.swing.JLabel AddThesisDepLabel;
     private javax.swing.JLabel AddThesisFigLabel;
     private javax.swing.JPanel AddThesisPanel;
@@ -3477,63 +4847,103 @@ the index value is -1
     private javax.swing.JLabel ItmSearchDescLabel;
     private javax.swing.JLabel ItmSearchLabel;
     private javax.swing.JScrollPane MagazineSearchList;
+    private javax.swing.JScrollPane MagazineSearchList1;
+    private javax.swing.JScrollPane MagazineSearchList2;
     private javax.swing.JTabbedPane MultiPaneLMS;
-    private javax.swing.JPanel RemoveItemInnerPanel;
-    private javax.swing.JPanel removeMagazinePanel;
+    private javax.swing.JPanel RemoveItemInnerPanel1;
     private javax.swing.JTabbedPane RemoveItemTabbedPane;
+    private javax.swing.JTabbedPane RemoveItemTabbedPane1;
     private javax.swing.JPanel RootPanel;
     private javax.swing.JLabel SearchBookAuthorLabel;
+    private javax.swing.JLabel SearchBookAuthorLabel2;
     private javax.swing.JLabel SearchBookChapLabel;
+    private javax.swing.JLabel SearchBookChapLabel2;
     private javax.swing.JLabel SearchBookEdNumLabel;
+    private javax.swing.JLabel SearchBookEdNumLabel2;
     private javax.swing.JLabel SearchBookFigsLabel;
+    private javax.swing.JLabel SearchBookFigsLabel2;
     private javax.swing.JList<String> SearchBookList;
     private javax.swing.JPanel SearchBookPanel;
     private javax.swing.JLabel SearchBookPubLabel;
+    private javax.swing.JLabel SearchBookPubLabel2;
     private javax.swing.JLabel SearchBookPubYearLabel;
+    private javax.swing.JLabel SearchBookPubYearLabel2;
     private javax.swing.JLabel SearchBookTitleLabel;
     private javax.swing.JLabel SearchConferenceAuthorListLabel;
+    private javax.swing.JLabel SearchConferenceAuthorListLabel2;
     private javax.swing.JList<String> SearchConferenceList;
     private javax.swing.JLabel SearchConferenceNameLabel;
+    private javax.swing.JLabel SearchConferenceNameLabel2;
     private javax.swing.JPanel SearchConferencePanel;
     private javax.swing.JLabel SearchConferencePublicationLabel;
+    private javax.swing.JLabel SearchConferencePublicationLabel2;
     private javax.swing.JLabel SearchDissertationAuthorLabel;
+    private javax.swing.JLabel SearchDissertationAuthorLabel2;
     private javax.swing.JLabel SearchDissertationChapLabel;
+    private javax.swing.JLabel SearchDissertationChapLabel2;
     private javax.swing.JLabel SearchDissertationCommiteeMemLabel;
+    private javax.swing.JLabel SearchDissertationCommiteeMemLabel2;
     private javax.swing.JLabel SearchDissertationDepLabel;
+    private javax.swing.JLabel SearchDissertationDepLabel2;
     private javax.swing.JLabel SearchDissertationFigsLabel;
+    private javax.swing.JLabel SearchDissertationFigsLabel2;
     private javax.swing.JList<String> SearchDissertationList;
     private javax.swing.JPanel SearchDissertationPanel;
     private javax.swing.JLabel SearchDissertationPubYearLabel;
+    private javax.swing.JLabel SearchDissertationPubYearLabel2;
     private javax.swing.JLabel SearchDissertationTitleLabel;
+    private javax.swing.JLabel SearchDissertationTitleLabel2;
     private javax.swing.JLabel SearchJournalAuthorListLabel;
+    private javax.swing.JLabel SearchJournalAuthorListLabel2;
     private javax.swing.JList<String> SearchJournalList;
     private javax.swing.JLabel SearchJournalNameLabel;
+    private javax.swing.JLabel SearchJournalNameLabel2;
     private javax.swing.JPanel SearchJournalPanel;
     private javax.swing.JLabel SearchJournalPubYearLabel;
+    private javax.swing.JLabel SearchJournalPubYearLabel2;
     private javax.swing.JLabel SearchJournalTitleLabel;
+    private javax.swing.JLabel SearchJournalTitleLabel1;
+    private javax.swing.JLabel SearchJournalTitleLabel4;
+    private javax.swing.JLabel SearchJournalTitleLabel5;
     private javax.swing.JList<String> SearchMagazineList;
     private javax.swing.JPanel SearchMagazinePalettePanel;
+    private javax.swing.JPanel SearchMagazinePalettePanel1;
+    private javax.swing.JPanel SearchMagazinePalettePanel2;
     private javax.swing.JPanel SearchMagazinePanel;
     private javax.swing.JLabel SearchMagazinePubYearLabel;
+    private javax.swing.JLabel SearchMagazinePubYearLabel2;
     private javax.swing.JLabel SearchMagazineTitleLablel;
+    private javax.swing.JLabel SearchMagazineTitleLablel2;
     private javax.swing.JPanel SearchPane;
     private javax.swing.JLabel SearchResearchAuthorListLabel;
+    private javax.swing.JLabel SearchResearchAuthorListLabel2;
     private javax.swing.JList<String> SearchResearchList;
     private javax.swing.JPanel SearchResearchPalettePanel;
+    private javax.swing.JPanel SearchResearchPalettePanel1;
+    private javax.swing.JPanel SearchResearchPalettePanel2;
     private javax.swing.JPanel SearchResearchPanel;
     private javax.swing.JLabel SearchResearchPubYearLabel;
+    private javax.swing.JLabel SearchResearchPubYearLabel2;
     private javax.swing.JLabel SearchResearchTitleLabel;
+    private javax.swing.JLabel SearchResearchTitleLabel2;
     private javax.swing.JTabbedPane SearchTabbedPanel;
     private javax.swing.JLabel SearchThesisAuthorLabel;
+    private javax.swing.JLabel SearchThesisAuthorLabel2;
     private javax.swing.JLabel SearchThesisBuildLabel;
     private javax.swing.JLabel SearchThesisChapLabel;
-    private javax.swing.JLabel SearchThesisCommitteeMemLabel;
+    private javax.swing.JLabel SearchThesisChapLabel2;
+    private javax.swing.JLabel SearchThesisCommiteeMemLabel;
+    private javax.swing.JLabel SearchThesisCommiteeMemLabel2;
     private javax.swing.JLabel SearchThesisDepLabel;
+    private javax.swing.JLabel SearchThesisDepLabel2;
     private javax.swing.JLabel SearchThesisFigsLabel;
+    private javax.swing.JLabel SearchThesisFigsLabel2;
     private javax.swing.JList<String> SearchThesisList;
     private javax.swing.JPanel SearchThesisPanel;
     private javax.swing.JLabel SearchThesisPubYearLabel;
+    private javax.swing.JLabel SearchThesisPubYearLabel2;
     private javax.swing.JLabel SearchThesisTitleLabel;
+    private javax.swing.JLabel SearchThesisTitleLabel2;
     private javax.swing.JTextField addBookAuthorListTxt;
     private javax.swing.JButton addBookBtn;
     private javax.swing.JTextField addBookChapTxt;
@@ -3549,17 +4959,20 @@ the index value is -1
     private javax.swing.JLabel addConferenceEndDateLabel;
     private javax.swing.JLabel addConferenceLocationLabel;
     private javax.swing.JTextField addConferenceLocationTxt;
+    private javax.swing.JTextField addConferenceNameTxt;
+    private javax.swing.JTextField addConferencePubYearTxt;
     private javax.swing.JLabel addConferenceStartDateLabel;
+    private javax.swing.JTextField addConferenceTitleTxt;
     private javax.swing.JTextField addDissertationAuthorTxt;
     private javax.swing.JButton addDissertationBtn;
     private javax.swing.JTextField addDissertationBuildTxt;
     private javax.swing.JTextField addDissertationChapTxt;
-    private javax.swing.JTextField addDissertationCommitteeMemsTxt;
+    private javax.swing.JTextField addDissertationCommiteeMemsTxt;
     private javax.swing.JTextField addDissertationDepTxt;
     private javax.swing.JTextField addDissertationFigsTxt;
     private javax.swing.JTextField addDissertationPubYearTxt;
     private javax.swing.JLabel addDissertationTitleLabel;
-    private javax.swing.JLabel AddDissertationCommitteeMemLabel;
+    private javax.swing.JLabel addDissertationTitleLabel1;
     private javax.swing.JTextField addDissertationTitleTxt;
     private javax.swing.JTextField addJournalAuthorListTxt;
     private javax.swing.JButton addJournalBtn;
@@ -3584,7 +4997,7 @@ the index value is -1
     private javax.swing.JButton addThesisBtn;
     private javax.swing.JTextField addThesisBuildTxt;
     private javax.swing.JTextField addThesisChapTxt;
-    private javax.swing.JTextField addThesisCommitteeMemsTxt;
+    private javax.swing.JTextField addThesisCommiteeMemsTxt;
     private javax.swing.JTextField addThesisDepTxt;
     private javax.swing.JTextField addThesisFigsTxt;
     private javax.swing.JTextField addThesisPubYearTxt;
@@ -3609,37 +5022,116 @@ the index value is -1
     private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane24;
     private javax.swing.JScrollPane jScrollPane26;
+    private javax.swing.JScrollPane jScrollPane27;
+    private javax.swing.JScrollPane jScrollPane28;
+    private javax.swing.JScrollPane jScrollPane29;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane30;
+    private javax.swing.JScrollPane jScrollPane31;
+    private javax.swing.JScrollPane jScrollPane32;
+    private javax.swing.JScrollPane jScrollPane33;
+    private javax.swing.JScrollPane jScrollPane34;
+    private javax.swing.JScrollPane jScrollPane35;
+    private javax.swing.JScrollPane jScrollPane36;
+    private javax.swing.JScrollPane jScrollPane37;
+    private javax.swing.JScrollPane jScrollPane38;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JList<String> removeBookAuthorList1;
     private javax.swing.JButton removeBookBtn;
+    private javax.swing.JButton removeBookBtn1;
+    private javax.swing.JTextField removeBookChapTxt1;
+    private javax.swing.JTextField removeBookFigsTxt1;
     private javax.swing.JList<String> removeBookList;
+    private javax.swing.JPanel removeBookPanel;
+    private javax.swing.JPanel removeBookPanel1;
+    private javax.swing.JTextField removeBookPubYearTxt1;
+    private javax.swing.JTextField removeBookPublisherTxt1;
+    private javax.swing.JLabel removeBookTitleLabel1;
+    private javax.swing.JTextField removeBookTitleTxt1;
+    private javax.swing.JList<String> removeConferenceAuthorList1;
     private javax.swing.JButton removeConferenceBtn;
+    private javax.swing.JButton removeConferenceBtn1;
     private javax.swing.JList<String> removeConferenceList;
+    private javax.swing.JTextField removeConferenceNameTxt1;
     private javax.swing.JPanel removeConferencePanel;
+    private javax.swing.JPanel removeConferencePanel1;
+    private javax.swing.JTextField removeConferencePubYearTxt1;
+    private javax.swing.JTextField removeConferenceTitleTxt1;
+    private javax.swing.JButton removeDIssertationBtn1;
+    private javax.swing.JTextField removeDissertationAuthorTxt1;
     private javax.swing.JButton removeDissertationBtn;
+    private javax.swing.JTextField removeDissertationChapTxt1;
+    private javax.swing.JList<String> removeDissertationCommiteeMemList1;
+    private javax.swing.JTextField removeDissertationDepTxt1;
+    private javax.swing.JTextField removeDissertationFigsTxt1;
     private javax.swing.JList<String> removeDissertationList;
     private javax.swing.JPanel removeDissertationPanel;
+    private javax.swing.JPanel removeDissertationPanel1;
+    private javax.swing.JTextField removeDissertationPubYearTxt1;
+    private javax.swing.JTextField removeDissertationTitleTxt1;
+    private javax.swing.JList<String> removeJournalAuthorList1;
     private javax.swing.JButton removeJournalBtn;
+    private javax.swing.JButton removeJournalBtn1;
     private javax.swing.JList<String> removeJournalList;
+    private javax.swing.JTextField removeJournalNameTxt1;
+    private javax.swing.JPanel removeJournalPanel;
+    private javax.swing.JPanel removeJournalPanel1;
+    private javax.swing.JTextField removeJournalPubYearTxt1;
+    private javax.swing.JTextField removeJournalTitleTxt1;
     private javax.swing.JButton removeMagazineBtn;
+    private javax.swing.JButton removeMagazineBtn1;
     private javax.swing.JList<String> removeMagazineList;
-    private javax.swing.JLabel SearchConferenceTitleLabel;
+    private javax.swing.JPanel removeMagazinePanel;
+    private javax.swing.JPanel removeMagazinePanel1;
+    private javax.swing.JTextField removeMagazinePubYearTxt1;
+    private javax.swing.JTextField removeMagazineTitleTxt1;
+    private javax.swing.JList<String> removeResearchAuthorList1;
     private javax.swing.JButton removeResearchBtn;
+    private javax.swing.JButton removeResearchBtn1;
     private javax.swing.JList<String> removeResearchList;
     private javax.swing.JPanel removeResearchPanel;
-    private javax.swing.JPanel removeBookPanel;
-    private javax.swing.JPanel removeJournalPanel;
+    private javax.swing.JPanel removeResearchPanel1;
+    private javax.swing.JTextField removeResearchPubYearTxt1;
+    private javax.swing.JTextField removeResearchTitleTxt1;
+    private javax.swing.JButton removeSearchBookBtn1;
+    private javax.swing.JList<String> removeSearchBookList1;
+    private javax.swing.JFormattedTextField removeSearchConferenceBeginDateFrmtTxt1;
+    private javax.swing.JLabel removeSearchConferenceBeginDateLabel1;
+    private javax.swing.JButton removeSearchConferenceBtn1;
+    private javax.swing.JFormattedTextField removeSearchConferenceEndDateFrmtTxt1;
+    private javax.swing.JLabel removeSearchConferenceEndDateLabel1;
+    private javax.swing.JList<String> removeSearchConferenceList1;
+    private javax.swing.JButton removeSearchDissertationBtn1;
+    private javax.swing.JList<String> removeSearchDissertationList1;
+    private javax.swing.JButton removeSearchJournalBtn1;
+    private javax.swing.JList<String> removeSearchJournalList1;
+    private javax.swing.JButton removeSearchMagazineBtn1;
+    private javax.swing.JList<String> removeSearchMagazineList1;
+    private javax.swing.JButton removeSearchResearchBtn1;
+    private javax.swing.JList<String> removeSearchResearchList1;
+    private javax.swing.JButton removeSearchThesisBtn1;
+    private javax.swing.JList<String> removeSearchThesisList1;
+    private javax.swing.JTextField removeThesisAuthorTxt1;
     private javax.swing.JButton removeThesisBtn;
+    private javax.swing.JButton removeThesisBtn1;
+    private javax.swing.JTextField removeThesisChapTxt1;
+    private javax.swing.JList<String> removeThesisCommiteeMemList1;
+    private javax.swing.JTextField removeThesisDepTxt1;
+    private javax.swing.JTextField removeThesisFigsTxt1;
     private javax.swing.JList<String> removeThesisList;
     private javax.swing.JPanel removeThesisPanel;
+    private javax.swing.JPanel removeThesisPanel1;
+    private javax.swing.JTextField removeThesisPubYearTxt1;
+    private javax.swing.JTextField removeThesisTitleTxt1;
     private javax.swing.JList<String> searchBookAuthorList;
     private javax.swing.JButton searchBookBtn;
     private javax.swing.JTextField searchBookChapTxt;
     private javax.swing.JTextField searchBookEdNumTxt;
+    private javax.swing.JTextField searchBookEdNumTxt2;
     private javax.swing.JTextField searchBookFigsTxt;
     private javax.swing.JTextField searchBookPubTxt;
     private javax.swing.JTextField searchBookPubYearTxt;
@@ -3679,13 +5171,10 @@ the index value is -1
     private javax.swing.JButton searchThesisBtn;
     private javax.swing.JTextField searchThesisBuildTxt;
     private javax.swing.JTextField searchThesisChapTxt;
-    private javax.swing.JList<String> searchThesisCommitteeMemList;
+    private javax.swing.JList<String> searchThesisCommiteeMemList;
     private javax.swing.JTextField searchThesisDepTxt;
     private javax.swing.JTextField searchThesisFigsTxt;
     private javax.swing.JTextField searchThesisPubYearTxt;
     private javax.swing.JTextField searchThesisTitleTxt;
-    private javax.swing.JPanel SearchRemoveMagazinePalettePanel;
-    private javax.swing.JPanel SearchRemoveResearchPalettePanel;
-    private javax.swing.JScrollPane MagazineSearchListRemove;
     // End of variables declaration//GEN-END:variables
     }
