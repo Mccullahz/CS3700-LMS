@@ -1,16 +1,14 @@
 package application;
 
 public class Publisher {
-    public String fName, lName;
+    public String Name;
 
     public Publisher() {
-        fName = "N/A";
-        lName = "N/A";
+        Name = "N/A";
     }
 
-    public Publisher(String fName, String lName){
-        this.fName = fName;
-        this.lName = lName;
+    public Publisher(String Name){
+        this.Name = Name;
     }
 
 }

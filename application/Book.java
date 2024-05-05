@@ -17,10 +17,10 @@ public class Book extends Publication{
         setEdNum(1);
     }
 
-    public Book(String title, String pubYear, int authNum, String fName, String lName, int chapCount, int pageCount, int numFigs, int edNum){
+    public Book(String title, String pubYear, int authNum, String PubName, int chapCount, int numFigs, int edNum){
         super(title, pubYear, authNum);
-        publisher = new Publisher(fName, lName);
-        chap = new Chapters(chapCount, pageCount);
+        publisher = new Publisher(PubName);
+        chap = new Chapters(chapCount);
         fig = new Figures(numFigs);
         setEdNum(edNum);
     }

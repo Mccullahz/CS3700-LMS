@@ -1,16 +1,14 @@
 package application;
 
 public class Chapters {
-    private int chapCount, pageCount;
+    private int chapCount;
 
     public Chapters(){
         chapCount = 5;
-        pageCount = 100;
     }
 
-    public Chapters(int cC, int pC){
+    public Chapters(int cC){
         setChapCount(cC);
-        setPageCount(pC);
     }
 
     public void setChapCount(int num){
@@ -18,16 +16,8 @@ public class Chapters {
             chapCount = num;
         } 
     }
-    public void setPageCount(int num){
-        if(num>=1){ 
-            pageCount = num;
-        } 
-    }
     
     public int getChapCount(){
         return chapCount;
-    }
-    public int getPageCount(){
-        return pageCount;
     }
 }
