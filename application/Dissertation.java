@@ -3,8 +3,8 @@ package application;
 //Patrick Siegler
 public class Dissertation extends Publication{
     
-    private Department department;
-    private CommitteeMember[] committeeMembers;
+    public Department department;
+    public CommitteeMember[] committeeMembers;
     private Chapters chapters;
     private Figures figures;
 
@@ -15,29 +15,15 @@ public class Dissertation extends Publication{
         figures = new Figures();
     }
 
-    public Dissertation(String title, String publicationYear, String departmentName, Department department, CommitteeMember[] committeeMembers, Chapters chapters, Figures figures){
+    public Dissertation(String title, String publicationYear, Department department, int committeeMembersNum, Chapters chapters, Figures figures){
         super(title, publicationYear, 1);
         this.department = department;
-        this.committeeMembers = committeeMembers;
+        committeeMembers = new CommitteeMember[committeeMembersNum];
         this.chapters = chapters;
         this.figures = figures;
     }
 
-    public Department getDepartment(){
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
-
-    public CommitteeMember[] getCommitteeMembers() {
-        return committeeMembers;
-    }
-
-    public void setCommitteeMembers(CommitteeMember[] committeeMembers) {
-        this.committeeMembers = committeeMembers;
-    }
+    
 
     public Chapters getChapters() {
         return chapters;

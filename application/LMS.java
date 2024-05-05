@@ -6,6 +6,8 @@ package application;
 
 import java.util.List;
 import java.util.ArrayList;
+
+import javax.swing.JList;
 // import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 import javax.swing.text.MaskFormatter;
@@ -68,7 +70,7 @@ public class LMS extends javax.swing.JFrame {
     List<Magazine> magazineSuper = new ArrayList<Magazine>();
 
 
-    //Search Lists, these are the "filters" we will use to take txt box inputs from user to find SUPER obj to find/edit
+    //Filter Lists, these are the "filters" we will use to take txt box inputs from user to find SUPER obj to find/edit
     List<Book> bookFilter = new ArrayList<Book>();
     List<Thesis> thesisFitler = new ArrayList<Thesis>();
     List<Dissertation> dissertationFilter = new ArrayList<Dissertation>();
@@ -76,6 +78,15 @@ public class LMS extends javax.swing.JFrame {
     List<JournalPaper> journalFilter = new ArrayList<JournalPaper>();
     List<ResearchReport> researchFilter = new ArrayList<ResearchReport>();
     List<Magazine> magazineFilter = new ArrayList<Magazine>();
+
+    //Show JLists
+    JList<Book> bookList;
+    JList<Thesis> thesisList;
+    JList<Dissertation> dissertationList;
+    JList<ConferencePaper> conferenceList;
+    JList<JournalPaper> journalList;
+    JList<ResearchReport> researchList;
+    JList<Magazine> magazineList;
 
 
     //Use this function to iterate through item sin the JTextField for author/commitee member lists
@@ -414,61 +425,61 @@ public class LMS extends javax.swing.JFrame {
         SearchBookTitleLabel.setText("Title:");
 
         searchBookTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookTitleTxtActionPerformed(evt);
-            }
-        });
+        // searchBookTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookEdNumLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookEdNumLabel.setText("Edition Number:");
 
         searchBookEdNumTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookEdNumTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookEdNumTxtActionPerformed(evt);
-            }
-        });
+        // searchBookEdNumTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookEdNumTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookPubYearLabel.setText("Publication Year:");
 
         searchBookPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookPubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchBookPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookChapLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookChapLabel.setText("Chapters:");
 
         searchBookChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookChapTxtActionPerformed(evt);
-            }
-        });
+        // searchBookChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookChapTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookFigsLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookFigsLabel.setText("Figures:");
 
         searchBookFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookFigsTxtActionPerformed(evt);
-            }
-        });
+        // searchBookFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookPubLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookPubLabel.setText("Publisher:");
 
         searchBookPubTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookPubTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBookPubTxtActionPerformed(evt);
-            }
-        });
+        // searchBookPubTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchBookPubTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchBookAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookAuthorLabel.setText("Authors:");
@@ -1552,62 +1563,62 @@ public class LMS extends javax.swing.JFrame {
         AddBookTitleLabel.setText("Title:");
 
         addBookTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookTitleTxtActionPerformed(evt);
-            }
-        });
+        // addBookTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookEdNumLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookEdNumLabel.setText("Edition Number:");
 
         addBookEdNumTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookEdNumTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookEdNumTxtActionPerformed(evt);
-            }
-        });
+        // addBookEdNumTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookEdNumTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookPubYearLabel.setText("Publication Year:");
 
         addBookPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookPubYearTxtActionPerformed(evt);
-            }
-        });
+        // addBookPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookChapLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookChapLabel.setText("Chapters:");
 
         addBookChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookChapTxtActionPerformed(evt);
-            }
-        });
+        // addBookChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookChapTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookFigLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookFigLabel.setText("Number of Figures:");
         AddBookFigLabel.setToolTipText("");
 
         addBookFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookFigsTxtActionPerformed(evt);
-            }
-        });
+        // addBookFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookPubLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookPubLabel.setText("Publisher:");
 
         addBookPubTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addBookPubTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBookPubTxtActionPerformed(evt);
-            }
-        });
+        // addBookPubTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addBookPubTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddBookAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddBookAuthorLabel.setText("Authors:");
@@ -1725,62 +1736,62 @@ public class LMS extends javax.swing.JFrame {
         addThesisTitleLabel.setText("Title:");
 
         addThesisTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisTitleTxtActionPerformed(evt);
-            }
-        });
+        // addThesisTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisPubYear.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddThesisPubYear.setText("Publication Year:");
 
         addThesisPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisPubYearTxtActionPerformed(evt);
-            }
-        });
+        // addThesisPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisDepLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddThesisDepLabel.setText("Department:");
 
         addThesisDepTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisDepTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisDepTxtActionPerformed(evt);
-            }
-        });
+        // addThesisDepTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisDepTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisChapLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddThesisChapLabel.setText("Chapters:");
 
         addThesisChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisChapTxtActionPerformed(evt);
-            }
-        });
+        // addThesisChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisChapTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisFigLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddThesisFigLabel.setText("Number of Figures:");
         AddThesisFigLabel.setToolTipText("");
 
         addThesisFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisFigsTxtActionPerformed(evt);
-            }
-        });
+        // addThesisFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddThesisAuthorLabel.setText("Author:");
 
         addThesisAuthorTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisAuthorTxtActionPerformed(evt);
-            }
-        });
+        // addThesisAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisAuthorTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddThesisCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
         AddThesisCommitteeMemInstructionLabel.setText("Enter the commitee members and seprate them by a semicolon. (;)");
@@ -1901,62 +1912,62 @@ public class LMS extends javax.swing.JFrame {
         addDissertationTitleLabel.setText("Title:");
 
         addDissertationTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationTitleTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddDissertationPubYearLabel.setText("Publication Year:");
 
         addDissertationPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationPubYearTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationDepLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddDissertationDepLabel.setText("Department:");
 
         addDissertationDepTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationDepTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationDepTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationDepTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationDepTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationChapLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddDissertationChapLabel.setText("Chapters:");
 
         addDissertationChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationChapTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationChapTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationFigsLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddDissertationFigsLabel.setText("Number of Figures:");
         AddDissertationFigsLabel.setToolTipText("");
 
         addDissertationFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationFigsTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddDissertationAuthorLabel.setText("Author:");
 
         addDissertationAuthorTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationAuthorTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationAuthorTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddDissertationCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
         AddDissertationCommitteeMemInstructionLabel.setText("Enter the commitee members and seprate them by a semicolon. (;)");
@@ -2075,11 +2086,11 @@ public class LMS extends javax.swing.JFrame {
         AddItemTabbedPane.addTab("Dissertation", AddDissertationPanel);
 
         addConferenceTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addConferenceTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationTitleTxt1ActionPerformed(evt);
-            }
-        });
+        // addConferenceTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationTitleTxt1ActionPerformed(evt);
+        //     }
+        // });
 
         AddConferencePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddConferencePubYearLabel.setText("Title:");
@@ -2088,18 +2099,18 @@ public class LMS extends javax.swing.JFrame {
         AddConferencePubYearLabel.setText("Publication Year:");
 
         addConferencePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addConferencePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationPubYearTxt1ActionPerformed(evt);
-            }
-        });
+        // addConferencePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationPubYearTxt1ActionPerformed(evt);
+        //     }
+        // });
 
         addConferenceNameTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addConferenceNameTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addConferenceNameTxtActionPerformed(evt);
-            }
-        });
+        // addConferenceNameTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addConferenceNameTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddConferenceNameLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddConferenceNameLabel.setText("Conference Name:");
@@ -2121,11 +2132,11 @@ public class LMS extends javax.swing.JFrame {
         addConferenceLocationLabel.setText("Location:");
 
         addConferenceLocationTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addConferenceLocationTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addConferenceLocationTxtActionPerformed(evt);
-            }
-        });
+        // addConferenceLocationTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addConferenceLocationTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddConferenceAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddConferenceAuthorLabel.setText("Authors:");
@@ -2142,6 +2153,7 @@ public class LMS extends javax.swing.JFrame {
         addConferenceEndDateLabel.setToolTipText("");
 
         javax.swing.GroupLayout AddConferencePanelLayout = new javax.swing.GroupLayout(AddConferencePanel);
+
         AddConferencePanel.setLayout(AddConferencePanelLayout);
         AddConferencePanelLayout.setHorizontalGroup(
             AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2247,18 +2259,18 @@ public class LMS extends javax.swing.JFrame {
         addJournalPubYearLabel.setText("Publication Year:");
 
         addJournalPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addJournalPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addJournalPubYearTxtActionPerformed(evt);
-            }
-        });
+        // addJournalPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addJournalPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         addJournalTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addJournalTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addJournalTitleTxtActionPerformed(evt);
-            }
-        });
+        // addJournalTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addJournalTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         addJournalTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         addJournalTitleLabel.setText("Title:");
@@ -2267,13 +2279,14 @@ public class LMS extends javax.swing.JFrame {
         addJournalNameLabel.setText("Journal Name:");
 
         addJournalNameTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addJournalNameTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addJournalNameTxtActionPerformed(evt);
-            }
-        });
+        // addJournalNameTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addJournalNameTxtActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout AddJournalPanelLayout = new javax.swing.GroupLayout(AddJournalPanel);
+
         AddJournalPanel.setLayout(AddJournalPanelLayout);
         AddJournalPanelLayout.setHorizontalGroup(
             AddJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2338,21 +2351,21 @@ public class LMS extends javax.swing.JFrame {
         addResearchTitleLabel.setText("Title:");
 
         addResearchTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addResearchTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addResearchTitleTxtActionPerformed(evt);
-            }
-        });
+        // addResearchTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addResearchTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         addResearchPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         addResearchPubYearLabel.setText("Publication Year:");
 
         addResearchPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addResearchPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addResearchPubYearTxtActionPerformed(evt);
-            }
-        });
+        // addResearchPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addResearchPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         AddResearchAuthorInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
         AddResearchAuthorInstructionLabel.setText("Enter the author(s) of the journal. If there are multiple, seprate them by a semicolon. (;)");
@@ -2370,6 +2383,7 @@ public class LMS extends javax.swing.JFrame {
         });
 
         javax.swing.GroupLayout AddResearchPanelLayout = new javax.swing.GroupLayout(AddResearchPanel);
+
         AddResearchPanel.setLayout(AddResearchPanelLayout);
         AddResearchPanelLayout.setHorizontalGroup(
             AddResearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2428,21 +2442,21 @@ public class LMS extends javax.swing.JFrame {
         addMagazineTitleLabel.setText("Title:");
 
         addMagazineTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addMagazineTitleTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addMagazineTitleTxtActionPerformed(evt);
-            }
-        });
+        // addMagazineTitleTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addMagazineTitleTxtActionPerformed(evt);
+        //     }
+        // });
 
         addMagazinePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         addMagazinePubYearLabel.setText("Publication Year:");
 
         addMagazinePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addMagazinePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addMagazinePubYearTxtActionPerformed(evt);
-            }
-        });
+        // addMagazinePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addMagazinePubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         addMagazineBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         addMagazineBtn.setText("Add Magazine");
@@ -2884,34 +2898,56 @@ public class LMS extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        private void GenReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenReportButtonActionPerformed
-            /* NOTE <-- NOT IMPLEMENTED YET, NEED TO FINISH BOOK CLASSES
-            String BookGenReportStr;
-            for (int i; i<BookList.length; i++) {
-                BookGenReportStr += BookList.toString();
-            }
-            ReportTextArea.setText(BookGenReportStr);
-            */
-        }//GEN-LAST:event_GenReportButtonActionPerformed
+    private void GenReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenReportButtonActionPerformed
+        /* NOTE <-- NOT IMPLEMENTED YET, NEED TO FINISH BOOK CLASSES
+        String BookGenReportStr;
+        for (int i; i<BookList.length; i++) {
+            BookGenReportStr += BookList.toString();
+        }
+        ReportTextArea.setText(BookGenReportStr);
+        */
+    }//GEN-LAST:event_GenReportButtonActionPerformed
+
+    private void GenReportTreeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_GenReportTreeValueChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GenReportTreeValueChanged
 
 
-        private void removeBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeBookBtnActionPerformed
-        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
-        if (m == JOptionPane.YES_OPTION) {
-            //This is where SQL/Database access information goes.
-        } else {
-            System.exit(0);
-        }            
-        }//GEN-LAST:event_removeBookBtnActionPerformed
-
+//SEARCH BTNS -----------------------------------------------------------
     private void searchMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchMagazineBtnActionPerformed
         // TODO add your handling code here:
+
+
     }//GEN-LAST:event_searchMagazineBtnActionPerformed
 
     private void searchResearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchResearchBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_searchResearchBtnActionPerformed
 
+    private void searchJournalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchJournalBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchJournalBtnActionPerformed
+
+    private void searchConferenceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchConferenceBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchConferenceBtnActionPerformed
+
+    private void searchDissertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchDissertationBtnActionPerformed
+
+    private void searchThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchThesisBtnActionPerformed
+
+    private void searchBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookBtnActionPerformed
+        // TODO add your handling code here:
+        
+
+    }//GEN-LAST:event_searchBookBtnActionPerformed
+
+
+//ADD BTNS ---------------------------------------------------------------
     private void addBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookBtnActionPerformed
         // TODO add your handling code here:
         if(addBookTitleTxt.getText().isEmpty() && addBookEdNumTxt.getText().isEmpty() && addBookPubYearTxt.getText().isEmpty() && addBookChapTxt.getText().isEmpty() && addBookFigsTxt.getText().isEmpty() && addBookAuthorListTxt.getText().isEmpty()){
@@ -2935,265 +2971,184 @@ public class LMS extends javax.swing.JFrame {
                   justAddedBook.author_list[num] = authors.get(numAuthors - (1+num));
                 }
             }
+
+        bookList = new JList<Book>(bookSuper.toArray(new Book[bookSuper.size()]));
+    
         }
-
-
-
-
     }//GEN-LAST:event_addBookBtnActionPerformed
-
-    private void GenReportTreeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_GenReportTreeValueChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GenReportTreeValueChanged
-
-    private void searchJournalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchJournalBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchJournalBtnActionPerformed
-
-    private void searchJournalNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchJournalNameTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchJournalNameTxtActionPerformed
-
-    private void searchConferenceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchConferenceBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchConferenceBtnActionPerformed
-
-    private void searchConferencePubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchConferencePubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchConferencePubYearTxtActionPerformed
-
-    private void searchConferenceNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchConferenceNameTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchConferenceNameTxtActionPerformed
-
-    private void searchJournalPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchJournalPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchJournalPubYearTxtActionPerformed
-
-    private void searchResearchPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchResearchPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchResearchPubYearTxtActionPerformed
-
-    private void searchMagazinePubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchMagazinePubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchMagazinePubYearTxtActionPerformed
-
-    private void searchDissertationDepTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationDepTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationDepTxtActionPerformed
-
-    private void searchDissertationPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationPubYearTxtActionPerformed
-
-    private void searchDissertationChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationChapTxtActionPerformed
-
-    private void searchDissertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationBtnActionPerformed
-
-    private void searchDissertationFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationFigsTxtActionPerformed
-
-    private void searchDissertationAuthorTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationAuthorTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationAuthorTxtActionPerformed
-
-    private void searchThesisDepTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisDepTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisDepTxtActionPerformed
-
-    private void searchThesisPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisPubYearTxtActionPerformed
-
-    private void searchThesisChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisChapTxtActionPerformed
-
-    private void searchThesisFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisFigsTxtActionPerformed
-
-    private void searchThesisAuthorTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisAuthorTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisAuthorTxtActionPerformed
-
-    private void searchThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisBtnActionPerformed
-
-    private void searchBookEdNumTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookEdNumTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookEdNumTxtActionPerformed
-
-    private void searchBookPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookPubYearTxtActionPerformed
-
-    private void searchBookChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookChapTxtActionPerformed
-
-    private void searchBookFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookFigsTxtActionPerformed
-
-    private void searchBookPubTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookPubTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookPubTxtActionPerformed
-
-    private void searchBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookBtnActionPerformed
-
-    private void searchBookTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBookTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBookTitleTxtActionPerformed
-
-    private void addBookTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookTitleTxtActionPerformed
-
-    private void addBookEdNumTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookEdNumTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookEdNumTxtActionPerformed
-
-    private void addBookPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookPubYearTxtActionPerformed
-
-    private void addBookChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookChapTxtActionPerformed
-
-    private void addBookFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookFigsTxtActionPerformed
-
-    private void addBookPubTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookPubTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addBookPubTxtActionPerformed
-
-    private void addThesisTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisTitleTxtActionPerformed
-
-    private void addThesisPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisPubYearTxtActionPerformed
-
-    private void addThesisDepTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisDepTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisDepTxtActionPerformed
-
-    private void addThesisChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisChapTxtActionPerformed
-
-    private void addThesisFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisFigsTxtActionPerformed
-
-    private void addThesisAuthorTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisAuthorTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisAuthorTxtActionPerformed
 
     private void addThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisBtnActionPerformed
         // TODO add your handling code here:
+        if(addThesisTitleTxt.getText().isEmpty() && addThesisDepTxt.getText().isEmpty() && addThesisPubYearTxt.getText().isEmpty() && addThesisBuildTxt.getText().isEmpty() && addThesisFigsTxt.getText().isEmpty() && addThesisAuthorTxt.getText().isEmpty() && addThesisCommitteeMemsTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a Thesis!");
+        } else {
+            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
+            List<CommitteeMember> committee = setCommitteeMems(addThesisCommitteeMemsTxt.getText());
+
+            //number of authors for array size in classes
+            int numCommittee = committee.size();
+
+            //this bookSuper.add is the justAddedBook
+            Department addThesisDepartment = new Department(addThesisBuildTxt.getText(), addThesisDepTxt.getText());
+            Chapters addThesisChapter = new Chapters(Integer.parseInt(addThesisChapTxt.getText()));
+            Figures addThesisFigure = new Figures(Integer.parseInt(addThesisFigsTxt.getText()));
+
+            thesisSuper.add(new Thesis(addThesisTitleTxt.getText(), addThesisPubYearTxt.getText(), addThesisDepartment, numCommittee, addThesisChapter, addThesisFigure));
+            // thesisSuper.author_list[0] = addThesisAuthorTxt.getText();
+
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                Thesis justAddedThesis = thesisSuper.get(thesisSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numCommittee; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedThesis.committeeMembers[num] = committee.get(numCommittee - (1+num));
+                }
+            }
+            thesisList = new JList<Thesis>(thesisSuper.toArray(new Thesis[thesisSuper.size()]));
+    
+        }       
     }//GEN-LAST:event_addThesisBtnActionPerformed
-
-    private void addDissertationTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationTitleTxtActionPerformed
-
-    private void addDissertationPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationPubYearTxtActionPerformed
-
-    private void addDissertationDepTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationDepTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationDepTxtActionPerformed
-
-    private void addDissertationChapTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationChapTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationChapTxtActionPerformed
-
-    private void addDissertationFigsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationFigsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationFigsTxtActionPerformed
-
-    private void addDissertationAuthorTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationAuthorTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationAuthorTxtActionPerformed
 
     private void addDissertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationBtnActionPerformed
         // TODO add your handling code here:
+        if(addDissertationTitleTxt.getText().isEmpty() && addDissertationDepTxt.getText().isEmpty() && addDissertationPubYearTxt.getText().isEmpty() && addDissertationBuildTxt.getText().isEmpty() && addDissertationFigsTxt.getText().isEmpty() && addDissertationAuthorTxt.getText().isEmpty() && addDissertationCommitteeMemsTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a dissertation!");
+        } else {
+            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
+            List<CommitteeMember> committee = setCommitteeMems(addDissertationCommitteeMemsTxt.getText());
+
+            //number of authors for array size in classes
+            int numCommittee = committee.size();
+
+            //this bookSuper.add is the justAddedBook
+            Department addDissertationDepartment = new Department(addDissertationBuildTxt.getText(), addDissertationDepTxt.getText());
+            Chapters addDissertationChapter = new Chapters(Integer.parseInt(addDissertationChapTxt.getText()));
+            Figures addDissertationFigure = new Figures(Integer.parseInt(addDissertationFigsTxt.getText()));
+
+            dissertationSuper.add(new Dissertation(addDissertationTitleTxt.getText(), addDissertationPubYearTxt.getText(), addDissertationDepartment, numCommittee, addDissertationChapter, addDissertationFigure));
+            //dissertationSuper.author_list[0] = addDissertationAuthorTxt.getText();
+
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                Dissertation justAddedDissertation = dissertationSuper.get(dissertationSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numCommittee; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedDissertation.committeeMembers[num] = committee.get(numCommittee - (1+num));
+                }
+            }
+            dissertationList = new JList<Dissertation>(dissertationSuper.toArray(new Dissertation[dissertationSuper.size()]));
+        }
     }//GEN-LAST:event_addDissertationBtnActionPerformed
-
-    private void addDissertationTitleTxt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationTitleTxt1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationTitleTxt1ActionPerformed
-
-    private void addDissertationPubYearTxt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationPubYearTxt1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationPubYearTxt1ActionPerformed
-
-    private void addConferenceNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceNameTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addConferenceNameTxtActionPerformed
 
     private void addConferenceBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addConferenceBtnActionPerformed
+        if(addConferenceTitleTxt.getText().isEmpty() && addConferencePubYearTxt.getText().isEmpty() && addConferenceAuthorListTxt.getText().isEmpty() && addConferenceNameTxt.getText().isEmpty() && addConferenceLocationTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a conference paper!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addConferenceAuthorListTxt.getText());
 
-    private void addConferenceLocationTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addConferenceLocationTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addConferenceLocationTxtActionPerformed
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //for Location and Period
+            Location addConferenceLocation = new Location(addConferenceLocationTxt.getText());
+            Period addConferencePeriod = new Period(addConferenceBeginDateFrmtTxt.getText(), addConferenceEndDateFrmtTxt.getText());
+
+            //this bookSuper.add is the justAddedBook
+            conferenceSuper.add(new ConferencePaper(addConferenceTitleTxt.getText(), addConferencePubYearTxt.getText(), numAuthors, addConferenceNameTxt.getText(), addConferenceLocation, addConferencePeriod));
+
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                ConferencePaper justAddedConference = conferenceSuper.get(conferenceSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedConference.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+            conferenceList = new JList<ConferencePaper>(conferenceSuper.toArray(new ConferencePaper[conferenceSuper.size()]));
+        }
+    }//GEN-LAST:event_addConferenceBtnActionPerformed
 
     private void addJournalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalBtnActionPerformed
         // TODO add your handling code here:
+        if(addJournalTitleTxt.getText().isEmpty() && addJournalPubYearTxt.getText().isEmpty() && addJournalAuthorListTxt.getText().isEmpty() && addJournalNameTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a Journal!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addJournalAuthorListTxt.getText());
+
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //this bookSuper.add is the justAddedBook
+            journalSuper.add(new JournalPaper(addJournalTitleTxt.getText(), addJournalPubYearTxt.getText(), numAuthors, addJournalNameTxt.getText()));
+
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                JournalPaper justAddedJournal = journalSuper.get(journalSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedJournal.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+            journalList = new JList<JournalPaper>(journalSuper.toArray(new JournalPaper[journalSuper.size()]));
+
+        }
     }//GEN-LAST:event_addJournalBtnActionPerformed
-
-    private void addJournalPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addJournalPubYearTxtActionPerformed
-
-    private void addJournalTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addJournalTitleTxtActionPerformed
-
-    private void addJournalNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJournalNameTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addJournalNameTxtActionPerformed
-
-    private void addResearchTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResearchTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addResearchTitleTxtActionPerformed
-
-    private void addResearchPubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResearchPubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addResearchPubYearTxtActionPerformed
 
     private void addResearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResearchBtnActionPerformed
         // TODO add your handling code here:
+        if(addResearchTitleTxt.getText().isEmpty() && addResearchPubYearTxt.getText().isEmpty() && addResearchAuthorListTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a research paper!");
+        } else {
+            //calling setAuthors to parse through text field for authors of new book
+            List<Author> authors = setAuthors(addResearchAuthorListTxt.getText());
+
+            //number of authors for array size in classes
+            int numAuthors = authors.size();
+
+            //this bookSuper.add is the justAddedBook
+            researchSuper.add(new ResearchReport(addResearchTitleTxt.getText(), addResearchPubYearTxt.getText(), numAuthors));
+
+            //outer part makes sure we get only 1 book, the most recent
+            for(int i = 1; i>0; i--){
+                ResearchReport justAddedResearch = researchSuper.get(researchSuper.size()-1);
+                //this for loop goes through array size for the number of authors in this new book
+                for (int num = 0; num < numAuthors; num++){
+                    //we are adding the Authors for each index in the author_list for the new book.
+                  justAddedResearch.author_list[num] = authors.get(numAuthors - (1+num));
+                }
+            }
+            researchList = new JList<ResearchReport>(researchSuper.toArray(new ResearchReport[researchSuper.size()]));
+        }
     }//GEN-LAST:event_addResearchBtnActionPerformed
-
-    private void addMagazineTitleTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMagazineTitleTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addMagazineTitleTxtActionPerformed
-
-    private void addMagazinePubYearTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMagazinePubYearTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addMagazinePubYearTxtActionPerformed
 
     private void addMagazineBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMagazineBtnActionPerformed
         // TODO add your handling code here:
+        if(addMagazineTitleTxt.getText().isEmpty() && addMagazinePubYearTxt.getText().isEmpty() && addBookPubYearTxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a magazine!");
+        } else {
+            magazineSuper.add(new Magazine(addMagazineTitleTxt.getText(), addMagazinePubYearTxt.getText()));
+            magazineList = new JList<Magazine>(magazineSuper.toArray(new Magazine[magazineSuper.size()]));
+        }
     }//GEN-LAST:event_addMagazineBtnActionPerformed
 
+    private void removeBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeBookBtnActionPerformed
+        int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
+        if (m == JOptionPane.YES_OPTION) {
+            //This is where SQL/Database access information goes.
+        } else {
+            System.exit(0);
+        }            
+    }//GEN-LAST:event_removeBookBtnActionPerformed
+
+
+//REMOVE BTNS -------------------------------------------------------------
     private void removeThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeThesisBtnActionPerformed
         int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
         if (m == JOptionPane.YES_OPTION) {
@@ -3248,6 +3203,8 @@ public class LMS extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_removeMagazineBtnActionPerformed
 
+
+//EDIT Btns ---------------------------------------------------
     private void confirmEditBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmEditBookBtnActionPerformed
         int m = JOptionPane.showConfirmDialog(null, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
         if (m == JOptionPane.YES_OPTION) {
