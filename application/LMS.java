@@ -153,8 +153,7 @@ public class LMS extends javax.swing.JFrame {
         SearchBookPubLabel = new javax.swing.JLabel();
         searchBookPubTxt = new javax.swing.JTextField();
         SearchBookAuthorLabel = new javax.swing.JLabel();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        searchBookAuthorList = new javax.swing.JList<>();
+        searchBookAuthorTxt = new javax.swing.JTextField();
         searchBookBtn = new javax.swing.JButton();
         confirmEditBookBtn = new javax.swing.JButton();
         SearchThesisPanel = new javax.swing.JPanel();
@@ -173,8 +172,7 @@ public class LMS extends javax.swing.JFrame {
         SearchThesisAuthorLabel = new javax.swing.JLabel();
         searchThesisAuthorTxt = new javax.swing.JTextField();
         SearchThesisCommitteeMemLabel = new javax.swing.JLabel();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        searchThesisCommitteeMemList = new javax.swing.JList<>();
+        searchThesisCommitteeMemTxt = new javax.swing.JTextField();
         searchThesisBtn = new javax.swing.JButton();
         confirmEditThesisBtn = new javax.swing.JButton();
         SearchThesisBuildLabel = new javax.swing.JLabel();
@@ -190,9 +188,8 @@ public class LMS extends javax.swing.JFrame {
         SearchDissertationPubYearLabel = new javax.swing.JLabel();
         SearchDissertationChapLabel = new javax.swing.JLabel();
         searchDissertationChapTxt = new javax.swing.JTextField();
-        SearchDissertationCommiteeMemLabel = new javax.swing.JLabel();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        searchDissertationCommiteeMemList = new javax.swing.JList<>();
+        SearchDissertationCommitteeMemLabel = new javax.swing.JLabel();
+        searchDissertationCommitteeMemTxt = new javax.swing.JTextField();
         searchDissertationBtn = new javax.swing.JButton();
         searchDissertationFigsTxt = new javax.swing.JTextField();
         SearchDissertationFigsLabel = new javax.swing.JLabel();
@@ -204,9 +201,8 @@ public class LMS extends javax.swing.JFrame {
         SearchConferencePanel = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         SearchConferenceList = new javax.swing.JList<>();
-        SearchConferenceAuthorListLabel = new javax.swing.JLabel();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        searchConferencelAuthorList = new javax.swing.JList<>();
+        SearchConferenceAuthorLabel = new javax.swing.JLabel();
+        searchConferenceAuthorTxt = new javax.swing.JTextField();
         searchConferenceBtn = new javax.swing.JButton();
         SearchConferenceNameLabel = new javax.swing.JLabel();
         searchConferencePubYearTxt = new javax.swing.JTextField();
@@ -225,9 +221,8 @@ public class LMS extends javax.swing.JFrame {
         searchJournalBtn = new javax.swing.JButton();
         searchJournalTitleTxt = new javax.swing.JTextField();
         SearchJournalTitleLabel = new javax.swing.JLabel();
-        SearchJournalAuthorListLabel = new javax.swing.JLabel();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        searchJournalAuthorList = new javax.swing.JList<>();
+        SearchJournalAuthorLabel = new javax.swing.JLabel();
+        searchJournalAuthorTxt = new javax.swing.JTextField();
         SearchJournalNameLabel = new javax.swing.JLabel();
         searchJournalNameTxt = new javax.swing.JTextField();
         searchJournalPubYearTxt = new javax.swing.JTextField();
@@ -237,9 +232,8 @@ public class LMS extends javax.swing.JFrame {
         SearchResearchPalettePanel = new javax.swing.JPanel();
         SearchResearchTitleLabel = new javax.swing.JLabel();
         searchResearchTitleTxt = new javax.swing.JTextField();
-        SearchResearchAuthorListLabel = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        searchResearchAuthorList = new javax.swing.JList<>();
+        SearchResearchAuthorLabel = new javax.swing.JLabel();
+        searchResearchAuthorTxt = new javax.swing.JTextField();
         jScrollPane5 = new javax.swing.JScrollPane();
         SearchResearchList = new javax.swing.JList<>();
         searchResearchBtn = new javax.swing.JButton();
@@ -484,14 +478,6 @@ public class LMS extends javax.swing.JFrame {
         SearchBookAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchBookAuthorLabel.setText("Authors:");
 
-        searchBookAuthorList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchBookAuthorList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane15.setViewportView(searchBookAuthorList);
-
         searchBookBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchBookBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
         searchBookBtn.setText("Search");
@@ -511,6 +497,8 @@ public class LMS extends javax.swing.JFrame {
                 confirmEditBookBtnActionPerformed(evt);
             }
         });
+
+        searchBookAuthorTxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout SearchBookPanelLayout = new javax.swing.GroupLayout(SearchBookPanel);
         SearchBookPanel.setLayout(SearchBookPanelLayout);
@@ -598,6 +586,8 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Book", SearchBookPanel);
 
+        //THESIS -----------------------------------
+
         SearchThesisList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchThesisListValueChanged(evt);
@@ -606,11 +596,11 @@ public class LMS extends javax.swing.JFrame {
         jScrollPane9.setViewportView(SearchThesisList);
 
         searchThesisDepTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisDepTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisDepTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisDepTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisDepTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchThesisDepLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchThesisDepLabel.setText("Department:");
@@ -624,52 +614,45 @@ public class LMS extends javax.swing.JFrame {
         SearchThesisPubYearLabel.setText("Publication Year:");
 
         searchThesisPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisPubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchThesisChapLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchThesisChapLabel.setText("Chapters:");
 
         searchThesisChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisChapTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisChapTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchThesisFigsLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchThesisFigsLabel.setText("Figures:");
 
         searchThesisFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisFigsTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchThesisAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchThesisAuthorLabel.setText("Author:");
 
         searchThesisAuthorTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisAuthorTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisAuthorTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchThesisCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchThesisCommitteeMemLabel.setText("Commitee Members:");
 
-        searchThesisCommitteeMemList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisCommitteeMemList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane14.setViewportView(searchThesisCommitteeMemList);
 
         searchThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -683,7 +666,7 @@ public class LMS extends javax.swing.JFrame {
         confirmEditThesisBtn.setVisible(false);
         confirmEditThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
         confirmEditThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        confirmEditThesisBtn.setActionCommand("EditBook");
+        confirmEditThesisBtn.setActionCommand("EditThesis");
         confirmEditThesisBtn.setLabel("Edit Thesis");
         confirmEditThesisBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -741,9 +724,8 @@ public class LMS extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(searchThesisChapTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(SearchThesisAuthorLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(searchThesisAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(SearchThesisCommitteeMemLabel)
+                                .addComponent(searchThesisCommitteeMemTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
@@ -752,8 +734,9 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchThesisPanelLayout.createSequentialGroup()
                         .addComponent(searchThesisBtn)
                         .addGap(10, 10, 10)))
-                .addGap(29, 29, 29))
+                .addGap(29, 29, 29))))
         );
+
         SearchThesisPanelLayout.setVerticalGroup(
             SearchThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchThesisPanelLayout.createSequentialGroup()
@@ -802,6 +785,9 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Thesis", SearchThesisPanel);
 
+
+//DISSERTATION ----------------------------
+
         SearchDissertationList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchDissertationListValueChanged(evt);
@@ -818,18 +804,18 @@ public class LMS extends javax.swing.JFrame {
         SearchDissertationDepLabel.setText("Department:");
 
         searchDissertationDepTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationDepTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationDepTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationDepTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationDepTxtActionPerformed(evt);
+        //     }
+        // });
 
         searchDissertationPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationPubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchDissertationPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchDissertationPubYearLabel.setText("Publication Year:");
@@ -838,22 +824,16 @@ public class LMS extends javax.swing.JFrame {
         SearchDissertationChapLabel.setText("Chapters:");
 
         searchDissertationChapTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationChapTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationChapTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationChapTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationChapTxtActionPerformed(evt);
+        //     }
+        // });
 
-        SearchDissertationCommiteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchDissertationCommiteeMemLabel.setText("Commitee Members:");
+        SearchDissertationCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchDissertationCommitteeMemLabel.setText("Commitee Members:");
 
-        searchDissertationCommiteeMemList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationCommiteeMemList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane13.setViewportView(searchDissertationCommiteeMemList);
+        searchDissertationCommitteeMemTxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         searchDissertationBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchDissertationBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -865,11 +845,11 @@ public class LMS extends javax.swing.JFrame {
         });
 
         searchDissertationFigsTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationFigsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationFigsTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationFigsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationFigsTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchDissertationFigsLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchDissertationFigsLabel.setText("Figures:");
@@ -878,11 +858,11 @@ public class LMS extends javax.swing.JFrame {
         SearchDissertationAuthorLabel.setText("Author:");
 
         searchDissertationAuthorTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationAuthorTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationAuthorTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationAuthorTxtActionPerformed(evt);
+        //     }
+        // });
 
         confirmEditDissertationBtn.setVisible(false);
         confirmEditDissertationBtn.setBackground(new java.awt.Color(203, 211, 217));
@@ -927,7 +907,9 @@ public class LMS extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchDissertationFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(SearchDissertationCommiteeMemLabel))
+                                .addComponent(SearchDissertationCommitteeMemLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(searchDissertationCommitteeMemTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchDissertationPanelLayout.createSequentialGroup()
                                 .addGroup(SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(SearchDissertationDepLabel)
@@ -944,13 +926,14 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(SearchDissertationAuthorLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchDissertationAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(confirmEditDissertationBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(searchDissertationBtn)
-                        .addGap(38, 38, 38))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addGroup(SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchDissertationPanelLayout.createSequentialGroup()
+                                        .addComponent(searchDissertationBtn)
+                                        .addGap(38, 38, 38))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchDissertationPanelLayout.createSequentialGroup()
+                                        .addComponent(confirmEditDissertationBtn)
+                                        .addContainerGap())))
                     .addGroup(SearchDissertationPanelLayout.createSequentialGroup()
                         .addComponent(jScrollPane8)
                         .addGap(20, 20, 20))))
@@ -958,10 +941,11 @@ public class LMS extends javax.swing.JFrame {
         SearchDissertationPanelLayout.setVerticalGroup(
             SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchDissertationPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                
                 .addGroup(SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    
                     .addGroup(SearchDissertationPanelLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(SearchDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(searchDisseratationTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -969,7 +953,8 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchDissertationPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SearchDissertationFigsLabel)
                                 .addComponent(searchDissertationFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchDissertationCommiteeMemLabel))
+                                .addComponent(SearchDissertationCommitteeMemLabel)
+                                .addComponent(searchDissertationCommitteeMemTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchDissertationPanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchDissertationTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -987,8 +972,9 @@ public class LMS extends javax.swing.JFrame {
                             .addComponent(searchDissertationBuildTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(SearchDissertationPanelLayout.createSequentialGroup()
                         .addComponent(searchDissertationBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(confirmEditDissertationBtn)))
+                        .addGap(18, 18, 18)
+                        .addComponent(confirmEditDissertationBtn)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(13, 13, 13)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1003,16 +989,10 @@ public class LMS extends javax.swing.JFrame {
         });
         jScrollPane7.setViewportView(SearchConferenceList);
 
-        SearchConferenceAuthorListLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchConferenceAuthorListLabel.setText("Author List:");
+        SearchConferenceAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchConferenceAuthorLabel.setText("Authors:");
 
-        searchConferencelAuthorList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchConferencelAuthorList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane12.setViewportView(searchConferencelAuthorList);
+        searchConferenceAuthorTxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         searchConferenceBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchConferenceBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -1027,11 +1007,11 @@ public class LMS extends javax.swing.JFrame {
         SearchConferenceNameLabel.setText("Conference Name: ");
 
         searchConferencePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchConferencePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchConferencePubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchConferencePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchConferencePubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchConferenceTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchConferenceTitleLabel.setText("Title:");
@@ -1042,11 +1022,11 @@ public class LMS extends javax.swing.JFrame {
         SearchConferencePublicationLabel.setText("Publication Year:");
 
         searchConferenceNameTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchConferenceNameTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchConferenceNameTxtActionPerformed(evt);
-            }
-        });
+        // searchConferenceNameTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchConferenceNameTxtActionPerformed(evt);
+        //     }
+        // });
 
         searchConferenceEndDateLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         searchConferenceEndDateLabel.setText("End Date:");
@@ -1089,7 +1069,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(58, 58, 58)
-                                .addComponent(SearchConferenceAuthorListLabel))
+                                .addComponent(SearchConferenceAuthorLabel))
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                                 .addComponent(SearchConferenceNameLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1103,11 +1083,12 @@ public class LMS extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(searchConferenceEndDateFrmtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        //.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                         .addGroup(SearchConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchConferencePanelLayout.createSequentialGroup()
                                 .addComponent(searchConferenceBtn)
+                                .addComponent(searchConferenceAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                                 .addGap(29, 29, 29))
                             .addComponent(confirmEditConferenceBtn, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addComponent(jScrollPane7))
@@ -1124,7 +1105,8 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SearchConferencePublicationLabel)
                                 .addComponent(searchConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchConferenceAuthorListLabel))
+                                .addComponent(SearchConferenceAuthorLabel))
+                                .addComponent(searchConferenceAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchConferenceTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1139,11 +1121,11 @@ public class LMS extends javax.swing.JFrame {
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                         .addComponent(searchConferenceBtn)
-                        .addGap(18, 18, 18)
+                        .addGap(35, 35, 35)
                         .addComponent(confirmEditConferenceBtn)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
-                .addContainerGap())
+                
         );
 
         SearchConferenceNameLabel.getAccessibleContext().setAccessibleDescription("");
@@ -1171,33 +1153,27 @@ public class LMS extends javax.swing.JFrame {
         SearchJournalTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchJournalTitleLabel.setText("Title:");
 
-        SearchJournalAuthorListLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchJournalAuthorListLabel.setText("Author List:");
+        SearchJournalAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchJournalAuthorLabel.setText("Author:");
 
-        searchJournalAuthorList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchJournalAuthorList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane11.setViewportView(searchJournalAuthorList);
+        searchJournalAuthorTxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         SearchJournalNameLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchJournalNameLabel.setText("Journal Name: ");
 
         searchJournalNameTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchJournalNameTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchJournalNameTxtActionPerformed(evt);
-            }
-        });
+        // searchJournalNameTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchJournalNameTxtActionPerformed(evt);
+        //     }
+        // });
 
         searchJournalPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchJournalPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchJournalPubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchJournalPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchJournalPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchJournalPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchJournalPubYearLabel.setText("Publication Year:");
@@ -1231,21 +1207,22 @@ public class LMS extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchJournalPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(32, 32, 32)
-                                .addComponent(SearchJournalAuthorListLabel))
+                                .addComponent(SearchJournalAuthorLabel))
                             .addGroup(SearchJournalPanelLayout.createSequentialGroup()
                                 .addComponent(SearchJournalNameLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchJournalNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(SearchJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(SearchJournalPanelLayout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addComponent(searchJournalBtn))
+                                .addGap(0, 270, Short.MAX_VALUE)
+                                .addComponent(confirmEditJournalBtn)
+                                .addGap(44, 44, 44))
                             .addGroup(SearchJournalPanelLayout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(confirmEditJournalBtn)))
-                        .addGap(44, 44, 44))
+                                .addComponent(searchJournalAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(searchJournalBtn)
+                                .addGap(59, 59, 59))))
                     .addGroup(SearchJournalPanelLayout.createSequentialGroup()
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 944, Short.MAX_VALUE)
                         .addGap(19, 19, 19))))
@@ -1253,16 +1230,17 @@ public class LMS extends javax.swing.JFrame {
         SearchJournalPanelLayout.setVerticalGroup(
             SearchJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SearchJournalPanelLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(18, 18, 18)
                 .addGroup(SearchJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    
                     .addGroup(SearchJournalPanelLayout.createSequentialGroup()
                         .addGroup(SearchJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(SearchJournalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(searchJournalTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchJournalAuthorListLabel)
+                                .addComponent(SearchJournalAuthorLabel)
                                 .addComponent(SearchJournalPubYearLabel)
-                                .addComponent(searchJournalPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(searchJournalPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(searchJournalAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchJournalPanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchJournalTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1274,9 +1252,9 @@ public class LMS extends javax.swing.JFrame {
                         .addComponent(searchJournalBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(confirmEditJournalBtn)))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
-                .addContainerGap())
+                        .addGap(37, 37, 37)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
+                        .addContainerGap())
         );
 
         SearchTabbedPanel.addTab("Journal", SearchJournalPanel);
@@ -1286,16 +1264,10 @@ public class LMS extends javax.swing.JFrame {
 
         searchResearchTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
-        SearchResearchAuthorListLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchResearchAuthorListLabel.setText("Authors:");
+        SearchResearchAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchResearchAuthorLabel.setText("Authors:");
 
-        searchResearchAuthorList.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchResearchAuthorList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane3.setViewportView(searchResearchAuthorList);
+        searchResearchAuthorTxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         SearchResearchList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
@@ -1314,11 +1286,11 @@ public class LMS extends javax.swing.JFrame {
         });
 
         searchResearchPubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchResearchPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchResearchPubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchResearchPubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchResearchPubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchResearchPubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchResearchPubYearLabel.setText("Publication Year:");
@@ -1348,15 +1320,16 @@ public class LMS extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(searchResearchPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
-                .addComponent(SearchResearchAuthorListLabel)
-                .addGap(33, 33, 33)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(SearchResearchAuthorLabel)
+                
                 .addGroup(SearchResearchPalettePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SearchResearchPalettePanelLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(224, 224, 224)
                         .addComponent(confirmEditResearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SearchResearchPalettePanelLayout.createSequentialGroup()
-                        .addGap(75, 75, 75)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(searchResearchAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(91, 91, 91)
                         .addComponent(searchResearchBtn)))
                 .addGap(0, 46, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchResearchPalettePanelLayout.createSequentialGroup()
@@ -1368,7 +1341,7 @@ public class LMS extends javax.swing.JFrame {
             SearchResearchPalettePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SearchResearchPalettePanelLayout.createSequentialGroup()
                 .addGroup(SearchResearchPalettePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    
                     .addGroup(SearchResearchPalettePanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(SearchResearchPalettePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1376,7 +1349,8 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchResearchTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SearchResearchPubYearLabel)
                                 .addComponent(searchResearchPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchResearchAuthorListLabel))
+                                .addComponent(SearchResearchAuthorLabel)
+                                .addComponent(searchResearchAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchResearchPalettePanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchResearchTitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -1385,8 +1359,8 @@ public class LMS extends javax.swing.JFrame {
                         .addComponent(searchResearchBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(confirmEditResearchBtn)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE)
+                        .addGap(17, 17, 17)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1433,11 +1407,11 @@ public class LMS extends javax.swing.JFrame {
         });
 
         searchMagazinePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchMagazinePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchMagazinePubYearTxtActionPerformed(evt);
-            }
-        });
+        // searchMagazinePubYearTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchMagazinePubYearTxtActionPerformed(evt);
+        //     }
+        // });
 
         SearchMagazinePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         SearchMagazinePubYearLabel.setText("Publication Year:");
@@ -3448,21 +3422,22 @@ the index value is -1
     private javax.swing.JLabel SearchBookPubLabel;
     private javax.swing.JLabel SearchBookPubYearLabel;
     private javax.swing.JLabel SearchBookTitleLabel;
-    private javax.swing.JLabel SearchConferenceAuthorListLabel;
+    private javax.swing.JLabel SearchConferenceAuthorLabel;
+    private javax.swing.JTextField searchConferenceAuthorTxt;
     private javax.swing.JList<String> SearchConferenceList;
     private javax.swing.JLabel SearchConferenceNameLabel;
     private javax.swing.JPanel SearchConferencePanel;
     private javax.swing.JLabel SearchConferencePublicationLabel;
     private javax.swing.JLabel SearchDissertationAuthorLabel;
     private javax.swing.JLabel SearchDissertationChapLabel;
-    private javax.swing.JLabel SearchDissertationCommiteeMemLabel;
+    private javax.swing.JLabel SearchDissertationCommitteeMemLabel;
     private javax.swing.JLabel SearchDissertationDepLabel;
     private javax.swing.JLabel SearchDissertationFigsLabel;
     private javax.swing.JList<String> SearchDissertationList;
     private javax.swing.JPanel SearchDissertationPanel;
     private javax.swing.JLabel SearchDissertationPubYearLabel;
     private javax.swing.JLabel SearchDissertationTitleLabel;
-    private javax.swing.JLabel SearchJournalAuthorListLabel;
+    private javax.swing.JLabel SearchJournalAuthorLabel;
     private javax.swing.JList<String> SearchJournalList;
     private javax.swing.JLabel SearchJournalNameLabel;
     private javax.swing.JPanel SearchJournalPanel;
@@ -3474,7 +3449,7 @@ the index value is -1
     private javax.swing.JLabel SearchMagazinePubYearLabel;
     private javax.swing.JLabel SearchMagazineTitleLablel;
     private javax.swing.JPanel SearchPane;
-    private javax.swing.JLabel SearchResearchAuthorListLabel;
+    private javax.swing.JLabel SearchResearchAuthorLabel;
     private javax.swing.JList<String> SearchResearchList;
     private javax.swing.JPanel SearchResearchPalettePanel;
     private javax.swing.JPanel SearchResearchPanel;
@@ -3593,7 +3568,7 @@ the index value is -1
     private javax.swing.JButton removeThesisBtn;
     private javax.swing.JList<String> removeThesisList;
     private javax.swing.JPanel removeThesisPanel;
-    private javax.swing.JList<String> searchBookAuthorList;
+    private javax.swing.JTextField searchBookAuthorTxt;
     private javax.swing.JButton searchBookBtn;
     private javax.swing.JTextField searchBookChapTxt;
     private javax.swing.JTextField searchBookEdNumTxt;
@@ -3609,18 +3584,18 @@ the index value is -1
     private javax.swing.JTextField searchConferenceNameTxt;
     private javax.swing.JTextField searchConferencePubYearTxt;
     private javax.swing.JTextField searchConferenceTitleTxt;
-    private javax.swing.JList<String> searchConferencelAuthorList;
+    private javax.swing.JTextField searchConferencelAuthorTxt;
     private javax.swing.JTextField searchDisseratationTitleTxt;
     private javax.swing.JTextField searchDissertationAuthorTxt;
     private javax.swing.JButton searchDissertationBtn;
     private javax.swing.JTextField searchDissertationBuildTxt;
     private javax.swing.JLabel searchDissertationBuildingLabel;
     private javax.swing.JTextField searchDissertationChapTxt;
-    private javax.swing.JList<String> searchDissertationCommiteeMemList;
+    private javax.swing.JTextField searchDissertationCommitteeMemTxt;
     private javax.swing.JTextField searchDissertationDepTxt;
     private javax.swing.JTextField searchDissertationFigsTxt;
     private javax.swing.JTextField searchDissertationPubYearTxt;
-    private javax.swing.JList<String> searchJournalAuthorList;
+    private javax.swing.JTextField searchJournalAuthorTxt;
     private javax.swing.JButton searchJournalBtn;
     private javax.swing.JTextField searchJournalNameTxt;
     private javax.swing.JTextField searchJournalPubYearTxt;
@@ -3628,7 +3603,7 @@ the index value is -1
     private javax.swing.JButton searchMagazineBtn;
     private javax.swing.JTextField searchMagazinePubYearTxt;
     private javax.swing.JTextField searchMagazineTitleTxt;
-    private javax.swing.JList<String> searchResearchAuthorList;
+    private javax.swing.JTextField searchResearchAuthorTxt;
     private javax.swing.JButton searchResearchBtn;
     private javax.swing.JTextField searchResearchPubYearTxt;
     private javax.swing.JTextField searchResearchTitleTxt;
@@ -3636,7 +3611,7 @@ the index value is -1
     private javax.swing.JButton searchThesisBtn;
     private javax.swing.JTextField searchThesisBuildTxt;
     private javax.swing.JTextField searchThesisChapTxt;
-    private javax.swing.JList<String> searchThesisCommitteeMemList;
+    private javax.swing.JTextField searchThesisCommitteeMemTxt;
     private javax.swing.JTextField searchThesisDepTxt;
     private javax.swing.JTextField searchThesisFigsTxt;
     private javax.swing.JTextField searchThesisPubYearTxt;
