@@ -37,4 +37,6 @@ public class Thesis extends Publication{
     public void setFigures(Figures figures) {
         this.figures = figures;
     }
+    
 }
+
