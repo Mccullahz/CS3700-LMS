@@ -206,7 +206,7 @@ public class LMS extends javax.swing.JFrame {
         searchConferenceBtn = new javax.swing.JButton();
         SearchConferenceNameLabel = new javax.swing.JLabel();
         searchConferencePubYearTxt = new javax.swing.JTextField();
-        SearchJournalTitleLabel1 = new javax.swing.JLabel();
+        SearchConferenceTitleLabel = new javax.swing.JLabel();
         searchConferenceTitleTxt = new javax.swing.JTextField();
         SearchConferencePublicationLabel = new javax.swing.JLabel();
         searchConferenceNameTxt = new javax.swing.JTextField();
@@ -286,9 +286,9 @@ public class LMS extends javax.swing.JFrame {
         addThesisFigsTxt = new javax.swing.JTextField();
         AddThesisAuthorLabel = new javax.swing.JLabel();
         addThesisAuthorTxt = new javax.swing.JTextField();
-        AddThesisCommiteeMemInstructionLabel = new javax.swing.JLabel();
-        AddThesisCommiteeMemLabel = new javax.swing.JLabel();
-        addThesisCommiteeMemsTxt = new javax.swing.JTextField();
+        AddThesisCommitteeMemInstructionLabel = new javax.swing.JLabel();
+        AddThesisCommitteeMemLabel = new javax.swing.JLabel();
+        addThesisCommitteeMemsTxt = new javax.swing.JTextField();
         addThesisBtn = new javax.swing.JButton();
         AddThesisBuildLabel = new javax.swing.JLabel();
         addThesisBuildTxt = new javax.swing.JTextField();
@@ -305,16 +305,16 @@ public class LMS extends javax.swing.JFrame {
         addDissertationFigsTxt = new javax.swing.JTextField();
         AddDissertationAuthorLabel = new javax.swing.JLabel();
         addDissertationAuthorTxt = new javax.swing.JTextField();
-        AddDissertationCommiteeMemInstructionLabel = new javax.swing.JLabel();
-        AddThesisCommiteeMemLabel1 = new javax.swing.JLabel();
-        addDissertationCommiteeMemsTxt = new javax.swing.JTextField();
+        AddDissertationCommitteeMemInstructionLabel = new javax.swing.JLabel();
+        AddDissertationCommitteeMemLabel = new javax.swing.JLabel();
+        addDissertationCommitteeMemsTxt = new javax.swing.JTextField();
         addDissertationBtn = new javax.swing.JButton();
         AddDissertationBuildLabel = new javax.swing.JLabel();
         addDissertationBuildTxt = new javax.swing.JTextField();
         AddConferencePanel = new javax.swing.JPanel();
         addConferenceTitleTxt = new javax.swing.JTextField();
-        addDissertationTitleLabel1 = new javax.swing.JLabel();
-        AddDissertationPubYearLabel1 = new javax.swing.JLabel();
+        addConferenceTitleLabel = new javax.swing.JLabel();
+        AddConferencePubYearLabel = new javax.swing.JLabel();
         addConferencePubYearTxt = new javax.swing.JTextField();
         addConferenceNameTxt = new javax.swing.JTextField();
         AddConferenceNameLabel = new javax.swing.JLabel();
@@ -324,7 +324,7 @@ public class LMS extends javax.swing.JFrame {
         addConferenceLocationTxt = new javax.swing.JTextField();
         addConferenceAuthorListTxt = new javax.swing.JTextField();
         AddConferenceAuthorLabel = new javax.swing.JLabel();
-        AddBookAuthorInstructionLabel1 = new javax.swing.JLabel();
+        AddConferenceAuthorInstructionLabel = new javax.swing.JLabel();
         addConferenceBeginDateFrmtTxt = new javax.swing.JFormattedTextField();
         addConferenceEndDateFrmtTxt = new javax.swing.JFormattedTextField();
         addConferenceEndDateLabel = new javax.swing.JLabel();
@@ -387,121 +387,6 @@ public class LMS extends javax.swing.JFrame {
         removeMagazineList = new javax.swing.JList<>();
         removeMagazineBtn = new javax.swing.JButton();
         RemoveItemTabbedPane1 = new javax.swing.JTabbedPane();
-        removeBookPanel1 = new javax.swing.JPanel();
-        jScrollPane27 = new javax.swing.JScrollPane();
-        removeSearchBookList1 = new javax.swing.JList<>();
-        removeBookTitleLabel1 = new javax.swing.JLabel();
-        removeBookTitleTxt1 = new javax.swing.JTextField();
-        SearchBookEdNumLabel2 = new javax.swing.JLabel();
-        searchBookEdNumTxt2 = new javax.swing.JTextField();
-        SearchBookPubYearLabel2 = new javax.swing.JLabel();
-        removeBookPubYearTxt1 = new javax.swing.JTextField();
-        SearchBookChapLabel2 = new javax.swing.JLabel();
-        removeBookChapTxt1 = new javax.swing.JTextField();
-        SearchBookFigsLabel2 = new javax.swing.JLabel();
-        removeBookFigsTxt1 = new javax.swing.JTextField();
-        SearchBookPubLabel2 = new javax.swing.JLabel();
-        removeBookPublisherTxt1 = new javax.swing.JTextField();
-        SearchBookAuthorLabel2 = new javax.swing.JLabel();
-        jScrollPane28 = new javax.swing.JScrollPane();
-        removeBookAuthorList1 = new javax.swing.JList<>();
-        removeSearchBookBtn1 = new javax.swing.JButton();
-        removeBookBtn1 = new javax.swing.JButton();
-        removeThesisPanel1 = new javax.swing.JPanel();
-        jScrollPane29 = new javax.swing.JScrollPane();
-        removeSearchThesisList1 = new javax.swing.JList<>();
-        removeThesisDepTxt1 = new javax.swing.JTextField();
-        SearchThesisDepLabel2 = new javax.swing.JLabel();
-        SearchThesisTitleLabel2 = new javax.swing.JLabel();
-        removeThesisTitleTxt1 = new javax.swing.JTextField();
-        SearchThesisPubYearLabel2 = new javax.swing.JLabel();
-        removeThesisPubYearTxt1 = new javax.swing.JTextField();
-        SearchThesisChapLabel2 = new javax.swing.JLabel();
-        removeThesisChapTxt1 = new javax.swing.JTextField();
-        SearchThesisFigsLabel2 = new javax.swing.JLabel();
-        removeThesisFigsTxt1 = new javax.swing.JTextField();
-        SearchThesisAuthorLabel2 = new javax.swing.JLabel();
-        removeThesisAuthorTxt1 = new javax.swing.JTextField();
-        SearchThesisCommiteeMemLabel2 = new javax.swing.JLabel();
-        jScrollPane30 = new javax.swing.JScrollPane();
-        removeThesisCommiteeMemList1 = new javax.swing.JList<>();
-        removeSearchThesisBtn1 = new javax.swing.JButton();
-        removeThesisBtn1 = new javax.swing.JButton();
-        removeDissertationPanel1 = new javax.swing.JPanel();
-        jScrollPane31 = new javax.swing.JScrollPane();
-        removeSearchDissertationList1 = new javax.swing.JList<>();
-        removeDissertationTitleTxt1 = new javax.swing.JTextField();
-        SearchDissertationTitleLabel2 = new javax.swing.JLabel();
-        SearchDissertationDepLabel2 = new javax.swing.JLabel();
-        removeDissertationDepTxt1 = new javax.swing.JTextField();
-        removeDissertationPubYearTxt1 = new javax.swing.JTextField();
-        SearchDissertationPubYearLabel2 = new javax.swing.JLabel();
-        SearchDissertationChapLabel2 = new javax.swing.JLabel();
-        removeDissertationChapTxt1 = new javax.swing.JTextField();
-        SearchDissertationCommiteeMemLabel2 = new javax.swing.JLabel();
-        jScrollPane32 = new javax.swing.JScrollPane();
-        removeDissertationCommiteeMemList1 = new javax.swing.JList<>();
-        removeSearchDissertationBtn1 = new javax.swing.JButton();
-        removeDissertationFigsTxt1 = new javax.swing.JTextField();
-        SearchDissertationFigsLabel2 = new javax.swing.JLabel();
-        SearchDissertationAuthorLabel2 = new javax.swing.JLabel();
-        removeDissertationAuthorTxt1 = new javax.swing.JTextField();
-        removeDIssertationBtn1 = new javax.swing.JButton();
-        removeConferencePanel1 = new javax.swing.JPanel();
-        jScrollPane33 = new javax.swing.JScrollPane();
-        removeSearchConferenceList1 = new javax.swing.JList<>();
-        SearchConferenceAuthorListLabel2 = new javax.swing.JLabel();
-        jScrollPane34 = new javax.swing.JScrollPane();
-        removeConferenceAuthorList1 = new javax.swing.JList<>();
-        removeSearchConferenceBtn1 = new javax.swing.JButton();
-        SearchConferenceNameLabel2 = new javax.swing.JLabel();
-        removeConferencePubYearTxt1 = new javax.swing.JTextField();
-        SearchJournalTitleLabel4 = new javax.swing.JLabel();
-        removeConferenceTitleTxt1 = new javax.swing.JTextField();
-        SearchConferencePublicationLabel2 = new javax.swing.JLabel();
-        removeConferenceNameTxt1 = new javax.swing.JTextField();
-        removeSearchConferenceBeginDateLabel1 = new javax.swing.JLabel();
-        removeConferenceBtn1 = new javax.swing.JButton();
-        removeSearchConferenceBeginDateFrmtTxt1 = new javax.swing.JFormattedTextField();
-        removeSearchConferenceEndDateFrmtTxt1 = new javax.swing.JFormattedTextField();
-        removeSearchConferenceEndDateLabel1 = new javax.swing.JLabel();
-        removeJournalPanel1 = new javax.swing.JPanel();
-        jScrollPane35 = new javax.swing.JScrollPane();
-        removeSearchJournalList1 = new javax.swing.JList<>();
-        removeSearchJournalBtn1 = new javax.swing.JButton();
-        removeJournalTitleTxt1 = new javax.swing.JTextField();
-        SearchJournalTitleLabel5 = new javax.swing.JLabel();
-        SearchJournalAuthorListLabel2 = new javax.swing.JLabel();
-        jScrollPane36 = new javax.swing.JScrollPane();
-        removeJournalAuthorList1 = new javax.swing.JList<>();
-        SearchJournalNameLabel2 = new javax.swing.JLabel();
-        removeJournalNameTxt1 = new javax.swing.JTextField();
-        removeJournalPubYearTxt1 = new javax.swing.JTextField();
-        SearchJournalPubYearLabel2 = new javax.swing.JLabel();
-        removeJournalBtn1 = new javax.swing.JButton();
-        removeResearchPanel1 = new javax.swing.JPanel();
-        SearchResearchPalettePanel2 = new javax.swing.JPanel();
-        SearchResearchTitleLabel2 = new javax.swing.JLabel();
-        removeResearchTitleTxt1 = new javax.swing.JTextField();
-        SearchResearchAuthorListLabel2 = new javax.swing.JLabel();
-        jScrollPane37 = new javax.swing.JScrollPane();
-        removeResearchAuthorList1 = new javax.swing.JList<>();
-        jScrollPane38 = new javax.swing.JScrollPane();
-        removeSearchResearchList1 = new javax.swing.JList<>();
-        removeSearchResearchBtn1 = new javax.swing.JButton();
-        removeResearchPubYearTxt1 = new javax.swing.JTextField();
-        SearchResearchPubYearLabel2 = new javax.swing.JLabel();
-        removeResearchBtn1 = new javax.swing.JButton();
-        removeMagazinePanel1 = new javax.swing.JPanel();
-        SearchMagazinePalettePanel2 = new javax.swing.JPanel();
-        SearchMagazineTitleLablel2 = new javax.swing.JLabel();
-        removeMagazineTitleTxt1 = new javax.swing.JTextField();
-        MagazineSearchList2 = new javax.swing.JScrollPane();
-        removeSearchMagazineList1 = new javax.swing.JList<>();
-        removeSearchMagazineBtn1 = new javax.swing.JButton();
-        removeMagazinePubYearTxt1 = new javax.swing.JTextField();
-        SearchMagazinePubYearLabel2 = new javax.swing.JLabel();
-        removeMagazineBtn1 = new javax.swing.JButton();
         AddRemoveInstructionLabel = new javax.swing.JLabel();
         GenerateReportPane = new javax.swing.JPanel();
         GenReportButton = new javax.swing.JButton();
@@ -527,12 +412,13 @@ public class LMS extends javax.swing.JFrame {
         SearchTabbedPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         SearchTabbedPanel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
 
-        SearchBookList.setModel(model);
+
         SearchBookList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchBookListValueChanged(evt);
             }
         });
+        
         jScrollPane10.setViewportView(SearchBookList);
 
         SearchBookTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
@@ -770,8 +656,8 @@ public class LMS extends javax.swing.JFrame {
         //     }
         // });
 
-        SearchThesisCommiteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchThesisCommiteeMemLabel.setText("Commitee Members:");
+        SearchThesisCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchThesisCommitteeMemLabel.setText("Commitee Members:");
 
         searchThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
         searchThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -786,7 +672,7 @@ public class LMS extends javax.swing.JFrame {
         confirmEditThesisBtn.setBackground(new java.awt.Color(203, 211, 217));
         confirmEditThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
         confirmEditThesisBtn.setActionCommand("EditThesis");
-        confirmEditThesisBtn.setLabel("Edit Thesis");
+        // confirmEditThesisBtn.setLabel("Edit Thesis");
         confirmEditThesisBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confirmEditThesisBtnActionPerformed(evt);
@@ -797,11 +683,11 @@ public class LMS extends javax.swing.JFrame {
         SearchThesisBuildLabel.setText("Building:");
 
         searchThesisBuildTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchThesisBuildTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchThesisBuildTxtActionPerformed(evt);
-            }
-        });
+        // searchThesisBuildTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchThesisBuildTxtActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout SearchThesisPanelLayout = new javax.swing.GroupLayout(SearchThesisPanel);
         SearchThesisPanel.setLayout(SearchThesisPanelLayout);
@@ -827,7 +713,7 @@ public class LMS extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(searchThesisFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(SearchThesisCommiteeMemLabel))
+                        .addComponent(SearchThesisCommitteeMemLabel))
                     .addGroup(SearchThesisPanelLayout.createSequentialGroup()
                         .addGroup(SearchThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SearchThesisPanelLayout.createSequentialGroup()
@@ -870,7 +756,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchThesisPubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SearchThesisFigsLabel)
                                 .addComponent(searchThesisFigsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SearchThesisCommiteeMemLabel))
+                                .addComponent(SearchThesisCommitteeMemLabel))
                             .addGroup(SearchThesisPanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addComponent(SearchThesisTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -997,11 +883,11 @@ public class LMS extends javax.swing.JFrame {
         searchDissertationBuildingLabel.setText("Building:");
 
         searchDissertationBuildTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        searchDissertationBuildTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchDissertationBuildTxtActionPerformed(evt);
-            }
-        });
+        // searchDissertationBuildTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         searchDissertationBuildTxtActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout SearchDissertationPanelLayout = new javax.swing.GroupLayout(SearchDissertationPanel);
         SearchDissertationPanel.setLayout(SearchDissertationPanelLayout);
@@ -1100,7 +986,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Dissertation", SearchDissertationPanel);
 
-        SearchConferenceList.setModel(model);
         SearchConferenceList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchConferenceListValueChanged(evt);
@@ -1132,8 +1017,8 @@ public class LMS extends javax.swing.JFrame {
         //     }
         // });
 
-        SearchJournalTitleLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        SearchJournalTitleLabel1.setText("Title:");
+        SearchConferenceTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        SearchConferenceTitleLabel.setText("Title:");
 
         searchConferenceTitleTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
@@ -1180,7 +1065,7 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                         .addGroup(SearchConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
-                                .addComponent(SearchJournalTitleLabel1)
+                                .addComponent(SearchConferenceTitleLabel)
                                 .addGap(18, 18, 18)
                                 .addComponent(searchConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(52, 52, 52)
@@ -1228,7 +1113,7 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(searchConferenceAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SearchConferencePanelLayout.createSequentialGroup()
                                 .addGap(3, 3, 3)
-                                .addComponent(SearchJournalTitleLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(SearchConferenceTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(20, 20, 20)
                         .addGroup(SearchConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SearchConferenceNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1251,7 +1136,6 @@ public class LMS extends javax.swing.JFrame {
 
         SearchTabbedPanel.addTab("Conference Paper", SearchConferencePanel);
 
-        SearchJournalList.setModel(model);
         SearchJournalList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 SearchJournalListValueChanged(evt);
@@ -1885,11 +1769,11 @@ public class LMS extends javax.swing.JFrame {
         //     }
         // });
 
-        AddThesisCommiteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        AddThesisCommiteeMemInstructionLabel.setText("Enter the committee members, and committee name, and seprate them by a semicolon. (;)");
+        AddThesisCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddThesisCommitteeMemInstructionLabel.setText("Enter the committee members, and committee name, and seprate them by a semicolon. (;)");
 
-        AddThesisCommiteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddThesisCommiteeMemLabel.setText("Commitee Members:");
+        AddThesisCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddThesisCommitteeMemLabel.setText("Commitee Members:");
 
         addThesisBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         addThesisBtn.setText("Add Thesis");
@@ -1904,11 +1788,11 @@ public class LMS extends javax.swing.JFrame {
         AddThesisBuildLabel.setText("Building:");
 
         addThesisBuildTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addThesisBuildTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addThesisBuildTxtActionPerformed(evt);
-            }
-        });
+        // addThesisBuildTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addThesisBuildTxtActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout AddThesisPanelLayout = new javax.swing.GroupLayout(AddThesisPanel);
         AddThesisPanel.setLayout(AddThesisPanelLayout);
@@ -1947,11 +1831,11 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(AddThesisPanelLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AddThesisCommiteeMemInstructionLabel)
+                            .addComponent(AddThesisCommitteeMemInstructionLabel)
                             .addGroup(AddThesisPanelLayout.createSequentialGroup()
-                                .addComponent(AddThesisCommiteeMemLabel)
+                                .addComponent(AddThesisCommitteeMemLabel)
                                 .addGap(33, 33, 33)
-                                .addComponent(addThesisCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addThesisCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(42, 42, 42)
                                 .addComponent(addThesisBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -1986,12 +1870,12 @@ public class LMS extends javax.swing.JFrame {
                     .addComponent(AddThesisAuthorLabel)
                     .addComponent(addThesisAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(AddThesisCommiteeMemInstructionLabel)
+                .addComponent(AddThesisCommitteeMemInstructionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AddThesisCommiteeMemLabel)
+                    .addComponent(AddThesisCommitteeMemLabel)
                     .addGroup(AddThesisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addThesisCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addThesisCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(addThesisBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
@@ -2059,17 +1943,17 @@ public class LMS extends javax.swing.JFrame {
         //     }
         // });
 
-        AddDissertationCommiteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        AddDissertationCommiteeMemInstructionLabel.setText("Enter the committee members, and committe name, and seprate them by a semicolon. (;)");
+        AddDissertationCommitteeMemInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddDissertationCommitteeMemInstructionLabel.setText("Enter the committee members, and committe name, and seprate them by a semicolon. (;)");
 
-        AddThesisCommiteeMemLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddThesisCommiteeMemLabel1.setText("Commitee Members:");
+        AddDissertationCommitteeMemLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddDissertationCommitteeMemLabel.setText("Commitee Members:");
 
-        addDissertationCommiteeMemsTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationCommiteeMemsTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationCommitteeMemsTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationCommiteeMemsTxtActionPerformed(evt);
+        //     }
+        // });
 
         addDissertationBtn.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         addDissertationBtn.setText("Add Dissertation");
@@ -2084,11 +1968,11 @@ public class LMS extends javax.swing.JFrame {
         AddDissertationBuildLabel.setText("Building:");
 
         addDissertationBuildTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
-        addDissertationBuildTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDissertationBuildTxtActionPerformed(evt);
-            }
-        });
+        // addDissertationBuildTxt.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         addDissertationBuildTxtActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout AddDissertationPanelLayout = new javax.swing.GroupLayout(AddDissertationPanel);
         AddDissertationPanel.setLayout(AddDissertationPanelLayout);
@@ -2126,11 +2010,11 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(AddDissertationPanelLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AddDissertationCommiteeMemInstructionLabel)
+                            .addComponent(AddDissertationCommitteeMemInstructionLabel)
                             .addGroup(AddDissertationPanelLayout.createSequentialGroup()
-                                .addComponent(AddThesisCommiteeMemLabel1)
+                                .addComponent(AddDissertationCommitteeMemLabel)
                                 .addGap(33, 33, 33)
-                                .addComponent(addDissertationCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(addDissertationCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(addDissertationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(179, Short.MAX_VALUE))
@@ -2165,12 +2049,12 @@ public class LMS extends javax.swing.JFrame {
                     .addComponent(AddDissertationAuthorLabel)
                     .addComponent(addDissertationAuthorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(AddDissertationCommiteeMemInstructionLabel)
+                .addComponent(AddDissertationCommitteeMemInstructionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AddThesisCommiteeMemLabel1)
+                    .addComponent(AddDissertationCommitteeMemLabel)
                     .addGroup(AddDissertationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(addDissertationCommiteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addDissertationCommitteeMemsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(addDissertationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
@@ -2185,11 +2069,11 @@ public class LMS extends javax.swing.JFrame {
         //     }
         // });
 
-        addDissertationTitleLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        addDissertationTitleLabel1.setText("Title:");
+        addConferenceTitleLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        addConferenceTitleLabel.setText("Title:");
 
-        AddDissertationPubYearLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
-        AddDissertationPubYearLabel1.setText("Publication Year:");
+        AddConferencePubYearLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        AddConferencePubYearLabel.setText("Publication Year:");
 
         addConferencePubYearTxt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 12)); // NOI18N
 
@@ -2235,8 +2119,8 @@ public class LMS extends javax.swing.JFrame {
         AddConferenceAuthorLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         AddConferenceAuthorLabel.setText("Authors:");
 
-        AddBookAuthorInstructionLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        AddBookAuthorInstructionLabel1.setText("Enter the author(s) of the conference paper. If there are multiple, seprate them by a semicolon. (;)");
+        AddConferenceAuthorInstructionLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        AddConferenceAuthorInstructionLabel.setText("Enter the author(s) of the conference paper. If there are multiple, seprate them by a semicolon. (;)");
 
         addConferenceBeginDateFrmtTxt.setText("dd/mm/yyyy");
 
@@ -2256,7 +2140,7 @@ public class LMS extends javax.swing.JFrame {
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddConferencePanelLayout.createSequentialGroup()
                         .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AddBookAuthorInstructionLabel1)
+                            .addComponent(AddConferenceAuthorInstructionLabel)
                             .addGroup(AddConferencePanelLayout.createSequentialGroup()
                                 .addComponent(AddConferenceAuthorLabel)
                                 .addGap(105, 105, 105)
@@ -2280,8 +2164,8 @@ public class LMS extends javax.swing.JFrame {
                                 .addComponent(addConferenceNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(AddConferencePanelLayout.createSequentialGroup()
                                     .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(AddDissertationPubYearLabel1)
-                                        .addComponent(addDissertationTitleLabel1)
+                                        .addComponent(AddConferencePubYearLabel)
+                                        .addComponent(addConferenceTitleLabel)
                                         .addComponent(addConferenceLocationLabel))
                                     .addGap(61, 61, 61)
                                     .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2297,10 +2181,10 @@ public class LMS extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addConferenceTitleTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addDissertationTitleLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addConferenceTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddDissertationPubYearLabel1)
+                    .addComponent(AddConferencePubYearLabel)
                     .addComponent(addConferencePubYearTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2324,7 +2208,7 @@ public class LMS extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddConferencePanelLayout.createSequentialGroup()
                         .addComponent(addConferenceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)))
-                .addComponent(AddBookAuthorInstructionLabel1)
+                .addComponent(AddConferenceAuthorInstructionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AddConferencePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddConferenceAuthorLabel)
@@ -3132,25 +3016,6 @@ public class LMS extends javax.swing.JFrame {
 
             thesisSuper.add(new Thesis(addThesisTitleTxt.getText(), addThesisPubYearTxt.getText(), addThesisDepartment, numCommittee, addThesisChapter, addThesisFigure));
             // thesisSuper.author_list[0] = addThesisAuthorTxt.getText();
-
-    private void addThesisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisBtnActionPerformed
-        // TODO add your handling code here:
-        if(addThesisTitleTxt.getText().isEmpty() && addThesisDepTxt.getText().isEmpty() && addThesisPubYearTxt.getText().isEmpty() && addThesisBuildTxt.getText().isEmpty() && addThesisFigsTxt.getText().isEmpty() && addThesisAuthorTxt.getText().isEmpty() && addThesisCommiteeMemsTxt.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
-        } else {
-            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
-            List<CommitteeMember> committee = setCommitteeMems(addThesisCommiteeMemsTxt.getText());
-
-            //number of authors for array size in classes
-            int numCommittee = committee.size();
-
-            //this bookSuper.add is the justAddedBook
-            Department addThesisDepartment = new Department(addThesisBuildTxt.getText(), addThesisDepTxt.getText());
-            Chapter addThesisChapter = new Chapter(Integer.parseInt(addThesisChapTxt.getText()));
-            Figure addThesisFigure = new Figure(Integer.parseInt(addThesisFigsTxt.getText()));
-            
-            thesisSuper.add(new Thesis(addThesisTitleTxt.getText(), addThesisPubYearTxt.getText(), addThesisDepartment, numCommittee, addThesisChapter, addThesisFigure));
-            thesisSuper.author_list[0] = addThesisAuthorTxt.getText();
             
 
             //outer part makes sure we get only 1 book, the most recent
@@ -3185,26 +3050,6 @@ public class LMS extends javax.swing.JFrame {
 
             dissertationSuper.add(new Dissertation(addDissertationTitleTxt.getText(), addDissertationPubYearTxt.getText(), addDissertationDepartment, numCommittee, addDissertationChapter, addDissertationFigure));
             //dissertationSuper.author_list[0] = addDissertationAuthorTxt.getText();
-
-
-    private void addDissertationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationBtnActionPerformed
-        // TODO add your handling code here:
-        if(addDissertationTitleTxt.getText().isEmpty() && addDissertationDepTxt.getText().isEmpty() && addDissertationPubYearTxt.getText().isEmpty() && addDissertationBuildTxt.getText().isEmpty() && addDissertationFigsTxt.getText().isEmpty() && addDissertationAuthorTxt.getText().isEmpty() && addDissertationCommiteeMemsTxt.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
-        } else {
-            //calling setComitteeMems to parse through text field for committee members and committee title of new dissertation/thesis
-            List<CommitteeMember> committee = setCommitteeMems(addDissertationCommiteeMemsTxt.getText());
-
-            //number of authors for array size in classes
-            int numCommittee = committee.size();
-
-            //this bookSuper.add is the justAddedBook
-            Department addDissertationDepartment = new Department(addDissertationBuildTxt.getText(), addDissertationDepTxt.getText());
-            Chapter addDissertationChapter = new Chapter(Integer.parseInt(addDissertationChapTxt.getText()));
-            Figure addDissertationFigure = new Figure(Integer.parseInt(addDissertationFigsTxt.getText()));
-            
-            dissertationSuper.add(new Dissertation(addDissertationTitleTxt.getText(), addDissertationPubYearTxt.getText(), addDissertationDepartment, numCommittee, addDissertationChapter, addDissertationFigure));
-            dissertationSuper.author_list[0] = addDissertationAuthorTxt.getText();
             
 
             //outer part makes sure we get only 1 book, the most recent
@@ -3240,19 +3085,6 @@ public class LMS extends javax.swing.JFrame {
 
             //this bookSuper.add is the justAddedBook
             conferenceSuper.add(new ConferencePaper(addConferenceTitleTxt.getText(), addConferencePubYearTxt.getText(), numAuthors, addConferenceNameTxt.getText(), addConferenceLocation, addConferencePeriod));
-
-            //outer part makes sure we get only 1 book, the most recent
-            for(int i = 1; i>0; i--){
-                ConferencePaper justAddedConference = conferenceSuper.get(conferenceSuper.size()-1);
-                //this for loop goes through array size for the number of authors in this new book
-                for (int num = 0; num < numAuthors; num++){
-                    //we are adding the Authors for each index in the author_list for the new book.
-                  justAddedConference.author_list[num] = authors.get(numAuthors - (1+num));
-                }
-            }
-        }
-    }//GEN-LAST:event_addConferenceBtnActionPerformed
-          
 
             //outer part makes sure we get only 1 book, the most recent
             for(int i = 1; i>0; i--){
@@ -3303,7 +3135,7 @@ public class LMS extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Please fill in all parameters for adding a book!");
         } else {
             //calling setAuthors to parse through text field for authors of new book
-            List<Author> authors = setAuthors(addResearchAuthorListTxt.getText())
+            List<Author> authors = setAuthors(addResearchAuthorListTxt.getText());
               
             //number of authors for array size in classes
             int numAuthors = authors.size();
@@ -3525,26 +3357,6 @@ the index value is -1
         }  
     }//GEN-LAST:event_SearchMagazineListValueChanged
 
-    private void searchDissertationBuildTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDissertationBuildTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchDissertationBuildTxtActionPerformed
-
-    private void searchThesisBuildTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchThesisBuildTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchThesisBuildTxtActionPerformed
-
-    private void addThesisBuildTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addThesisBuildTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addThesisBuildTxtActionPerformed
-
-    private void addDissertationBuildTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationBuildTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationBuildTxtActionPerformed
-
-    private void addDissertationCommiteeMemsTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDissertationCommiteeMemsTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDissertationCommiteeMemsTxtActionPerformed
-
         /**
          * @param args the command line arguments
          */
@@ -3582,7 +3394,7 @@ the index value is -1
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AddBookAuthorInstructionLabel;
-    private javax.swing.JLabel AddBookAuthorInstructionLabel1;
+    private javax.swing.JLabel AddConferenceAuthorInstructionLabel;
     private javax.swing.JLabel AddBookAuthorLabel;
     private javax.swing.JLabel AddBookChapLabel;
     private javax.swing.JLabel AddBookEdNumLabel;
@@ -3597,12 +3409,12 @@ the index value is -1
     private javax.swing.JLabel AddDissertationAuthorLabel;
     private javax.swing.JLabel AddDissertationBuildLabel;
     private javax.swing.JLabel AddDissertationChapLabel;
-    private javax.swing.JLabel AddDissertationCommiteeMemInstructionLabel;
+    private javax.swing.JLabel AddDissertationCommitteeMemInstructionLabel;
     private javax.swing.JLabel AddDissertationDepLabel;
     private javax.swing.JLabel AddDissertationFigsLabel;
     private javax.swing.JPanel AddDissertationPanel;
     private javax.swing.JLabel AddDissertationPubYearLabel;
-    private javax.swing.JLabel AddDissertationPubYearLabel1;
+    private javax.swing.JLabel AddConferencePubYearLabel;
     private javax.swing.JPanel AddItemPanel;
     private javax.swing.JTabbedPane AddItemTabbedPane;
     private javax.swing.JLabel AddJournalAuthorInstructionLabel;
@@ -3617,9 +3429,9 @@ the index value is -1
     private javax.swing.JLabel AddThesisAuthorLabel;
     private javax.swing.JLabel AddThesisBuildLabel;
     private javax.swing.JLabel AddThesisChapLabel;
-    private javax.swing.JLabel AddThesisCommiteeMemInstructionLabel;
-    private javax.swing.JLabel AddThesisCommiteeMemLabel;
-    private javax.swing.JLabel AddThesisCommiteeMemLabel1;
+    private javax.swing.JLabel AddThesisCommitteeMemInstructionLabel;
+    private javax.swing.JLabel AddThesisCommitteeMemLabel;
+    private javax.swing.JLabel AddDissertationCommitteeMemLabel;
     private javax.swing.JLabel AddThesisDepLabel;
     private javax.swing.JLabel AddThesisFigLabel;
     private javax.swing.JPanel AddThesisPanel;
@@ -3642,11 +3454,11 @@ the index value is -1
     private javax.swing.JLabel SearchBookAuthorLabel;
     private javax.swing.JLabel SearchBookAuthorLabel2;
     private javax.swing.JLabel SearchBookChapLabel;
-    private javax.swing.JLabel SearchBookChapLabel2;
+    // private javax.swing.JLabel SearchBookChapLabel2;
     private javax.swing.JLabel SearchBookEdNumLabel;
-    private javax.swing.JLabel SearchBookEdNumLabel2;
+    // private javax.swing.JLabel SearchBookEdNumLabel2;
     private javax.swing.JLabel SearchBookFigsLabel;
-    private javax.swing.JLabel SearchBookFigsLabel2;
+    // private javax.swing.JLabel SearchBookFigsLabel2;
     private javax.swing.JList<String> SearchBookList;
     private javax.swing.JPanel SearchBookPanel;
     private javax.swing.JLabel SearchBookPubLabel;
@@ -3683,9 +3495,9 @@ the index value is -1
     private javax.swing.JLabel SearchJournalPubYearLabel;
     private javax.swing.JLabel SearchJournalPubYearLabel2;
     private javax.swing.JLabel SearchJournalTitleLabel;
-    private javax.swing.JLabel SearchJournalTitleLabel1;
-    private javax.swing.JLabel SearchJournalTitleLabel4;
-    private javax.swing.JLabel SearchJournalTitleLabel5;
+    private javax.swing.JLabel SearchThesisTitleLabel1;
+    private javax.swing.JLabel SearchMagazineTitleLabel;
+    private javax.swing.JLabel SearchConferenceTitleLabel;
     private javax.swing.JList<String> SearchMagazineList;
     private javax.swing.JPanel SearchMagazinePalettePanel;
     private javax.swing.JPanel SearchMagazinePalettePanel1;
@@ -3712,8 +3524,8 @@ the index value is -1
     private javax.swing.JLabel SearchThesisBuildLabel;
     private javax.swing.JLabel SearchThesisChapLabel;
     private javax.swing.JLabel SearchThesisChapLabel2;
-    private javax.swing.JLabel SearchThesisCommiteeMemLabel;
-    private javax.swing.JLabel SearchThesisCommiteeMemLabel2;
+    private javax.swing.JLabel SearchThesisCommitteeMemLabel;
+    private javax.swing.JLabel SearchConferenceCommitteeMemLabel;
     private javax.swing.JLabel SearchThesisDepLabel;
     private javax.swing.JLabel SearchThesisDepLabel2;
     private javax.swing.JLabel SearchThesisFigsLabel;
@@ -3747,12 +3559,12 @@ the index value is -1
     private javax.swing.JButton addDissertationBtn;
     private javax.swing.JTextField addDissertationBuildTxt;
     private javax.swing.JTextField addDissertationChapTxt;
-    private javax.swing.JTextField addDissertationCommiteeMemsTxt;
+    private javax.swing.JTextField addDissertationCommitteeMemsTxt;
     private javax.swing.JTextField addDissertationDepTxt;
     private javax.swing.JTextField addDissertationFigsTxt;
     private javax.swing.JTextField addDissertationPubYearTxt;
     private javax.swing.JLabel addDissertationTitleLabel;
-    private javax.swing.JLabel addDissertationTitleLabel1;
+    private javax.swing.JLabel addConferenceTitleLabel;
     private javax.swing.JTextField addDissertationTitleTxt;
     private javax.swing.JTextField addJournalAuthorListTxt;
     private javax.swing.JButton addJournalBtn;
@@ -3777,7 +3589,7 @@ the index value is -1
     private javax.swing.JButton addThesisBtn;
     private javax.swing.JTextField addThesisBuildTxt;
     private javax.swing.JTextField addThesisChapTxt;
-    private javax.swing.JTextField addThesisCommiteeMemsTxt;
+    private javax.swing.JTextField addThesisCommitteeMemsTxt;
     private javax.swing.JTextField addThesisDepTxt;
     private javax.swing.JTextField addThesisFigsTxt;
     private javax.swing.JTextField addThesisPubYearTxt;
