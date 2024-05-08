@@ -1,16 +1,15 @@
 package application;
 
 //Cherico Welch
-public class Thesis extends Publication {
-    
-    private Department department;
-    public CommitteeMember[] committeeMember;
+public class Thesis extends Publication{
+    public Department department;
+    public CommitteeMember[] committeeMembers;
     private Chapters chapters;
     private Figures figures;
-    
+
     public Thesis(){
-        Department = new Department();
-        committeeMember = new CommitteeMember[0];
+        department = new Department();
+        committeeMembers = new CommitteeMember[0];
         chapters = new Chapters();
         figures = new Figures();
     }
@@ -21,22 +20,6 @@ public class Thesis extends Publication {
         committeeMembers = new CommitteeMember[committeeMembersNum];
         this.chapters = chapters;
         this.figures = figures;
-    }
-
-    public Department getDepartment(){
-        return department;
-    }
-
-    public department setDepartment(Department department){
-        return department;
-    }
-
-    public CommitteeMember [] getCommitteeMembers(){
-        return CommitteeMembers;
-    }
-
-    public void setCommitteeMembers(CommitteeMember[] committeeMembers) {
-        this.committeeMembers = committeeMembers;
     }
 
     public Chapters getChapters() {

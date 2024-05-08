@@ -3,7 +3,7 @@ package application;
 //Patrick Siegler
 public class Dissertation extends Publication{
     
-    private Department department;
+    public Department department;
     public CommitteeMember[] committeeMembers;
     private Chapters chapters;
     private Figures figures;
@@ -23,13 +23,6 @@ public class Dissertation extends Publication{
         this.figures = figures;
     }
 
-    public Department getDepartment(){
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
 
     public Chapters getChapters() {
         return chapters;
