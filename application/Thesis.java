@@ -1,5 +1,6 @@
 package application;
 
+//Cherico Welch
 public class Thesis extends Publication{
     public Department department;
     public CommitteeMember[] committeeMembers;
@@ -36,4 +37,6 @@ public class Thesis extends Publication{
     public void setFigures(Figures figures) {
         this.figures = figures;
     }
+    
 }
+

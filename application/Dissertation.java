@@ -23,7 +23,6 @@ public class Dissertation extends Publication{
         this.figures = figures;
     }
 
-    
 
     public Chapters getChapters() {
         return chapters;

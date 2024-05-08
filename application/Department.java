@@ -15,6 +15,4 @@ public class Department {
         building = b;
         department_name = dn;
     }
-
-
 }
